@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  direction: rtl;
+}
+
+@font-face {
+  font-family: 'Yekan';
+  src: url("../../assets/font/Yekan.eot");
+  /* IE9 Compat Modes */
+  src: url("../../assets/font/Yekan.eot?#iefix") format("embedded-opentype"), url("../../assets/font/Yekan.woff2") format("woff2"), url("../../assets/font/Yekan.woff") format("woff"), url("../../assets/font/Yekan.otf") format("opentype"), url("../../assets/font/Yekan.ttf") format("truetype"), url("../../assets/font/Yekan.svg#Yekan") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Yekan;
+}
+
+.logo__title {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.logo__description {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+.u-margin-bottom-huge {
+  margin-bottom: 5.2rem;
+}
+
+.header__img {
+  height: 10rem;
+  position: relative;
+}
+
+.header__shape {
+  position: absolute;
+  left: -12%;
+  width: 85rem;
+}
+
+.header__doc {
+  width: 40rem;
+  position: absolute;
+  left: 9%;
+  top: 111%;
+}
+
+.header__box {
+  position: relative;
+}
+
+.header__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20rem;
+  margin-top: 10rem;
+}
+
+.header__title {
+  font-size: 3.6rem;
+  color: #1894FF;
+}
+
+.header__description {
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+
+.list {
+  width: 30%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.list__item {
+  font-size: 1.6rem;
+  opacity: 70%;
+}
+
+nav {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo__img {
+  width: 3.2rem;
+  margin-left: 1rem;
+}
+
+.logo__info-box {
+  margin-top: 1.1rem;
+}
+
+.logo__title {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.logo__description {
+  font-size: 1.2rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+.btn--download {
+  background-color: #E6F3FF;
+  color: #1894FF;
+  margin-top: 1rem;
+  padding: 1.4rem 3.2rem;
+}
+
+.btn--white {
+  color: #1894FF;
+  border: 1px solid #1894FF;
+  padding: 1.5rem 2rem;
+  margin-right: 1.5rem;
+}
+
+.btn--blue {
+  background-color: #1894FF;
+  color: #fff;
+  padding: 1.4rem 3.9rem 1.7rem 3.7rem;
+}
+/*# sourceMappingURL=main.css.map */

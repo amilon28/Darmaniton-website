@@ -1,0 +1,28 @@
+.btn {
+
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    border-radius: 1rem;
+    text-decoration: none;
+
+    &--download {
+        background-color: $color-grey;
+        color: $color-blue-light;
+        margin-top: 1rem;
+        padding: 1.4rem 3.2rem;
+    }
+
+    &--white {
+        color: $color-blue-light;
+        border: 1px solid $color-blue-light;
+        padding: 1.5rem 2rem;
+        margin-right: 1.5rem;
+    }
+
+    &--blue {
+        background-color: $color-blue-light;
+        color: #fff;
+        padding: 1.4rem 3.9rem 1.7rem 3.7rem;
+    }
+}

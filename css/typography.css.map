@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU;EACN,WAAW,EAAE,OAAO;EACpB,GAAG,EAAE,kCAAkC;EACvC,sBAAsB;EACtB,GAAG,EAAE,yCAAyC,CAAC,2BAA2B,EAEtE,oCAAoC,CAAC,eAAe,EAEpD,mCAAmC,CAAC,cAAc,EAElD,kCAAkC,CAAC,kBAAkB,EAErD,kCAAkC,CAAC,kBAAkB,EAErD,wCAAwC,CAAC,aAAa;EAC1D,gBAAgB;EAChB,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM;;;AAGtB,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,KAAK;CACrB",
+    "sources": [
+        "../sass/base/typography.scss"
+    ],
+    "names": [],
+    "file": "typography.css"
+}

@@ -1,0 +1,29 @@
+nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+
+
+    &__img {
+        width: 3.2rem;
+        margin-left: 1rem;
+    }
+
+    &__info-box {
+        margin-top: 1.1rem;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+
+    &__description {
+        font-size: 1.2rem;
+    }
+}
