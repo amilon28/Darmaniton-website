@@ -178,11 +178,12 @@ nav {
 }
 
 .main .about__description {
-  width: 77%;
+  width: 90%;
   font-size: 1.6rem;
   font-weight: 100;
   opacity: 70%;
   margin-bottom: 9rem;
+  line-height: 3.5rem;
 }
 
 .main .about__cards {
