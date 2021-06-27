@@ -1,0 +1,58 @@
+.main {
+
+    &>* {
+        padding: 30rem 20rem;
+    }
+
+    .about {
+        display: flex;
+
+        &__infoBox {
+            padding: 2rem 4rem;
+            order: 1;
+            margin-right: 10rem;
+        }
+
+        &__imgBox {
+
+            order: 0;
+        }
+
+        &__title {
+            font-size: 2rem;
+            color: $color-blue-dark;
+            border-right: 4px solid $color-green;
+            border-radius: .1rem;
+            padding-right: 1rem;
+        }
+
+        &__description {
+            width: 77%;
+            font-size: 1.6rem;
+            font-weight: 100;
+            opacity: 70%;
+            margin-bottom: 9rem;
+        }
+
+        &__cards {
+
+            display: flex;
+            justify-content: space-between;
+
+            .card {
+                background-color: $color-white;
+                margin-bottom: 1rem;
+                padding: 2rem 2.2rem;
+                border-radius: 2rem;
+                box-shadow: -2px -2px 2.2rem 1.1rem #e4edf5;
+
+                &-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
