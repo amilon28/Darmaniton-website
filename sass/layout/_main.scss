@@ -1,9 +1,15 @@
 .main {
 
     &>* {
-        padding: 30rem 20rem;
+        padding: 20rem 20rem;
     }
 
+    .about {
+        padding: 30rem 20rem 0;
+    }
+
+
+    // About
     .about {
         display: flex;
 
@@ -19,16 +25,12 @@
         }
 
         &__title {
-            font-size: 2rem;
-            color: $color-blue-dark;
-            border-right: 4px solid $color-green;
-            border-radius: .1rem;
-            padding-right: 1rem;
+            @include section-title
         }
 
         &__description {
             width: 90%;
-            font-size: 1.6rem;
+            font-size: $default-font-size;
             font-weight: 100;
             opacity: 70%;
             margin-bottom: 9rem;
@@ -41,11 +43,10 @@
             justify-content: space-between;
 
             .card {
-                background-color: $color-white;
+
                 margin-bottom: 1.5rem;
                 padding: 2rem 2.2rem;
-                border-radius: 2rem;
-                box-shadow: -2px -2px 2.2rem 1.1rem #e4edf5;
+                @include cardsBoxShadow;
 
                 &-container {
                     display: flex;
@@ -59,6 +60,161 @@
                     font-weight: 100;
                 }
             }
+        }
+    }
+
+    // Facilities
+    .facilities {
+        .container {
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 2fr 3fr;
+            row-gap: 2rem;
+            column-gap: 8rem;
+            grid-template-areas:
+                "header header header header"
+                "services  pharmacy  pharmacy pharmacy "
+                "services process  process process";
+        }
+
+        &__title {
+            @include section-title;
+            height: 3.2rem;
+            grid-area: header;
+        }
+
+        &__pharmacy {
+            padding: 1rem;
+            grid-area: pharmacy;
+
+
+        }
+
+        &__services {
+
+            grid-area: services;
+            display: grid;
+            grid-template-columns: repeat(2, 20rem);
+            justify-items: center;
+            align-items: center;
+            row-gap: 4rem;
+
+        }
+
+        &__process {
+            grid-area: process;
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem;
+            @include cardsBoxShadow;
+
+
+
+            &--visit,
+            &--pharmacy {
+                padding: 2.5rem 5rem;
+            }
+
+            &--shop {
+                padding: 2.3rem 5.8rem;
+            }
+
+
+            &--reservation {
+                padding: 3rem 4rem;
+            }
+        }
+
+        &__label {
+            font-size: 1.4rem;
+            text-align: center;
+            margin-top: 1.5rem;
+            opacity: 60%;
+        }
+
+
+        &__header {
+            font-size: $default-font-size;
+            margin-bottom: 1.5rem;
+        }
+
+        &__description {
+            font-size: $default-font-size;
+            line-height: 3.2rem;
+            opacity: 70%;
+            ;
+        }
+
+        &__process {
+            display: flex;
+        }
+
+        &__diagram {
+            flex: 0 1 4rem;
+            position: relative;
+        }
+
+        &__step {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        &__line {
+            width: .2rem;
+            height: 16rem;
+            background-color: #d1d1d193;
+            position: absolute;
+            right: 44%;
+            top: 10%;
+        }
+
+        &__circle-container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        &__circle {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background-color: $color-grey;
+            position: relative;
+
+            &--arrow {
+                transform: rotate(271deg);
+                @include circle-icons;
+            }
+
+            &--check {
+                @include circle-icons;
+            }
+        }
+
+        .check {
+            background-color: $color-green;
+        }
+
+        &__step-heading {
+            font-size: $default-font-size;
+            margin-top: 2rem;
+            margin-right: 1rem;
+        }
+
+        &__step-description {
+            font-size: 1.4rem;
+            opacity: .7;
+            margin-right: 5rem;
+            margin-top: .4rem;
         }
     }
 }

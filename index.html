@@ -95,89 +95,90 @@
       <!-- Start Facilities -->
       <section class="facilities">
         <div class="container">
-          <div class="facilities__header">امکانات درمانیتو</div>
+          <div class="facilities__title">امکانات درمانیتو</div>
           <div class="facilities__pharmacy">
             <h2 class="facilities__header">داروخانه آنلاین</h2>
             <p class="facilities__description">
               در سرویس داروخانه شما میتوانید نسخه دارویی یا محصول بهداشتی خودتون
-              رو برای پیدا شدن به داروخانه و فروشگاه ها سفارش بدید
+              رو برای پیدا شدن به داروخانه و فروشگاه ها سفارش بدید.
             </p>
           </div>
           <div class="facilities__services">
-            <div class="facilities__card">
-              <img
-                src="assets/img/shop.svg"
-                alt="shop"
-                class="facilities__icon"
-              />
-              <span class="facilities__label">فروشگاه</span>
-            </div>
-            <div class="facilities__card">
+            <div class="facilities__card facilities__card--pharmacy">
               <img
                 src="assets/img/pharmacy.svg"
                 alt="pharmacy"
                 class="facilities__icon"
               />
-              <span class="facilities__label">داروخانه</span>
+              <span class="facilities__label active">داروخانه</span>
             </div>
-            <div class="facilities__card">
+            <div class="facilities__card facilities__card--shop">
               <img
-                src="assets/img/calender.svg"
-                alt="reservation"
-                class="facilities__icon"
+                src="assets/img/shop.svg"
+                alt="shop"
+                class="facilities__icon deactive"
               />
-              <span class="facilities__label">نوبت دهی آنلاین</span>
+              <span class="facilities__label">فروشگاه</span>
             </div>
-            <div class="facilities__card">
+            <div class="facilities__card facilities__card--visit">
               <img
                 src="assets/img/doctor-toys.svg"
                 alt="visit"
-                class="facilities__icon"
+                class="facilities__icon deactive"
               />
               <span class="facilities__label">ویزیت آنلاین</span>
+            </div>
+            <div class="facilities__card facilities__card--reservation">
+              <img
+                src="assets/img/calender.svg"
+                alt="reservation"
+                class="facilities__icon deactive"
+              />
+              <span class="facilities__label">نوبت دهی آنلاین</span>
             </div>
           </div>
           <div class="facilities__process">
             <div class="facilities__diagram">
+              <div class="facilities__line"></div>
               <div class="facilities__circle-container">
                 <div class="facilities__circle">
                   <img
                     src="assets/img/arrow.svg"
                     alt="arrow"
-                    class="facilities__circle--icon"
+                    class="facilities__circle--arrow"
                   />
                 </div>
                 <div class="facilities__circle">
                   <img
                     src="assets/img/arrow.svg"
                     alt="arrow"
-                    class="facilities__circle--icon"
+                    class="facilities__circle--arrow"
                   />
                 </div>
-                <div class="facilities__circle">
+                <div class="facilities__circle check">
                   <img
                     src="assets/img/check.svg"
                     alt="check"
-                    class="facilities__circle--icon"
+                    class="facilities__circle--check"
                   />
                 </div>
               </div>
             </div>
             <div class="facilities__step">
               <div class="facilities__step--1">
-                <h1 class="facilities__step-heading">قدم اول</h1>
+                <p class="facilities__step-heading">قدم اول</p>
                 <p class="facilities__step-description">
                   وارد بخش سفارش با عکس نسخه شوید و عکس و توضیحات را وارد کنید
                 </p>
               </div>
               <div class="facilities__step--2">
-                <h1 class="facilities__step-heading">قدم دوم</h1>
+                <p class="facilities__step-heading">قدم دوم</p>
                 <p class="facilities__step-description">
                   بعد از ارسال عکس نسخه، باید آدرس محل خودتون رو وارد کنید
                 </p>
               </div>
               <div class="facilities__step--3">
-                <h1 class="facilities__step-heading">قدم سوم</h1>
+                <p class="facilities__step-heading">قدم سوم</p>
                 <p class="facilities__step-description">
                   اگر نتیجه جستجوی نسخه موفقیت آمیز باشه باید منتظر تحویل سفارش
                   باشید

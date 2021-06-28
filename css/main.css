@@ -49,6 +49,16 @@ body {
   margin-bottom: 5.2rem;
 }
 
+.deactive {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
+.active {
+  color: #2361B5;
+  opacity: 1 !important;
+}
+
 .header__img {
   height: 10rem;
   position: relative;
@@ -146,7 +156,11 @@ nav {
 }
 
 .main > * {
-  padding: 30rem 20rem;
+  padding: 20rem 20rem;
+}
+
+.main .about {
+  padding: 30rem 20rem 0;
 }
 
 .main .about {
@@ -171,6 +185,7 @@ nav {
 
 .main .about__title {
   font-size: 2rem;
+  font-weight: bold;
   color: #2361B5;
   border-right: 4px solid #00DE9A;
   border-radius: .1rem;
@@ -196,9 +211,9 @@ nav {
 }
 
 .main .about__cards .card {
-  background-color: #fff;
   margin-bottom: 1.5rem;
   padding: 2rem 2.2rem;
+  background-color: #fff;
   border-radius: 2rem;
   -webkit-box-shadow: -2px -2px 2.2rem 1.1rem #e4edf5;
           box-shadow: -2px -2px 2.2rem 1.1rem #e4edf5;
@@ -223,6 +238,207 @@ nav {
 .main .about__cards .card-label {
   font-size: 1.4rem;
   font-weight: 100;
+}
+
+.main .facilities .container {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr 2fr 3fr;
+      grid-template-rows: 1fr 2fr 3fr;
+  row-gap: 2rem;
+  -webkit-column-gap: 8rem;
+          column-gap: 8rem;
+      grid-template-areas: "header header header header" "services  pharmacy  pharmacy pharmacy " "services process  process process";
+}
+
+.main .facilities__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2361B5;
+  border-right: 4px solid #00DE9A;
+  border-radius: .1rem;
+  padding-right: 1rem;
+  height: 3.2rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: header;
+}
+
+.main .facilities__pharmacy {
+  padding: 1rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: pharmacy;
+}
+
+.main .facilities__services {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: services;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (20rem)[2];
+      grid-template-columns: repeat(2, 20rem);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 4rem;
+}
+
+.main .facilities__process {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: process;
+}
+
+.main .facilities__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  -webkit-box-shadow: -2px -2px 2.2rem 1.1rem #e4edf5;
+          box-shadow: -2px -2px 2.2rem 1.1rem #e4edf5;
+}
+
+.main .facilities__card--visit, .main .facilities__card--pharmacy {
+  padding: 2.5rem 5rem;
+}
+
+.main .facilities__card--shop {
+  padding: 2.3rem 5.8rem;
+}
+
+.main .facilities__card--reservation {
+  padding: 3rem 4rem;
+}
+
+.main .facilities__label {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  opacity: 60%;
+}
+
+.main .facilities__header {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.main .facilities__description {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  opacity: 70%;
+}
+
+.main .facilities__process {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .facilities__diagram {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 4rem;
+          flex: 0 1 4rem;
+  position: relative;
+}
+
+.main .facilities__step {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .facilities__line {
+  width: .2rem;
+  height: 16rem;
+  background-color: #d1d1d193;
+  position: absolute;
+  right: 44%;
+  top: 10%;
+}
+
+.main .facilities__circle-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .facilities__circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #E6F3FF;
+  position: relative;
+}
+
+.main .facilities__circle--arrow {
+  -webkit-transform: rotate(271deg);
+          transform: rotate(271deg);
+  position: absolute;
+  top: 28%;
+  right: 25%;
+  width: 1.3rem;
+}
+
+.main .facilities__circle--check {
+  position: absolute;
+  top: 28%;
+  right: 25%;
+  width: 1.3rem;
+}
+
+.main .facilities .check {
+  background-color: #00DE9A;
+}
+
+.main .facilities__step-heading {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+
+.main .facilities__step-description {
+  font-size: 1.4rem;
+  opacity: .7;
+  margin-right: 5rem;
+  margin-top: .4rem;
 }
 
 .btn {
