@@ -42,7 +42,7 @@
 
             .card {
                 background-color: $color-white;
-                margin-bottom: 1rem;
+                margin-bottom: 1.5rem;
                 padding: 2rem 2.2rem;
                 border-radius: 2rem;
                 box-shadow: -2px -2px 2.2rem 1.1rem #e4edf5;
@@ -52,6 +52,11 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                }
+
+                &-label {
+                    font-size: 1.4rem;
+                    font-weight: 100;
                 }
             }
         }
