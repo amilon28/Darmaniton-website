@@ -14,7 +14,8 @@
     }
 
     .subscription {
-        padding-top: 2rem;
+        padding-top: 8rem;
+        padding-right: 20rem
     }
 
 
@@ -153,10 +154,7 @@
         }
 
         &__description {
-            font-size: $default-font-size;
-            line-height: 3.2rem;
-            opacity: 70%;
-            ;
+            @include section-description;
         }
 
         &__process {
@@ -251,7 +249,7 @@
 
         }
 
-        .content {
+        &__content {
             width: 100%;
 
             margin: 10r em auto 0;
@@ -302,31 +300,6 @@
             position: relative;
         }
 
-        &__input-field {
-            width: 70%;
-            font-family: inherit;
-            padding: 2.2rem 2rem 1.5rem 0;
-            border-radius: 1rem;
-            border: none;
-            margin-bottom: 2rem;
-
-            &:focus {
-                outline: none;
-            }
-        }
-
-        &__send-link-btn {
-            color: $color-white;
-            text-decoration: none;
-            font-size: $default-font-size;
-            padding: .8rem 2.2rem;
-            background-color: $color-blue-light;
-            border-radius: 1rem;
-            position: absolute;
-            top: 10%;
-            right: 55%;
-        }
-
         &__social {
             &-icon {
                 width: 18rem;
@@ -334,6 +307,51 @@
                 opacity: .9;
                 cursor: pointer;
             }
+        }
+    }
+
+    // Subscription
+    .subscription {
+        overflow: hidden;
+        position: relative;
+
+        &__cloud {
+            position: absolute;
+            right: -2%;
+            z-index: -999;
+        }
+
+        &__content {
+            margin-top: 10rem;
+            @include cardsBoxShadow;
+            display: flex;
+            padding: 7.2rem 8rem 0 8rem;
+        }
+
+        &__textBox {
+            width: 55%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly
+        }
+
+        &__title {
+            @include section-title;
+            margin-bottom: 2rem;
+        }
+
+        &__description {
+            @include section-description;
+
+        }
+
+        &__inputBox {
+            position: relative;
+        }
+
+        &__img {
+            padding-right: 5rem;
         }
     }
 }

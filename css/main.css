@@ -118,6 +118,7 @@ body {
 .list__item {
   font-size: 1.6rem;
   opacity: 70%;
+  cursor: pointer;
 }
 
 nav {
@@ -169,7 +170,8 @@ nav {
 }
 
 .main .subscription {
-  padding-top: 2rem;
+  padding-top: 8rem;
+  padding-right: 20rem;
 }
 
 .main .about {
@@ -224,8 +226,8 @@ nav {
   padding: 2rem 2.2rem;
   background-color: #fff;
   border-radius: 2rem;
-  -webkit-box-shadow: -2px -2px 2.2rem 1.1rem #e4edf5;
-          box-shadow: -2px -2px 2.2rem 1.1rem #e4edf5;
+  -webkit-box-shadow: -1px 1px 2rem 0 #aed9ff;
+          box-shadow: -1px 1px 2rem 0 #aed9ff;
 }
 
 .main .about__cards .card-container {
@@ -322,8 +324,8 @@ nav {
   padding: 3rem;
   background-color: #fff;
   border-radius: 2rem;
-  -webkit-box-shadow: -2px -2px 2.2rem 1.1rem #e4edf5;
-          box-shadow: -2px -2px 2.2rem 1.1rem #e4edf5;
+  -webkit-box-shadow: -1px 1px 2rem 0 #aed9ff;
+          box-shadow: -1px 1px 2rem 0 #aed9ff;
 }
 
 .main .facilities__card--visit, .main .facilities__card--pharmacy {
@@ -473,7 +475,7 @@ nav {
           transform: rotate(-8deg);
 }
 
-.main .download .content {
+.main .download__content {
   width: 100%;
   margin: 10r em auto 0;
   display: -webkit-box;
@@ -527,31 +529,6 @@ nav {
   position: relative;
 }
 
-.main .download__input-field {
-  width: 70%;
-  font-family: inherit;
-  padding: 2.2rem 2rem 1.5rem 0;
-  border-radius: 1rem;
-  border: none;
-  margin-bottom: 2rem;
-}
-
-.main .download__input-field:focus {
-  outline: none;
-}
-
-.main .download__send-link-btn {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.6rem;
-  padding: .8rem 2.2rem;
-  background-color: #1894FF;
-  border-radius: 1rem;
-  position: absolute;
-  top: 10%;
-  right: 55%;
-}
-
 .main .download__social-icon {
   width: 18rem;
   margin-left: 2rem;
@@ -559,11 +536,73 @@ nav {
   cursor: pointer;
 }
 
+.main .subscription {
+  overflow: hidden;
+  position: relative;
+}
+
+.main .subscription__cloud {
+  position: absolute;
+  right: -2%;
+  z-index: -999;
+}
+
+.main .subscription__content {
+  margin-top: 10rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  -webkit-box-shadow: -1px 1px 2rem 0 #aed9ff;
+          box-shadow: -1px 1px 2rem 0 #aed9ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7.2rem 8rem 0 8rem;
+}
+
+.main .subscription__textBox {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main .subscription__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2361B5;
+  border-right: 4px solid #00DE9A;
+  border-radius: .1rem;
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.main .subscription__description {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  opacity: 70%;
+}
+
+.main .subscription__inputBox {
+  position: relative;
+}
+
+.main .subscription__img {
+  padding-right: 5rem;
+}
+
 .btn {
   font-size: 1.6rem;
   font-weight: bold;
   border-radius: 1rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .btn--download {
@@ -584,5 +623,55 @@ nav {
   background-color: #1894FF;
   color: #fff;
   padding: 1.4rem 3.9rem 1.7rem 3.7rem;
+}
+
+.input-btn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: .8rem 2.2rem;
+  background-color: #1894FF;
+  border-radius: 1rem;
+  position: absolute;
+  top: 10%;
+  right: 55%;
+}
+
+.input-btn--sign-in {
+  right: 63%;
+}
+
+.input-field {
+  width: 70%;
+  font-family: inherit;
+  padding: 2.2rem 2rem 1.5rem 0;
+  border-radius: 1rem;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.input-field--greyBackground {
+  background-color: #F9F9F9;
+  width: 90%;
+}
+
+::-webkit-input-placeholder {
+  opacity: .8;
+}
+
+:-ms-input-placeholder {
+  opacity: .8;
+}
+
+::-ms-input-placeholder {
+  opacity: .8;
+}
+
+::placeholder {
+  opacity: .8;
 }
 /*# sourceMappingURL=main.css.map */

@@ -5,6 +5,7 @@
 
     border-radius: 1rem;
     text-decoration: none;
+    cursor: pointer;
 
     &--download {
         background-color: $color-grey;
@@ -24,5 +25,21 @@
         background-color: $color-blue-light;
         color: $color-white;
         padding: 1.4rem 3.9rem 1.7rem 3.7rem;
+    }
+}
+
+.input-btn {
+    color: $color-white;
+    text-decoration: none;
+    font-size: $default-font-size;
+    padding: .8rem 2.2rem;
+    background-color: $color-blue-light;
+    border-radius: 1rem;
+    position: absolute;
+    top: 10%;
+    right: 55%;
+
+    &--sign-in {
+        right: 63%;
     }
 }

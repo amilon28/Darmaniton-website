@@ -7,10 +7,16 @@
     padding-right: 1rem;
 }
 
+@mixin section-description {
+    font-size: $default-font-size;
+    line-height: 3.2rem;
+    opacity: 70%;
+}
+
 @mixin cardsBoxShadow {
     background-color: $color-white;
     border-radius: 2rem;
-    box-shadow: -2px -2px 2.2rem 1.1rem #e4edf5;
+    box-shadow: -1px 1px 2rem 0 #aed9ff;
 }
 
 @mixin circle-icons {
