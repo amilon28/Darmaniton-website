@@ -1,0 +1,111 @@
+.footer {
+    background-color: #e75050;
+
+    &__support {
+        background-color: $color-blue-light;
+        padding: 3rem 4rem;
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__response-and-support {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-white;
+    }
+
+    &__support-heading {
+        font-size: 2rem;
+        margin-left: 2.5rem;
+    }
+
+    &__response {
+        font-size: 1.4rem;
+        opacity: .9;
+
+    }
+
+    &__links {
+        background-color: $color-white;
+        padding: 8.6rem 12.6rem;
+
+        .container {
+            height: 20rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__textBox {
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            width: 78%;
+            font-size: 1.4rem;
+        }
+
+        margin: 2.5rem 0;
+    }
+
+    &__social {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__heading {
+        font-size: $default-font-size;
+        margin-bottom: 1.4rem;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-black;
+        font-size: 1.4rem;
+    }
+
+    &__list {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    a.active-item {
+        @include section-title;
+        font-size: 1.4rem;
+    }
+
+    &__apps {
+        margin-top: 2.5rem;
+
+        img:first-child {
+            margin-left: 1.8rem;
+        }
+    }
+}
