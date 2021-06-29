@@ -15,6 +15,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   direction: rtl;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -161,6 +162,14 @@ nav {
 
 .main .about {
   padding: 30rem 20rem 0;
+}
+
+.main .download {
+  padding: 0 20rem;
+}
+
+.main .subscription {
+  padding-top: 2rem;
 }
 
 .main .about {
@@ -439,6 +448,114 @@ nav {
   opacity: .7;
   margin-right: 5rem;
   margin-top: .4rem;
+}
+
+.main .download {
+  position: relative;
+  background-color: #0089FF;
+  overflow: hidden;
+}
+
+.main .download .cloud {
+  position: absolute;
+}
+
+.main .download .cloud-left {
+  left: -10%;
+  top: -6%;
+  opacity: .5;
+}
+
+.main .download .cloud-right {
+  right: -15%;
+  top: -37%;
+  -webkit-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+}
+
+.main .download .content {
+  width: 100%;
+  margin: 10r em auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .download__img-preview {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 40%;
+}
+
+.main .download__img-preview img {
+  height: 55rem;
+  margin-bottom: -1rem;
+}
+
+.main .download__download-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 60%;
+  height: 30rem;
+  padding-right: 3rem;
+  color: #fff;
+}
+
+.main .download__header {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.main .download__text {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.main .download__inputBox {
+  position: relative;
+}
+
+.main .download__input-field {
+  width: 70%;
+  font-family: inherit;
+  padding: 2.2rem 2rem 1.5rem 0;
+  border-radius: 1rem;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.main .download__input-field:focus {
+  outline: none;
+}
+
+.main .download__send-link-btn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: .8rem 2.2rem;
+  background-color: #1894FF;
+  border-radius: 1rem;
+  position: absolute;
+  top: 10%;
+  right: 55%;
+}
+
+.main .download__social-icon {
+  width: 18rem;
+  margin-left: 2rem;
+  opacity: .9;
 }
 
 .btn {
