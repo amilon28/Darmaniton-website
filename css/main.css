@@ -161,7 +161,7 @@ nav {
 }
 
 .main .about {
-  padding: 30rem 20rem 0;
+  padding: 40rem 20rem 0;
 }
 
 .main .download {
@@ -556,6 +556,7 @@ nav {
   width: 18rem;
   margin-left: 2rem;
   opacity: .9;
+  cursor: pointer;
 }
 
 .btn {
