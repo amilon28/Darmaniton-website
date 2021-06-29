@@ -50,11 +50,16 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-
+    color: $color-black;
 
     &__item {
         font-size: $default-font-size;
         opacity: 70%;
         cursor: pointer;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
     }
 }

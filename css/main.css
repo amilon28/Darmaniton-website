@@ -113,12 +113,18 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #000;
 }
 
 .list__item {
   font-size: 1.6rem;
   opacity: 70%;
   cursor: pointer;
+}
+
+.list__link {
+  text-decoration: none;
+  color: inherit;
 }
 
 nav {
