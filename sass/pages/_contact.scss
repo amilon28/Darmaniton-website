@@ -1,0 +1,106 @@
+.map-container {
+    padding: 13rem 16.3rem;
+
+    display: flex;
+
+
+    .form {
+        width: 50%;
+
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            width: 80%;
+            height: 100%;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+
+            margin-bottom: 2rem;
+        }
+
+        &__label {
+            font-size: 1.2rem;
+            font-family: inherit;
+            margin-bottom: 1.2rem;
+        }
+
+        &__input {
+            padding: 1.5rem 1rem;
+            border: none;
+            border-radius: 1rem;
+            border: 1px solid $color-border;
+        }
+
+        &__input.active-input {
+            border: 2px solid $color-blue-light;
+        }
+
+        &__btn {
+            background-color: transparent;
+            padding: 1.5rem 19rem;
+            font-size: $default-font-size;
+            color: $color-blue-light;
+            border: 1px solid $color-blue-light;
+            border-radius: 1rem;
+        }
+    }
+
+    .map {
+        width: 50%;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .textBox {
+            padding: 1rem 1.5rem;
+            width: 90%;
+            background-color: $color-white;
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            .title {
+                color: $color-black;
+                font-size: $default-font-size;
+                margin-bottom: 1.2rem;
+            }
+
+            .content {
+                font-size: $default-font-size;
+            }
+
+            .address {
+                grid-column: 2;
+                grid-row: 1/ span 2;
+
+                &__content {
+                    width: 77%;
+                    line-height: 3rem;
+                }
+            }
+
+            .info {
+                margin-bottom: 1.2rem;
+            }
+
+            .email,
+            .fixed-number {
+                &__content {
+                    color: $color-blue-light;
+                }
+            }
+        }
+    }
+}

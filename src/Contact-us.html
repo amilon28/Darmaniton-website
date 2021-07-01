@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FQA</title>
+    <title>Contact us</title>
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
-    <!-- Start Nav -->
+    <!-- Start nav -->
     <nav>
       <div class="logo">
         <img src="../assets/img/logo.svg" alt="logo-image" class="logo__img" />
@@ -25,7 +25,7 @@
           <a class="list__link" href="#">درباره ما</a>
         </li>
         <li class="list__item">
-          <a class="list__link" href="./Contact-us.html">تماس باما</a>
+          <a class="list__link" href="#">تماس باما</a>
         </li>
         <li class="list__item">
           <a class="list__link" href="./subscription.html">عضویت داروخانه ها</a>
@@ -33,89 +33,74 @@
       </ul>
       <a class="btn btn--download">دانلود درمانیتو</a>
     </nav>
-    <!-- End Nav -->
-    <main class="FQ">
+    <!-- End nav -->
+    <main>
       <section class="FQ__title">
         <img src="../assets/img/right-shape-FQ.svg" class="right-shape-FQ" />
         <img src="../assets/img/left-shape-FQ.svg" class="left-shape-FQ" />
         <img src="" alt="" />
-        <h2>سوالات متداول</h2>
+        <h2>تماس با ما</h2>
       </section>
-      <section class="FQ__box">
-        <div class="FQ__box-main">
-          <h2 class="FQ__main-heading">سوال شما درباره کدوم سرویس هست؟</h2>
-          <div class="FQ__gallery">
-            <div class="facilities__card facilities__card--pharmacy">
-              <img
-                src="../assets/img/pharmacy.svg"
-                alt="pharmacy"
-                class="facilities__icon"
+      <section class="map-container">
+        <form action="#" class="form">
+          <div class="form__container">
+            <div class="form__item">
+              <label for="fullName" class="form__label"
+                >نام و نام خانوادگی</label
+              >
+              <input
+                id="fullName"
+                type="text"
+                class="form__input active-input"
+                placeholder="ایمیل یا شماره همراه"
               />
-              <span class="facilities__label active">داروخانه</span>
             </div>
-            <div class="facilities__card facilities__card--shop">
-              <img
-                src="../assets/img/shop.svg"
-                alt="shop"
-                class="facilities__icon deactive"
+            <div class="form__item">
+              <label for="email" class="form__label"
+                >ایمیل یا شماره همراه</label
+              >
+              <input
+                id="email"
+                type="text"
+                class="form__input"
+                placeholder="ایمیل یا شماره همراه"
               />
-              <span class="facilities__label">فروشگاه</span>
             </div>
-            <div class="facilities__card facilities__card--visit">
-              <img
-                src="../assets/img/doctor-toys.svg"
-                alt="visit"
-                class="facilities__icon deactive"
-              />
-              <span class="facilities__label">ویزیت آنلاین</span>
-              <a class="btn btn--coming-soon" href="#">به زودی</a>
+            <div class="form__item">
+              <label for="message" class="form__label">پیام شما</label>
+              <textarea
+                id="message"
+                cols="30"
+                rows="10"
+                class="form__input"
+                placeholder="ایمیل یا شماره همراه"
+              ></textarea>
             </div>
-            <div class="facilities__card facilities__card--reservation">
-              <img
-                src="../assets/img/calender.svg"
-                alt="reservation"
-                class="facilities__icon deactive"
-              />
-              <span class="facilities__label">نوبت دهی آنلاین</span>
-              <a class="btn btn--coming-soon" href="#">به زودی</a>
-            </div>
-            <!-- <img src="../assets/img/shop.svg" alt="shop" />
-            <img src="../assets/img/doctor-toys.svg" alt="visit" />
-            <img src="../assets/img/calender.svg" alt="calender" /> -->
+            <input type="submit" value="ارسال پیام" class="form__btn" />
           </div>
-        </div>
-        <div class="FQ__box-text">
-          <img src="../assets/img/plus.svg" alt="plus" />
-          <h3 class="FQ__sub-heading">
-            هزینه ای درمانیتو برای پیدا کردن دارو دریافت میکنه؟
-          </h3>
-        </div>
-        <div class="FQ__box-text">
-          <img src="../assets/img/plus.svg" alt="plus" />
-          <h3 class="FQ__sub-heading">
-            هزینه ای درمانیتو برای پیدا کردن دارو دریافت میکنه؟
-          </h3>
-        </div>
-        <div class="FQ__box-ans">
-          <div class="FQ__box-text">
-            <img src="../assets/img/minus.svg" alt="minus" />
-            <h3 class="FQ__sub-heading">
-              درمانیتو فقط در تهران و کرج فعال هست؟
-            </h3>
+        </form>
+        <div class="map">
+          <img src="../assets/img/Map.svg" alt="map" />
+          <div class="textBox">
+            <div class="email info">
+              <h3 class="title">ایمیل</h3>
+              <p class="email__content content">info@nahiraTech.com</p>
+            </div>
+            <div class="fixed-number info">
+              <h3 class="title">شماره ثابت</h3>
+              <p class="fixed-number__content content">۰۲۱-۴۴۲۱۹۶۷۱</p>
+            </div>
+            <div class="address info">
+              <h3 class="title">آدرس</h3>
+              <p class="address__content content">
+                تهران، طرشت، خیابان شهید چوب تراش، خیابان شهید حسین مردی، بن‌بست
+                پنجم، پلاک 15، واحد 1
+              </p>
+            </div>
           </div>
-          <p class="FQ__paragraph">
-            خیر، ما هم اکنون در تهران در حال فعالیت هستیم
-          </p>
-        </div>
-        <div class="FQ__box-text">
-          <img src="../assets/img/plus.svg" alt="plus" />
-          <h3 class="FQ__sub-heading">
-            هزینه ای درمانیتو برای پیدا کردن دارو دریافت میکنه؟
-          </h3>
         </div>
       </section>
     </main>
-
     <!-- Start Footer -->
     <footer class="footer">
       <div class="footer__support">

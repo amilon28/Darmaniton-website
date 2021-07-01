@@ -853,18 +853,26 @@ nav {
 
 ::-webkit-input-placeholder {
   opacity: .8;
+  font-size: 1.4rem;
+  font-family: inherit;
 }
 
 :-ms-input-placeholder {
   opacity: .8;
+  font-size: 1.4rem;
+  font-family: inherit;
 }
 
 ::-ms-input-placeholder {
   opacity: .8;
+  font-size: 1.4rem;
+  font-family: inherit;
 }
 
 ::placeholder {
   opacity: .8;
+  font-size: 1.4rem;
+  font-family: inherit;
 }
 
 .pharmacies {
@@ -1092,6 +1100,7 @@ nav {
   position: relative;
   background-color: #1894FF;
   color: #fff;
+  margin-top: 1rem;
   padding: 4rem 0;
 }
 
@@ -1180,5 +1189,121 @@ nav {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.map-container {
+  padding: 13rem 16.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map-container .form {
+  width: 50%;
+}
+
+.map-container .form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  height: 100%;
+}
+
+.map-container .form__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.map-container .form__label {
+  font-size: 1.2rem;
+  font-family: inherit;
+  margin-bottom: 1.2rem;
+}
+
+.map-container .form__input {
+  padding: 1.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  border: 1px solid #D8D8D8;
+}
+
+.map-container .form__input.active-input {
+  border: 2px solid #1894FF;
+}
+
+.map-container .form__btn {
+  background-color: transparent;
+  padding: 1.5rem 19rem;
+  font-size: 1.6rem;
+  color: #1894FF;
+  border: 1px solid #1894FF;
+  border-radius: 1rem;
+}
+
+.map-container .map {
+  width: 50%;
+  position: relative;
+}
+
+.map-container .map img {
+  width: 100%;
+}
+
+.map-container .map .textBox {
+  padding: 1rem 1.5rem;
+  width: 90%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.map-container .map .textBox .title {
+  color: #000;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.map-container .map .textBox .content {
+  font-size: 1.6rem;
+}
+
+.map-container .map .textBox .address {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/ span 2;
+}
+
+.map-container .map .textBox .address__content {
+  width: 77%;
+  line-height: 3rem;
+}
+
+.map-container .map .textBox .info {
+  margin-bottom: 1.2rem;
+}
+
+.map-container .map .textBox .email__content,
+.map-container .map .textBox .fixed-number__content {
+  color: #1894FF;
 }
 /*# sourceMappingURL=main.css.map */
