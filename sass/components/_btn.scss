@@ -1,5 +1,4 @@
 .btn {
-
     font-size: $default-font-size;
     font-weight: bold;
 
@@ -39,7 +38,23 @@
     top: 10%;
     right: 55%;
 
-    &--sign-in {
+    &--sign-up {
         right: 63%;
+    }
+
+    &--sub {
+        right: 53%;
+    }
+
+    &--pharmacy-big {
+        font-size: 1.2rem;
+        padding: .5rem 1rem;
+        @include sign-up-btn-subscribe;
+    }
+
+    &--pharmacy-small {
+        font-size: .8rem;
+        padding: .5rem .8rem;
+        @include sign-up-btn-subscribe;
     }
 }

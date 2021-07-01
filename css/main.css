@@ -793,8 +793,26 @@ nav {
   right: 55%;
 }
 
-.input-btn--sign-in {
+.input-btn--sign-up {
   right: 63%;
+}
+
+.input-btn--sub {
+  right: 53%;
+}
+
+.input-btn--pharmacy-big {
+  font-size: 1.2rem;
+  padding: .5rem 1rem;
+  top: 7%;
+  right: 80%;
+}
+
+.input-btn--pharmacy-small {
+  font-size: .8rem;
+  padding: .5rem .8rem;
+  top: 7%;
+  right: 80%;
 }
 
 .input-field {
@@ -815,6 +833,10 @@ nav {
   width: 90%;
 }
 
+.input-field--sub {
+  width: 75%;
+}
+
 ::-webkit-input-placeholder {
   opacity: .8;
 }
@@ -829,5 +851,113 @@ nav {
 
 ::placeholder {
   opacity: .8;
+}
+
+.pharmacies {
+  width: 80%;
+  padding: 6rem 12rem 5rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.pharmacies__quick-sign-up {
+  padding-top: 3.5rem;
+  width: 60%;
+}
+
+.pharmacies__name {
+  padding-top: 3rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.pharmacies__title {
+  width: 56%;
+  line-height: 5rem;
+  font-size: 3rem;
+  color: #1894FF;
+  margin-bottom: 2rem;
+}
+
+.pharmacies__description {
+  font-size: 1.6rem;
+  width: 71%;
+  line-height: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.pharmacies__inputBox {
+  position: relative;
+}
+
+.pharmacies__infoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  border-radius: 2rem;
+  -webkit-box-shadow: -1px 1px 2rem 0 #aed9ff;
+          box-shadow: -1px 1px 2rem 0 #aed9ff;
+  border-radius: 1.4rem;
+  margin-bottom: 3.5rem;
+}
+
+.pharmacies__infoBox--1 {
+  position: relative;
+  padding: 1.5rem 1.2rem 1rem 1rem;
+  width: 90%;
+}
+
+.pharmacies__infoBox--2, .pharmacies__infoBox--3 {
+  padding: 1rem;
+  width: 62%;
+  font-size: .8rem;
+}
+
+.pharmacies__infoBox--2 {
+  opacity: .6;
+  margin-right: 6rem;
+}
+
+.pharmacies__infoBox--3 {
+  opacity: .4;
+  margin-right: 20rem;
+  position: relative;
+}
+
+.pharmacies__infoBox .person-1 {
+  width: 6.5rem;
+}
+
+.pharmacies__infoBox .person-2 {
+  width: 5.2rem;
+}
+
+.pharmacies__info {
+  margin-right: 1.5rem;
+}
+
+.pharmacies__locationBox {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pharmacies__main-heading {
+  font-size: 2rem;
+}
+
+.pharmacies__sub-heading {
+  font-size: 1.3rem;
+}
+
+.pharmacies__address {
+  margin-right: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

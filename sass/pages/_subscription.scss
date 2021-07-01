@@ -1,0 +1,102 @@
+.pharmacies {
+    width: 80%;
+    padding: 6rem 12rem 5rem 4rem;
+    display: flex;
+    justify-content: space-around;
+
+    &__quick-sign-up {
+        padding-top: 3.5rem;
+        width: 60%;
+    }
+
+    &__name {
+        padding-top: 3rem;
+        user-select: none;
+    }
+
+    &__title {
+        width: 56%;
+        line-height: 5rem;
+        font-size: 3rem;
+        color: $color-blue-light;
+        margin-bottom: 2rem;
+    }
+
+    &__description {
+        font-size: $default-font-size;
+        width: 71%;
+        line-height: 3.5rem;
+        margin-bottom: 3.5rem;
+    }
+
+    &__inputBox {
+        position: relative;
+    }
+
+    &__infoBox {
+        display: flex;
+
+        @include cardsBoxShadow;
+        ;
+        border-radius: 1.4rem;
+        margin-bottom: 3.5rem;
+
+        &--1 {
+            position: relative;
+            padding: 1.5rem 1.2rem 1rem 1rem;
+            width: 90%
+        }
+
+        &--2,
+        &--3 {
+            padding: 1rem;
+            width: 62%;
+            font-size: .8rem;
+        }
+
+        &--2 {
+            opacity: .6;
+            margin-right: 6rem;
+        }
+
+        &--3 {
+            opacity: .4;
+            margin-right: 20rem;
+            position: relative;
+        }
+
+        .person {
+            &-1 {
+                width: 6.5rem;
+            }
+
+            &-2 {
+                width: 5.2rem;
+            }
+
+
+        }
+
+    }
+
+    &__info {
+        margin-right: 1.5rem;
+    }
+
+    &__locationBox {
+        margin-top: 1rem;
+        display: flex;
+    }
+
+    &__main-heading {
+        font-size: 2rem;
+    }
+
+    &__sub-heading {
+        font-size: 1.3rem;
+    }
+
+    &__address {
+        margin-right: 1rem;
+    }
+}
