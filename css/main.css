@@ -141,6 +141,7 @@ nav {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 4rem 0;
 }
 
 .logo {
@@ -184,13 +185,13 @@ nav {
   padding-right: 20rem;
 }
 
-.main .about {
+.about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main .about__infoBox {
+.about__infoBox {
   padding: 2rem 4rem;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -198,13 +199,13 @@ nav {
   margin-right: 10rem;
 }
 
-.main .about__imgBox {
+.about__imgBox {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
 }
 
-.main .about__title {
+.about__title {
   font-size: 2rem;
   font-weight: bold;
   color: #2361B5;
@@ -213,7 +214,7 @@ nav {
   padding-right: 1rem;
 }
 
-.main .about__description {
+.about__description {
   width: 90%;
   font-size: 1.6rem;
   font-weight: 100;
@@ -222,7 +223,7 @@ nav {
   line-height: 3.5rem;
 }
 
-.main .about__cards {
+.about__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,7 +232,7 @@ nav {
           justify-content: space-between;
 }
 
-.main .about__cards .card {
+.about__cards .card {
   margin-bottom: 1.5rem;
   padding: 2rem 2.2rem;
   background-color: #fff;
@@ -240,7 +241,7 @@ nav {
           box-shadow: -1px 1px 2rem 0 #aed9ff;
 }
 
-.main .about__cards .card-container {
+.about__cards .card-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,12 +257,12 @@ nav {
           align-items: center;
 }
 
-.main .about__cards .card-label {
+.about__cards .card-label {
   font-size: 1.4rem;
   font-weight: 100;
 }
 
-.main .facilities .container {
+.facilities .container {
   width: 90%;
   display: -ms-grid;
   display: grid;
@@ -275,7 +276,7 @@ nav {
       grid-template-areas: "header header header header" "services  pharmacy  pharmacy pharmacy " "services process  process process";
 }
 
-.main .facilities__title {
+.facilities__title {
   font-size: 2rem;
   font-weight: bold;
   color: #2361B5;
@@ -289,7 +290,7 @@ nav {
   grid-area: header;
 }
 
-.main .facilities__pharmacy {
+.facilities__pharmacy {
   padding: 1rem;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
@@ -297,7 +298,7 @@ nav {
   grid-area: pharmacy;
 }
 
-.main .facilities__services {
+.facilities__services {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -313,14 +314,14 @@ nav {
   row-gap: 4rem;
 }
 
-.main .facilities__process {
+.facilities__process {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: process;
 }
 
-.main .facilities__card {
+.facilities__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,50 +339,50 @@ nav {
           box-shadow: -1px 1px 2rem 0 #aed9ff;
 }
 
-.main .facilities__card--visit, .main .facilities__card--pharmacy {
+.facilities__card--visit, .facilities__card--pharmacy {
   padding: 2.5rem 5rem;
 }
 
-.main .facilities__card--shop {
+.facilities__card--shop {
   padding: 2.3rem 5.8rem;
 }
 
-.main .facilities__card--reservation {
+.facilities__card--reservation {
   padding: 3rem 4rem;
 }
 
-.main .facilities__label {
+.facilities__label {
   font-size: 1.4rem;
   text-align: center;
   margin-top: 1.5rem;
   opacity: 60%;
 }
 
-.main .facilities__header {
+.facilities__header {
   font-size: 1.6rem;
   margin-bottom: 1.5rem;
 }
 
-.main .facilities__description {
+.facilities__description {
   font-size: 1.6rem;
   line-height: 3.2rem;
   opacity: 70%;
 }
 
-.main .facilities__process {
+.facilities__process {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main .facilities__diagram {
+.facilities__diagram {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 4rem;
           flex: 0 1 4rem;
   position: relative;
 }
 
-.main .facilities__step {
+.facilities__step {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -396,7 +397,7 @@ nav {
       justify-content: space-around;
 }
 
-.main .facilities__line {
+.facilities__line {
   width: .2rem;
   height: 14rem;
   background-color: #d1d1d193;
@@ -405,7 +406,7 @@ nav {
   top: 10%;
 }
 
-.main .facilities__circle-container {
+.facilities__circle-container {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,7 +422,7 @@ nav {
       justify-content: space-around;
 }
 
-.main .facilities__circle {
+.facilities__circle {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -429,7 +430,7 @@ nav {
   position: relative;
 }
 
-.main .facilities__circle--arrow {
+.facilities__circle--arrow {
   -webkit-transform: rotate(271deg);
           transform: rotate(271deg);
   position: absolute;
@@ -438,54 +439,54 @@ nav {
   width: 1.3rem;
 }
 
-.main .facilities__circle--check {
+.facilities__circle--check {
   position: absolute;
   top: 28%;
   right: 25%;
   width: 1.3rem;
 }
 
-.main .facilities .check {
+.facilities .check {
   background-color: #00DE9A;
 }
 
-.main .facilities__step-heading {
+.facilities__step-heading {
   font-size: 1.6rem;
   margin-top: 2rem;
   margin-right: 1rem;
 }
 
-.main .facilities__step-description {
+.facilities__step-description {
   font-size: 1.4rem;
   opacity: .7;
   margin-right: 5rem;
   margin-top: .4rem;
 }
 
-.main .download {
+.download {
   position: relative;
   background-color: #0089FF;
   overflow: hidden;
 }
 
-.main .download .cloud {
+.download .cloud {
   position: absolute;
 }
 
-.main .download .cloud-left {
+.download .cloud-left {
   left: -10%;
   top: -6%;
   opacity: .5;
 }
 
-.main .download .cloud-right {
+.download .cloud-right {
   right: -15%;
   top: -37%;
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
 }
 
-.main .download__content {
+.download__content {
   width: 100%;
   margin: 10r em auto 0;
   display: -webkit-box;
@@ -496,19 +497,19 @@ nav {
           align-items: center;
 }
 
-.main .download__img-preview {
+.download__img-preview {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
   width: 40%;
 }
 
-.main .download__img-preview img {
+.download__img-preview img {
   height: 55rem;
   margin-bottom: -1rem;
 }
 
-.main .download__download-link {
+.download__download-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,39 +526,39 @@ nav {
   color: #fff;
 }
 
-.main .download__header {
+.download__header {
   font-size: 2.4rem;
   font-weight: bold;
 }
 
-.main .download__text {
+.download__text {
   font-size: 1.6rem;
   margin-top: 2rem;
 }
 
-.main .download__inputBox {
+.download__inputBox {
   position: relative;
 }
 
-.main .download__social-icon {
+.download__social-icon {
   width: 18rem;
   margin-left: 2rem;
   opacity: .9;
   cursor: pointer;
 }
 
-.main .subscription {
+.subscription {
   overflow: hidden;
   position: relative;
 }
 
-.main .subscription__cloud {
+.subscription__cloud {
   position: absolute;
   right: -2%;
   z-index: -999;
 }
 
-.main .subscription__content {
+.subscription__content {
   margin-top: 10rem;
   background-color: #fff;
   border-radius: 2rem;
@@ -569,7 +570,7 @@ nav {
   padding: 7.2rem 8rem 0 8rem;
 }
 
-.main .subscription__textBox {
+.subscription__textBox {
   width: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,7 +584,7 @@ nav {
           justify-content: space-evenly;
 }
 
-.main .subscription__title {
+.subscription__title {
   font-size: 2rem;
   font-weight: bold;
   color: #2361B5;
@@ -593,17 +594,17 @@ nav {
   margin-bottom: 2rem;
 }
 
-.main .subscription__description {
+.subscription__description {
   font-size: 1.6rem;
   line-height: 3.2rem;
   opacity: 70%;
 }
 
-.main .subscription__inputBox {
+.subscription__inputBox {
   position: relative;
 }
 
-.main .subscription__img {
+.subscription__img {
   padding-right: 5rem;
 }
 
@@ -783,6 +784,15 @@ nav {
 
 .btn--services {
   padding: 1rem 4.8rem;
+}
+
+.btn--coming-soon {
+  background-color: #E7E7E7;
+  color: #888888;
+  padding: .7rem 1rem;
+  font-size: 1.2rem;
+  position: absolute;
+  top: -9%;
 }
 
 .input-btn {
@@ -1072,5 +1082,103 @@ nav {
 
 .services__cardBox .card img {
   width: 10.288rem;
+}
+
+.FQ {
+  padding-top: 2rem;
+}
+
+.FQ__title {
+  position: relative;
+  background-color: #1894FF;
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.FQ__title h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.FQ__title img {
+  position: absolute;
+  top: -8%;
+}
+
+.FQ__title .right-shape-FQ {
+  left: -10%;
+}
+
+.FQ__title .left-shape-FQ {
+  right: -10%;
+}
+
+.FQ__box {
+  padding: 12rem;
+}
+
+.FQ__box-main {
+  margin-bottom: 4.5rem;
+}
+
+.FQ__box-main .facilities__card {
+  position: relative;
+}
+
+.FQ__box-text {
+  color: #2361B5;
+  width: 108.8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+  padding: 2.2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.FQ__box-text img {
+  cursor: pointer;
+}
+
+.FQ__box-ans {
+  width: 85%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+  padding-bottom: 1.5rem;
+}
+
+.FQ__box-ans .FQ__box-text {
+  border: none;
+  padding-bottom: 2rem;
+}
+
+.FQ__main-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2361B5;
+  border-right: 4px solid #00DE9A;
+  border-radius: .1rem;
+  padding-right: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.FQ__sub-heading {
+  margin-right: 4rem;
+  font-size: 1.6rem;
+}
+
+.FQ__paragraph {
+  font-size: 1.4rem;
+  border-right: 4px solid #00DE9A;
+  padding: 1.2rem 4rem;
+  margin-right: 10rem;
+  border-top-right-radius: .1rem;
+  border-bottom-right-radius: .1rem;
+}
+
+.FQ__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=main.css.map */

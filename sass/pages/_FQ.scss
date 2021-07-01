@@ -1,0 +1,90 @@
+.FQ {
+
+    padding-top: 2rem;
+
+    &__title {
+        position: relative;
+        background-color: $color-blue-light;
+        color: $color-white;
+
+        padding: 4rem 0;
+
+        h2 {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        img {
+            position: absolute;
+            top: -8%;
+        }
+
+        .right-shape-FQ {
+            left: -10%;
+        }
+
+        .left-shape-FQ {
+            right: -10%;
+        }
+    }
+
+    &__box {
+        padding: 12rem;
+
+        &-main {
+            margin-bottom: 4.5rem;
+
+            .facilities__card {
+                position: relative;
+            }
+        }
+
+        &-text {
+            color: $color-blue-dark;
+            width: 108.8rem;
+            border-bottom: 1px solid $color-black-transparent;
+            padding: 2.2rem 2rem;
+            display: flex;
+
+            img {
+                cursor: pointer;
+            }
+        }
+
+        &-ans {
+            width: 85%;
+            border-bottom: 1px solid $color-black-transparent;
+            padding-bottom: 1.5rem;
+
+            .FQ__box-text {
+                border: none;
+                padding-bottom: 2rem;
+            }
+        }
+    }
+
+    &__main-heading {
+        @include section-title;
+        margin-bottom: 2.5rem;
+    }
+
+    &__sub-heading {
+        margin-right: 4rem;
+        font-size: $default-font-size;
+
+    }
+
+    &__paragraph {
+        font-size: 1.4rem;
+        border-right: 4px solid $color-green;
+        padding: 1.2rem 4rem;
+        margin-right: 10rem;
+        border-top-right-radius: .1rem;
+        border-bottom-right-radius: .1rem;
+    }
+
+    &__gallery {
+        display: flex;
+        justify-content: space-around;
+    }
+}

@@ -18,340 +18,340 @@
         padding-right: 20rem
     }
 
+}
 
-    // About
-    .about {
+// About
+.about {
+    display: flex;
+
+    &__infoBox {
+        padding: 2rem 4rem;
+        order: 1;
+        margin-right: 10rem;
+    }
+
+    &__imgBox {
+
+        order: 0;
+    }
+
+    &__title {
+        @include section-title
+    }
+
+    &__description {
+        width: 90%;
+        font-size: $default-font-size;
+        font-weight: 100;
+        opacity: 70%;
+        margin-bottom: 9rem;
+        line-height: 3.5rem;
+    }
+
+    &__cards {
+
         display: flex;
+        justify-content: space-between;
 
-        &__infoBox {
-            padding: 2rem 4rem;
-            order: 1;
-            margin-right: 10rem;
-        }
+        .card {
 
-        &__imgBox {
-
-            order: 0;
-        }
-
-        &__title {
-            @include section-title
-        }
-
-        &__description {
-            width: 90%;
-            font-size: $default-font-size;
-            font-weight: 100;
-            opacity: 70%;
-            margin-bottom: 9rem;
-            line-height: 3.5rem;
-        }
-
-        &__cards {
-
-            display: flex;
-            justify-content: space-between;
-
-            .card {
-
-                margin-bottom: 1.5rem;
-                padding: 2rem 2.2rem;
-                @include cardsBoxShadow;
-
-                &-container {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                &-label {
-                    font-size: 1.4rem;
-                    font-weight: 100;
-                }
-            }
-        }
-    }
-
-    // Facilities
-    .facilities {
-        .container {
-            width: 90%;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 1fr 2fr 3fr;
-            row-gap: 2rem;
-            column-gap: 8rem;
-            grid-template-areas:
-                "header header header header"
-                "services  pharmacy  pharmacy pharmacy "
-                "services process  process process";
-        }
-
-        &__title {
-            @include section-title;
-            height: 3.2rem;
-            grid-area: header;
-        }
-
-        &__pharmacy {
-            padding: 1rem;
-            grid-area: pharmacy;
-
-
-        }
-
-        &__services {
-
-            grid-area: services;
-            display: grid;
-            grid-template-columns: repeat(2, 20rem);
-            justify-items: center;
-            align-items: center;
-            row-gap: 4rem;
-
-        }
-
-        &__process {
-            grid-area: process;
-        }
-
-        &__card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 3rem;
-            @include cardsBoxShadow;
-
-
-
-            &--visit,
-            &--pharmacy {
-                padding: 2.5rem 5rem;
-            }
-
-            &--shop {
-                padding: 2.3rem 5.8rem;
-            }
-
-
-            &--reservation {
-                padding: 3rem 4rem;
-            }
-        }
-
-        &__label {
-            font-size: 1.4rem;
-            text-align: center;
-            margin-top: 1.5rem;
-            opacity: 60%;
-        }
-
-
-        &__header {
-            font-size: $default-font-size;
             margin-bottom: 1.5rem;
-        }
-
-        &__description {
-            @include section-description;
-        }
-
-        &__process {
-            display: flex;
-        }
-
-        &__diagram {
-            flex: 0 1 4rem;
-            position: relative;
-        }
-
-        &__step {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-
-        &__line {
-            width: .2rem;
-            height: 14rem;
-            background-color: #d1d1d193;
-            position: absolute;
-            right: 44%;
-            top: 10%;
-        }
-
-        &__circle-container {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-        }
-
-        &__circle {
-            width: 3rem;
-            height: 3rem;
-            border-radius: 50%;
-            background-color: $color-grey;
-            position: relative;
-
-            &--arrow {
-                transform: rotate(271deg);
-                @include circle-icons;
-            }
-
-            &--check {
-                @include circle-icons;
-            }
-        }
-
-        .check {
-            background-color: $color-green;
-        }
-
-        &__step-heading {
-            font-size: $default-font-size;
-            margin-top: 2rem;
-            margin-right: 1rem;
-        }
-
-        &__step-description {
-            font-size: 1.4rem;
-            opacity: .7;
-            margin-right: 5rem;
-            margin-top: .4rem;
-        }
-    }
-
-    // Download
-    .download {
-        position: relative;
-        background-color: $color-download-bg;
-        overflow: hidden;
-
-        .cloud {
-            position: absolute;
-        }
-
-        .cloud-left {
-            left: -10%;
-            top: -6%;
-            opacity: .5;
-        }
-
-        .cloud-right {
-            right: -15%;
-            top: -37%;
-            transform: rotate(-8deg);
-            // opacity: .5;
-
-        }
-
-        &__content {
-            width: 100%;
-
-            margin: 10r em auto 0;
-
-            display: flex;
-            align-items: center;
-        }
-
-        &__img-preview {
-            order: 1;
-            width: 40%;
-
-
-
-
-            img {
-                height: 55rem;
-                margin-bottom: -1rem;
-            }
-
-        }
-
-        &__download-link {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            width: 60%;
-            height: 30rem;
-            padding-right: 3rem;
-            color: $color-white;
-
-        }
-
-        &__header {
-            font-size: 2.4rem;
-            font-weight: bold;
-
-        }
-
-        &__text {
-            font-size: $default-font-size;
-            margin-top: 2rem;
-        }
-
-
-
-        &__inputBox {
-            position: relative;
-        }
-
-        &__social {
-            &-icon {
-                width: 18rem;
-                margin-left: 2rem;
-                opacity: .9;
-                cursor: pointer;
-            }
-        }
-    }
-
-    // Subscription
-    .subscription {
-        overflow: hidden;
-        position: relative;
-
-        &__cloud {
-            position: absolute;
-            right: -2%;
-            z-index: -999;
-        }
-
-        &__content {
-            margin-top: 10rem;
+            padding: 2rem 2.2rem;
             @include cardsBoxShadow;
-            display: flex;
-            padding: 7.2rem 8rem 0 8rem;
+
+            &-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &-label {
+                font-size: 1.4rem;
+                font-weight: 100;
+            }
+        }
+    }
+}
+
+// Facilities
+.facilities {
+    .container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 2fr 3fr;
+        row-gap: 2rem;
+        column-gap: 8rem;
+        grid-template-areas:
+            "header header header header"
+            "services  pharmacy  pharmacy pharmacy "
+            "services process  process process";
+    }
+
+    &__title {
+        @include section-title;
+        height: 3.2rem;
+        grid-area: header;
+    }
+
+    &__pharmacy {
+        padding: 1rem;
+        grid-area: pharmacy;
+
+
+    }
+
+    &__services {
+
+        grid-area: services;
+        display: grid;
+        grid-template-columns: repeat(2, 20rem);
+        justify-items: center;
+        align-items: center;
+        row-gap: 4rem;
+
+    }
+
+    &__process {
+        grid-area: process;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+        @include cardsBoxShadow;
+
+
+
+        &--visit,
+        &--pharmacy {
+            padding: 2.5rem 5rem;
         }
 
-        &__textBox {
-            width: 55%;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly
+        &--shop {
+            padding: 2.3rem 5.8rem;
         }
 
-        &__title {
-            @include section-title;
-            margin-bottom: 2rem;
+
+        &--reservation {
+            padding: 3rem 4rem;
+        }
+    }
+
+    &__label {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-top: 1.5rem;
+        opacity: 60%;
+    }
+
+
+    &__header {
+        font-size: $default-font-size;
+        margin-bottom: 1.5rem;
+    }
+
+    &__description {
+        @include section-description;
+    }
+
+    &__process {
+        display: flex;
+    }
+
+    &__diagram {
+        flex: 0 1 4rem;
+        position: relative;
+    }
+
+    &__step {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__line {
+        width: .2rem;
+        height: 14rem;
+        background-color: #d1d1d193;
+        position: absolute;
+        right: 44%;
+        top: 10%;
+    }
+
+    &__circle-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__circle {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: $color-grey;
+        position: relative;
+
+        &--arrow {
+            transform: rotate(271deg);
+            @include circle-icons;
         }
 
-        &__description {
-            @include section-description;
+        &--check {
+            @include circle-icons;
+        }
+    }
 
+    .check {
+        background-color: $color-green;
+    }
+
+    &__step-heading {
+        font-size: $default-font-size;
+        margin-top: 2rem;
+        margin-right: 1rem;
+    }
+
+    &__step-description {
+        font-size: 1.4rem;
+        opacity: .7;
+        margin-right: 5rem;
+        margin-top: .4rem;
+    }
+}
+
+// Download
+.download {
+    position: relative;
+    background-color: $color-download-bg;
+    overflow: hidden;
+
+    .cloud {
+        position: absolute;
+    }
+
+    .cloud-left {
+        left: -10%;
+        top: -6%;
+        opacity: .5;
+    }
+
+    .cloud-right {
+        right: -15%;
+        top: -37%;
+        transform: rotate(-8deg);
+        // opacity: .5;
+
+    }
+
+    &__content {
+        width: 100%;
+
+        margin: 10r em auto 0;
+
+        display: flex;
+        align-items: center;
+    }
+
+    &__img-preview {
+        order: 1;
+        width: 40%;
+
+
+
+
+        img {
+            height: 55rem;
+            margin-bottom: -1rem;
         }
 
-        &__inputBox {
-            position: relative;
-        }
+    }
 
-        &__img {
-            padding-right: 5rem;
+    &__download-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 60%;
+        height: 30rem;
+        padding-right: 3rem;
+        color: $color-white;
+
+    }
+
+    &__header {
+        font-size: 2.4rem;
+        font-weight: bold;
+
+    }
+
+    &__text {
+        font-size: $default-font-size;
+        margin-top: 2rem;
+    }
+
+
+
+    &__inputBox {
+        position: relative;
+    }
+
+    &__social {
+        &-icon {
+            width: 18rem;
+            margin-left: 2rem;
+            opacity: .9;
+            cursor: pointer;
         }
+    }
+}
+
+// Subscription
+.subscription {
+    overflow: hidden;
+    position: relative;
+
+    &__cloud {
+        position: absolute;
+        right: -2%;
+        z-index: -999;
+    }
+
+    &__content {
+        margin-top: 10rem;
+        @include cardsBoxShadow;
+        display: flex;
+        padding: 7.2rem 8rem 0 8rem;
+    }
+
+    &__textBox {
+        width: 55%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly
+    }
+
+    &__title {
+        @include section-title;
+        margin-bottom: 2rem;
+    }
+
+    &__description {
+        @include section-description;
+
+    }
+
+    &__inputBox {
+        position: relative;
+    }
+
+    &__img {
+        padding-right: 5rem;
     }
 }
