@@ -1,6 +1,6 @@
 .pharmacies {
     width: 80%;
-    padding: 6rem 12rem 5rem 4rem;
+    padding: 6rem 12rem 20rem 4rem;
     display: flex;
     justify-content: space-around;
 
@@ -15,9 +15,9 @@
     }
 
     &__title {
-        width: 56%;
+        width: 65%;
         line-height: 5rem;
-        font-size: 3rem;
+        font-size: 3.5rem;
         color: $color-blue-light;
         margin-bottom: 2rem;
     }
@@ -26,7 +26,7 @@
         font-size: $default-font-size;
         width: 71%;
         line-height: 3.5rem;
-        margin-bottom: 3.5rem;
+        margin-bottom: 7.5rem;
     }
 
     &__inputBox {
@@ -39,7 +39,7 @@
         @include cardsBoxShadow;
         ;
         border-radius: 1.4rem;
-        margin-bottom: 3.5rem;
+        margin-bottom: 5.5rem;
 
         &--1 {
             position: relative;
@@ -67,7 +67,7 @@
 
         .person {
             &-1 {
-                width: 6.5rem;
+                width: 7.5rem;
             }
 
             &-2 {
@@ -98,5 +98,92 @@
 
     &__address {
         margin-right: 1rem;
+    }
+}
+
+.numOfPharmacies {
+    padding: 2.5rem 0 3rem;
+    background-color: $color-blue-light;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+    .circle {
+        position: absolute;
+
+        &-left {
+            right: -1%;
+            top: $top;
+        }
+
+        &-right {
+            left: -1%;
+            top: $top;
+        }
+    }
+
+    .box {
+        // width: 33.333%;
+
+        color: $color-white;
+
+        &__title {
+            font-size: $default-font-size;
+            margin-bottom: 1.7rem;
+            text-align: center;
+        }
+
+        &__number {
+            font-size: 3.6rem;
+        }
+    }
+}
+
+.services {
+    padding: 12rem 14rem;
+
+    &__textBox {
+        &-main-heading {
+            @include section-title;
+            margin-bottom: 1.5rem;
+            padding-right: 2rem;
+        }
+
+        &-heading {
+            @include section-title;
+            padding-right: 0;
+            border-right: 0;
+            margin-bottom: 1.2rem;
+        }
+
+        &-text {
+            @include section-description;
+        }
+    }
+
+    &__cardBox {
+        width: 94%;
+        height: 50rem;
+        margin-top: 6rem;
+
+
+        display: flex;
+        justify-content: space-between;
+
+        .card {
+            @include cardsBoxShadow;
+            width: 38%;
+            padding: 0 2rem 0 1rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            img {
+                width: 10.288rem;
+            }
+
+        }
     }
 }

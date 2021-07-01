@@ -781,6 +781,10 @@ nav {
   padding: 1.4rem 3.9rem 1.7rem 3.7rem;
 }
 
+.btn--services {
+  padding: 1rem 4.8rem;
+}
+
 .input-btn {
   color: #fff;
   text-decoration: none;
@@ -855,7 +859,7 @@ nav {
 
 .pharmacies {
   width: 80%;
-  padding: 6rem 12rem 5rem 4rem;
+  padding: 6rem 12rem 20rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -877,9 +881,9 @@ nav {
 }
 
 .pharmacies__title {
-  width: 56%;
+  width: 65%;
   line-height: 5rem;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #1894FF;
   margin-bottom: 2rem;
 }
@@ -888,7 +892,7 @@ nav {
   font-size: 1.6rem;
   width: 71%;
   line-height: 3.5rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 7.5rem;
 }
 
 .pharmacies__inputBox {
@@ -904,7 +908,7 @@ nav {
   -webkit-box-shadow: -1px 1px 2rem 0 #aed9ff;
           box-shadow: -1px 1px 2rem 0 #aed9ff;
   border-radius: 1.4rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 5.5rem;
 }
 
 .pharmacies__infoBox--1 {
@@ -931,7 +935,7 @@ nav {
 }
 
 .pharmacies__infoBox .person-1 {
-  width: 6.5rem;
+  width: 7.5rem;
 }
 
 .pharmacies__infoBox .person-2 {
@@ -959,5 +963,114 @@ nav {
 
 .pharmacies__address {
   margin-right: 1rem;
+}
+
+.numOfPharmacies {
+  padding: 2.5rem 0 3rem;
+  background-color: #1894FF;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.numOfPharmacies .circle {
+  position: absolute;
+}
+
+.numOfPharmacies .circle-left {
+  right: -1%;
+  top: 2%;
+}
+
+.numOfPharmacies .circle-right {
+  left: -1%;
+  top: 2%;
+}
+
+.numOfPharmacies .box {
+  color: #fff;
+}
+
+.numOfPharmacies .box__title {
+  font-size: 1.6rem;
+  margin-bottom: 1.7rem;
+  text-align: center;
+}
+
+.numOfPharmacies .box__number {
+  font-size: 3.6rem;
+}
+
+.services {
+  padding: 12rem 14rem;
+}
+
+.services__textBox-main-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2361B5;
+  border-right: 4px solid #00DE9A;
+  border-radius: .1rem;
+  padding-right: 1rem;
+  margin-bottom: 1.5rem;
+  padding-right: 2rem;
+}
+
+.services__textBox-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2361B5;
+  border-right: 4px solid #00DE9A;
+  border-radius: .1rem;
+  padding-right: 1rem;
+  padding-right: 0;
+  border-right: 0;
+  margin-bottom: 1.2rem;
+}
+
+.services__textBox-text {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  opacity: 70%;
+}
+
+.services__cardBox {
+  width: 94%;
+  height: 50rem;
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services__cardBox .card {
+  background-color: #fff;
+  border-radius: 2rem;
+  -webkit-box-shadow: -1px 1px 2rem 0 #aed9ff;
+          box-shadow: -1px 1px 2rem 0 #aed9ff;
+  width: 38%;
+  padding: 0 2rem 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services__cardBox .card img {
+  width: 10.288rem;
 }
 /*# sourceMappingURL=main.css.map */
