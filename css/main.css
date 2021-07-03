@@ -988,9 +988,11 @@ nav {
   width: 100%;
 }
 
-.download__inputBox a {
-  right: 70%;
-  top: 12%;
+@media (max-width: 376px) {
+  .download__inputBox a {
+    right: 70%;
+    top: 12%;
+  }
 }
 
 @media (max-width: 376px) {

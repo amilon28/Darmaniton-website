@@ -504,11 +504,13 @@
         position: relative;
         width: 100%;
 
-
-        a {
-            right: 70%;
-            top: 12%;
+        @include phone {
+            a {
+                right: 70%;
+                top: 12%;
+            }
         }
+
     }
 
 
