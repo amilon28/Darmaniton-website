@@ -3,12 +3,22 @@
     &__img {
         height: 10rem;
         position: relative;
+        z-index: -999;
+
+        @include respond-phone {
+            z-index: 999;
+        }
     }
 
     &__shape {
         position: absolute;
         left: -12%;
         width: 85rem;
+        z-index: -999;
+
+        @include respond-phone {
+            display: none;
+        }
 
     }
 
@@ -17,10 +27,24 @@
         position: absolute;
         left: 9%;
         top: 111%;
+
+        @include respond-phone {
+            width: 25rem;
+            left: -30%;
+            top: 80%;
+        }
     }
 
     &__box {
         position: relative;
+
+        @include respond-phone {
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
     }
 
     &__info {
@@ -28,12 +52,23 @@
         flex-direction: column;
         margin-right: 20rem;
         margin-top: 10rem;
+        z-index: 999;
+
+        @include respond-phone {
+            z-index: 0;
+            margin-top: 30rem;
+            width: 19.2rem;
+        }
 
     }
 
     &__title {
         font-size: 3.6rem;
         color: $color-blue-light;
+
+        @include respond-phone {
+            font-size: 2.4rem;
+        }
 
 
     }
@@ -42,6 +77,15 @@
         font-size: 1.8rem;
         font-weight: lighter;
 
+        @include respond-phone {
+            font-size: 1.4rem;
+        }
+
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
     }
 }
 

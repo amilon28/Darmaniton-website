@@ -9,10 +9,22 @@
 
 html {
     font-size: 62.5%; // 1rem = 10px
+
+    @include respond-phone {
+        font-size: 70%; // 1rem = 8px
+    }
 }
 
 body {
+    width: 100vw;
+ height: 100vh;
     box-sizing: border-box;
     direction: rtl;
     overflow-x: hidden;
+
+
+    @include respond-phone {
+        width: 100%;
+
+    }
 }

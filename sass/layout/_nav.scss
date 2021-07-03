@@ -5,10 +5,43 @@ nav {
     justify-content: space-around;
 
     padding: 4rem 0;
+
+
+    .hamburger-menu {
+        width: 2.5rem;
+        display: none;
+
+        @include respond-phone {
+            display: block;
+        }
+
+
+    }
+
+    @include respond-phone {
+        width: 150%;
+    }
+
+    .list {
+        @include respond-phone {
+            display: none;
+        }
+    }
+
+    .btn {
+        @include respond-phone {
+            display: none;
+        }
+    }
+
 }
 
 .logo {
     display: flex;
+
+    @include respond-phone {
+        padding-right: 13rem;
+    }
 
 
     &__img {
@@ -23,6 +56,8 @@ nav {
     &__title {
         font-weight: 700;
         font-size: 1.8rem;
+
+
     }
 
     &__description {
