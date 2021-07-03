@@ -1,5 +1,7 @@
 .header {
 
+    padding: 4.4rem;
+
     &__img {
         height: 10rem;
         position: relative;
@@ -10,6 +12,10 @@
         left: -12%;
         width: 85rem;
 
+        @include phone {
+            display: none;
+        }
+
     }
 
     &__doc {
@@ -17,10 +23,25 @@
         position: absolute;
         left: 9%;
         top: 111%;
+
+
+        @include phone {
+            position: static;
+
+        }
     }
 
     &__box {
         position: relative;
+
+        @include phone {
+            height: 85vh;
+            position: static;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     &__info {
@@ -29,11 +50,19 @@
         margin-right: 20rem;
         margin-top: 10rem;
 
+        @include phone {
+            margin: 0;
+        }
+
     }
 
     &__title {
         font-size: 3.6rem;
         color: $color-blue-light;
+
+        @include phone {
+            text-align: center;
+        }
 
 
     }
@@ -42,24 +71,52 @@
         font-size: 1.8rem;
         font-weight: lighter;
 
+        @include phone {
+            text-align: center;
+        }
+
+        @include phone {
+            display: none;
+        }
+
+        &--phone {
+            display: none;
+
+            @include phone {
+                display: block;
+            }
+        }
+
     }
-}
 
-.list {
-    width: 30%;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    color: $color-black;
+    &__buttons {
+        @include phone {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-around;
+            height: 20vh;
+            width: 80%;
+            margin-right: 2rem;
+        }
 
-    &__item {
-        font-size: $default-font-size;
-        opacity: 70%;
-        cursor: pointer;
+        a {
+            text-align: center;
+
+            &:first-child {
+                @include phone {
+                    display: none;
+                }
+            }
+        }
+
     }
 
-    &__link {
-        text-decoration: none;
-        color: inherit;
+    &-direct-download-btn {
+        display: none;
+
+        @include phone {
+            display: block;
+        }
     }
 }

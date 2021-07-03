@@ -6,41 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>درمانیتو</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
+    <!-- Start nav -->
+    <nav>
+      <div class="logo">
+        <img src="assets/img/logo.svg" alt="logo-image" class="logo__img" />
+        <div class="logo__info-box">
+          <div class="logo__title">درمانیتو</div>
+          <div class="logo__description">همراه شما در منزل</div>
+        </div>
+      </div>
+      <ul class="list">
+        <li class="list__item">
+          <a class="list__link" href="#">صفحه اصلی</a>
+        </li>
+        <li class="list__item">
+          <a class="list__link" href="#">درباره ما</a>
+        </li>
+        <li class="list__item">
+          <a class="list__link" href="./src/Contact-us.html">تماس باما</a>
+        </li>
+        <li class="list__item">
+          <a class="list__link" href="./src/subscription.html"
+            >عضویت داروخانه ها</a
+          >
+        </li>
+      </ul>
+      <a class="btn btn--download">دانلود درمانیتو</a>
+      <div class="hamburger">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </nav>
+    <!-- End nav -->
+
     <!-- Start Header section -->
     <header class="header">
-      <nav>
-        <div class="logo">
-          <img src="assets/img/logo.svg" alt="logo-image" class="logo__img" />
-          <div class="logo__info-box">
-            <div class="logo__title">درمانیتو</div>
-            <div class="logo__description">همراه شما در منزل</div>
-          </div>
-        </div>
-        <ul class="list">
-          <li class="list__item">
-            <a class="list__link" href="#">صفحه اصلی</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link" href="#">درباره ما</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link" href="./src/Contact-us.html">تماس باما</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link" href="./src/subscription.html"
-              >عضویت داروخانه ها</a
-            >
-          </li>
-        </ul>
-        <a class="btn btn--download">دانلود درمانیتو</a>
-        <div class="hamburger">
-          <div class="line-1"></div>
-          <div class="line-2"></div>
-          <div class="line-3"></div>
-        </div>
-      </nav>
       <div class="header__box">
         <div class="header__img">
           <img src="assets/img/Path 15701.svg" class="header__shape" />
@@ -51,8 +55,20 @@
           <p class="header__description u-margin-bottom-huge">
             درمانیتو، سامانه هوشمند درمان و سلامت
           </p>
+          <p
+            class="
+              header__description
+              u-margin-bottom-huge
+              header__description--phone
+            "
+          >
+            سوپر اپلیکیشن حوزه درمان و سلامت
+          </p>
           <div class="header__buttons">
             <a href="#" class="btn btn--blue">دانلود درمانیتو</a>
+            <a href="#" class="btn btn--blue header-direct-download-btn"
+              >دانلود مستقیم اپ</a
+            >
             <a href="./src/subscription.html" class="btn btn--white"
               >عضویت داروخانه ها</a
             >
