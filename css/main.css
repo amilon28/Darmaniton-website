@@ -344,7 +344,7 @@ nav {
 
 @media (max-width: 376px) {
   .main .about {
-    padding: 5rem;
+    padding: 5rem 8rem 5rem 5rem;
   }
 }
 
