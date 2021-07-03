@@ -424,6 +424,7 @@ nav {
 @media (max-width: 376px) {
   .about__title {
     display: none;
+    padding-right: 1.8rem;
   }
 }
 
