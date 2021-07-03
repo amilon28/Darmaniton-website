@@ -23,7 +23,11 @@
 
     .subscription {
         padding-top: 8rem;
-        padding-right: 20rem
+        padding-right: 20rem;
+
+        @include phone {
+            padding: 8rem 1.4rem 15rem 1rem;
+        }
     }
 
 }
@@ -557,6 +561,10 @@
         position: absolute;
         right: -2%;
         z-index: -999;
+
+        @include phone {
+            display: none;
+        }
     }
 
     &__content {
@@ -564,6 +572,14 @@
         @include cardsBoxShadow;
         display: flex;
         padding: 7.2rem 8rem 0 8rem;
+
+        @include phone {
+            flex-direction: column;
+            width: 43.75rem;
+            height: 66.45rem;
+            padding-right: 4rem;
+            padding-left: 2rem;
+        }
     }
 
     &__textBox {
@@ -571,25 +587,68 @@
 
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly
+        justify-content: space-evenly;
+
+        @include phone {
+            flex-direction: column;
+            order: 1;
+            width: 100%;
+            margin-top: 3rem;
+        }
     }
 
     &__title {
         @include section-title;
         margin-bottom: 2rem;
+
+        @include phone {
+            display: none;
+        }
+
+        &--phone {
+            display: none;
+
+            @include phone {
+                display: block;
+                width: 100%;
+            }
+        }
     }
 
     &__description {
         @include section-description;
 
+        @include phone {
+            width: 100%;
+            margin-bottom: 4rem;
+            font-size: 1.5rem;
+        }
+
     }
 
     &__inputBox {
         position: relative;
+
+        @include phone {
+            .input-field {
+                margin: 0;
+            }
+
+            a {
+                padding-left: 1rem;
+                right: 58%;
+            }
+        }
     }
 
     &__img {
         padding-right: 5rem;
+
+        @include phone {
+            padding: 0;
+            width: 32.7825rem;
+
+        }
     }
 }
 

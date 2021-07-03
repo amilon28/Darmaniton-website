@@ -343,6 +343,12 @@ nav {
   padding-right: 20rem;
 }
 
+@media (max-width: 376px) {
+  .main .subscription {
+    padding: 8rem 1.4rem 15rem 1rem;
+  }
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1015,6 +1021,12 @@ nav {
   z-index: -999;
 }
 
+@media (max-width: 376px) {
+  .subscription__cloud {
+    display: none;
+  }
+}
+
 .subscription__content {
   margin-top: 10rem;
   background-color: #fff;
@@ -1025,6 +1037,19 @@ nav {
   display: -ms-flexbox;
   display: flex;
   padding: 7.2rem 8rem 0 8rem;
+}
+
+@media (max-width: 376px) {
+  .subscription__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 43.75rem;
+    height: 66.45rem;
+    padding-right: 4rem;
+    padding-left: 2rem;
+  }
 }
 
 .subscription__textBox {
@@ -1041,6 +1066,20 @@ nav {
           justify-content: space-evenly;
 }
 
+@media (max-width: 376px) {
+  .subscription__textBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    margin-top: 3rem;
+  }
+}
+
 .subscription__title {
   font-size: 2rem;
   font-weight: bold;
@@ -1051,18 +1090,60 @@ nav {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 376px) {
+  .subscription__title {
+    display: none;
+  }
+}
+
+.subscription__title--phone {
+  display: none;
+}
+
+@media (max-width: 376px) {
+  .subscription__title--phone {
+    display: block;
+    width: 100%;
+  }
+}
+
 .subscription__description {
   font-size: 1.6rem;
   line-height: 3.2rem;
   opacity: 70%;
 }
 
+@media (max-width: 376px) {
+  .subscription__description {
+    width: 100%;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+  }
+}
+
 .subscription__inputBox {
   position: relative;
 }
 
+@media (max-width: 376px) {
+  .subscription__inputBox .input-field {
+    margin: 0;
+  }
+  .subscription__inputBox a {
+    padding-left: 1rem;
+    right: 58%;
+  }
+}
+
 .subscription__img {
   padding-right: 5rem;
+}
+
+@media (max-width: 376px) {
+  .subscription__img {
+    padding: 0;
+    width: 32.7825rem;
+  }
 }
 
 ::-webkit-input-placeholder {
