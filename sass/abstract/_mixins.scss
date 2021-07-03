@@ -30,12 +30,3 @@
     top: 7%;
     right: 80%;
 }
-
-// Media Querie
-@mixin respond-phone {
-    @media (max-width: 376px) {
-        @content
-    }
-
-
-}

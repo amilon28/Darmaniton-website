@@ -11,25 +11,11 @@ html {
   font-size: 62.5%;
 }
 
-@media (max-width: 376px) {
-  html {
-    font-size: 70%;
-  }
-}
-
 body {
-  width: 100vw;
-  height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   direction: rtl;
   overflow-x: hidden;
-}
-
-@media (max-width: 376px) {
-  body {
-    width: 100%;
-  }
 }
 
 @font-face {
@@ -81,26 +67,12 @@ body {
 .header__img {
   height: 10rem;
   position: relative;
-  z-index: -999;
-}
-
-@media (max-width: 376px) {
-  .header__img {
-    z-index: 999;
-  }
 }
 
 .header__shape {
   position: absolute;
   left: -12%;
   width: 85rem;
-  z-index: -999;
-}
-
-@media (max-width: 376px) {
-  .header__shape {
-    display: none;
-  }
 }
 
 .header__doc {
@@ -110,31 +82,8 @@ body {
   top: 111%;
 }
 
-@media (max-width: 376px) {
-  .header__doc {
-    width: 25rem;
-    left: -30%;
-    top: 80%;
-  }
-}
-
 .header__box {
   position: relative;
-}
-
-@media (max-width: 376px) {
-  .header__box {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
 }
 
 .header__info {
@@ -147,15 +96,6 @@ body {
           flex-direction: column;
   margin-right: 20rem;
   margin-top: 10rem;
-  z-index: 999;
-}
-
-@media (max-width: 376px) {
-  .header__info {
-    z-index: 0;
-    margin-top: 30rem;
-    width: 19.2rem;
-  }
 }
 
 .header__title {
@@ -163,31 +103,9 @@ body {
   color: #1894FF;
 }
 
-@media (max-width: 376px) {
-  .header__title {
-    font-size: 2.4rem;
-  }
-}
-
 .header__description {
   font-size: 1.8rem;
   font-weight: lighter;
-}
-
-@media (max-width: 376px) {
-  .header__description {
-    font-size: 1.4rem;
-  }
-}
-
-.header__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .list {
@@ -226,45 +144,10 @@ nav {
   padding: 4rem 0;
 }
 
-nav .hamburger-menu {
-  width: 2.5rem;
-  display: none;
-}
-
-@media (max-width: 376px) {
-  nav .hamburger-menu {
-    display: block;
-  }
-}
-
-@media (max-width: 376px) {
-  nav {
-    width: 150%;
-  }
-}
-
-@media (max-width: 376px) {
-  nav .list {
-    display: none;
-  }
-}
-
-@media (max-width: 376px) {
-  nav .btn {
-    display: none;
-  }
-}
-
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media (max-width: 376px) {
-  .logo {
-    padding-right: 13rem;
-  }
 }
 
 .logo__img {
@@ -308,17 +191,6 @@ nav .hamburger-menu {
   display: flex;
 }
 
-@media (max-width: 376px) {
-  .about {
-    width: 28rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 14rem !important;
-  }
-}
-
 .about__infoBox {
   padding: 2rem 4rem;
   -webkit-box-ordinal-group: 2;
@@ -327,16 +199,7 @@ nav .hamburger-menu {
   margin-right: 10rem;
 }
 
-@media (max-width: 376px) {
-  .about__infoBox {
-    width: 30rem;
-    padding: 0;
-    margin: 0;
-  }
-}
-
 .about__imgBox {
-  width: 30rem;
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
@@ -351,12 +214,6 @@ nav .hamburger-menu {
   padding-right: 1rem;
 }
 
-@media (max-width: 376px) {
-  .about__title {
-    font-size: 1.6rem;
-  }
-}
-
 .about__description {
   width: 90%;
   font-size: 1.6rem;
@@ -364,13 +221,6 @@ nav .hamburger-menu {
   opacity: 70%;
   margin-bottom: 9rem;
   line-height: 3.5rem;
-}
-
-@media (max-width: 376px) {
-  .about__description {
-    width: 100%;
-    font-size: 1.2rem;
-  }
 }
 
 .about__cards {
@@ -945,25 +795,6 @@ nav .hamburger-menu {
   top: -9%;
 }
 
-.btn--phone {
-  display: none;
-}
-
-@media (max-width: 376px) {
-  .btn--phone {
-    display: block;
-    margin: 0 1rem 1.5rem 0;
-    padding: 1.68rem 0rem 1.68rem 2.24rem;
-    text-align: center;
-  }
-}
-
-@media (max-width: 376px) {
-  .btn--desktop {
-    display: none;
-  }
-}
-
 .input-btn {
   color: #fff;
   text-decoration: none;
@@ -1420,7 +1251,6 @@ nav .hamburger-menu {
   color: #1894FF;
   border: 1px solid #1894FF;
   border-radius: 1rem;
-  cursor: pointer;
 }
 
 .map-container .map {

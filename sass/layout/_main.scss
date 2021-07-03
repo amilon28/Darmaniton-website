@@ -24,36 +24,19 @@
 .about {
     display: flex;
 
-
-    @include respond-phone {
-        width: 28rem;
-        flex-direction: column;
-        padding: 14rem !important;
-    }
-
     &__infoBox {
         padding: 2rem 4rem;
         order: 1;
         margin-right: 10rem;
-
-        @include respond-phone {
-            width: 30rem;
-            padding: 0;
-            margin: 0;
-        }
     }
 
     &__imgBox {
-        width: 30rem;
+
         order: 0;
     }
 
     &__title {
-        @include section-title;
-
-        @include respond-phone {
-            font-size: $default-font-size;
-        }
+        @include section-title
     }
 
     &__description {
@@ -63,11 +46,6 @@
         opacity: 70%;
         margin-bottom: 9rem;
         line-height: 3.5rem;
-
-        @include respond-phone {
-            width: 100%;
-            font-size: 1.2rem;
-        }
     }
 
     &__cards {
