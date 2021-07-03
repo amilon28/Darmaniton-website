@@ -5,10 +5,23 @@ nav {
     justify-content: space-around;
 
     padding: 4rem 0;
+
+    @include phone {
+        width: 100%;
+        padding: 4rem 2rem;
+        justify-content: space-between;
+
+        .list,
+        .list+a {
+            display: none;
+        }
+    }
 }
 
 .logo {
     display: flex;
+
+
 
 
     &__img {
@@ -27,5 +40,24 @@ nav {
 
     &__description {
         font-size: 1.2rem;
+    }
+}
+
+.hamburger {
+    display: none;
+
+    div {
+        width: 2.5rem;
+        height: 2px;
+        background-color: $color-blue-light;
+        margin-bottom: 5px;
+    }
+
+    .line {
+        &-1 {}
+
+        &-2 {}
+
+        &-3 {}
     }
 }

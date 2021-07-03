@@ -30,3 +30,10 @@
     top: 7%;
     right: 80%;
 }
+
+// Media Query
+@mixin phone {
+    @media (max-width: 376px) {
+        @content;
+    }
+}
