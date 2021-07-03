@@ -12,6 +12,7 @@ html {
 
     @include phone {
         font-size: 50%; // 1rem = 8px
+        overflow-x: hidden;
     }
 }
 

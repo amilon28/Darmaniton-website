@@ -24,6 +24,10 @@
     top: 28%;
     right: 25%;
     width: 1.3rem;
+
+    @include phone {
+        width: 1.8rem;
+    }
 }
 
 @mixin sign-up-btn-subscribe {

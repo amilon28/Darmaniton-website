@@ -7,10 +7,18 @@
 
     .about {
         padding: 40rem 20rem 0;
+
+        @include phone {
+            padding: 5rem;
+        }
     }
 
     .download {
         padding: 0 20rem;
+
+        @include phone {
+            padding: 0 5rem;
+        }
     }
 
     .subscription {
@@ -24,19 +32,48 @@
 .about {
     display: flex;
 
+    @include phone {
+        flex-direction: column;
+    }
+
     &__infoBox {
         padding: 2rem 4rem;
         order: 1;
         margin-right: 10rem;
+
+        @include phone {
+            margin: 0;
+            padding: 0;
+        }
     }
 
     &__imgBox {
 
         order: 0;
+        margin-bottom: 4rem;
+
+        img {
+            @include phone {
+                width: 30rem;
+            }
+        }
     }
 
     &__title {
-        @include section-title
+        @include section-title;
+
+        @include phone {
+            display: none;
+        }
+
+
+        &--phone {
+            display: none;
+
+            @include phone {
+                display: block;
+            }
+        }
     }
 
     &__description {
@@ -46,12 +83,29 @@
         opacity: 70%;
         margin-bottom: 9rem;
         line-height: 3.5rem;
+
+        @include phone {
+            display: none;
+        }
+
+        &--phone {
+            display: none;
+
+            @include phone {
+                display: block;
+                width: 100%;
+            }
+        }
     }
 
     &__cards {
 
         display: flex;
         justify-content: space-between;
+
+        @include phone {
+            display: none;
+        }
 
         .card {
 
@@ -76,6 +130,13 @@
 
 // Facilities
 .facilities {
+
+
+    @include phone {
+        padding: 0 5rem 10rem;
+    }
+
+
     .container {
         width: 90%;
         display: grid;
@@ -87,17 +148,42 @@
             "header header header header"
             "services  pharmacy  pharmacy pharmacy "
             "services process  process process";
+
+
+        @include phone {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__title {
         @include section-title;
         height: 3.2rem;
         grid-area: header;
+
+        @include phone {
+            display: none;
+
+        }
+
+        &--phone {
+            display: none;
+
+            @include phone {
+                display: block;
+                padding-right: 2rem;
+            }
+        }
     }
 
     &__pharmacy {
         padding: 1rem;
         grid-area: pharmacy;
+
+        @include phone {
+            width: 120%;
+            order: 1;
+        }
 
 
     }
@@ -111,10 +197,22 @@
         align-items: center;
         row-gap: 4rem;
 
+        @include phone {
+            display: flex;
+            justify-content: space-between;
+
+            width: 75rem;
+
+        }
+
     }
 
     &__process {
         grid-area: process;
+
+        @include phone {
+            order: 2;
+        }
     }
 
     &__card {
@@ -129,15 +227,27 @@
         &--visit,
         &--pharmacy {
             padding: 2.5rem 5rem;
+
+            @include phone {
+                padding: 1.5rem 4rem;
+            }
         }
 
         &--shop {
             padding: 2.3rem 5.8rem;
+
+            @include phone {
+                padding: 1.3rem 4.8rem;
+            }
         }
 
 
         &--reservation {
             padding: 3rem 4rem;
+
+            @include phone {
+                padding: 2rem 3rem;
+            }
         }
     }
 
@@ -156,6 +266,8 @@
 
     &__description {
         @include section-description;
+
+
     }
 
     &__process {
@@ -165,6 +277,8 @@
     &__diagram {
         flex: 0 1 4rem;
         position: relative;
+
+
     }
 
     &__step {
@@ -181,6 +295,10 @@
         position: absolute;
         right: 44%;
         top: 10%;
+
+        @include phone {
+            height: 25rem;
+        }
     }
 
     &__circle-container {
@@ -198,6 +316,11 @@
         background-color: $color-grey;
         position: relative;
 
+        @include phone {
+            width: 4.1rem;
+            height: 4.1rem;
+        }
+
         &--arrow {
             transform: rotate(271deg);
             @include circle-icons;
@@ -208,14 +331,15 @@
         }
     }
 
-    .check {
-        background-color: $color-green;
-    }
 
     &__step-heading {
         font-size: $default-font-size;
         margin-top: 2rem;
         margin-right: 1rem;
+
+        @include phone {
+            margin: 4rem 1rem 0 0;
+        }
     }
 
     &__step-description {
@@ -223,7 +347,38 @@
         opacity: .7;
         margin-right: 5rem;
         margin-top: .4rem;
+
+        @include phone {
+            margin-right: 1.5rem;
+        }
     }
+
+    &__icon {
+
+        &--pharmacy {
+            @include phone {
+                width: 6.25rem;
+            }
+        }
+
+        &--shop {
+            @include phone {
+                width: 4.5rem;
+            }
+        }
+
+        &--visit {}
+
+        &--reservation {}
+
+    }
+
+
+
+    .check {
+        background-color: $color-green;
+    }
+
 }
 
 // Download
@@ -231,6 +386,14 @@
     position: relative;
     background-color: $color-download-bg;
     overflow: hidden;
+
+    @include phone {
+        height: 111.625rem;
+
+        &>img {
+            display: none;
+        }
+    }
 
     .cloud {
         position: absolute;
@@ -257,18 +420,31 @@
 
         display: flex;
         align-items: center;
+
+        @include phone {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 111.625rem;
+        }
     }
 
     &__img-preview {
         order: 1;
         width: 40%;
 
-
-
+        @include phone {
+            margin-left: 44rem;
+        }
 
         img {
             height: 55rem;
             margin-bottom: -1rem;
+
+            @include phone {
+                height: 58.15375rem;
+            }
         }
 
     }
@@ -282,32 +458,93 @@
         padding-right: 3rem;
         color: $color-white;
 
+        @include phone {
+            height: 58.15375rem;
+            width: 100%;
+            height: 80rem;
+        }
+
     }
 
     &__header {
         font-size: 2.4rem;
         font-weight: bold;
 
+        @include phone {
+            font-size: 2rem;
+        }
+
     }
 
     &__text {
         font-size: $default-font-size;
         margin-top: 2rem;
+
+        @include phone {
+            display: none;
+        }
+
+        &--phone {
+            display: none;
+
+            @include phone {
+                display: block;
+            }
+
+        }
     }
 
 
 
     &__inputBox {
         position: relative;
+        width: 100%;
+
+
+        a {
+            right: 70%;
+            top: 12%;
+        }
     }
 
+
     &__social {
+        @include phone {
+            margin: 0 4rem;
+        }
+
         &-icon {
             width: 18rem;
             margin-left: 2rem;
             opacity: .9;
             cursor: pointer;
+
+            @include phone {
+                width: 22.5rem;
+            }
         }
+
+        &--android {
+            @include phone {
+                display: none;
+            }
+        }
+
+        &--sibapp {
+            @include phone {
+                margin: 0 0 3rem;
+            }
+        }
+
+    }
+
+    .input-field {
+        @include phone {
+            width: 100%;
+        }
+
+
+
     }
 }
 
@@ -353,5 +590,15 @@
 
     &__img {
         padding-right: 5rem;
+    }
+}
+
+::placeholder {
+    opacity: .8;
+    font-size: 1.4rem;
+    font-family: inherit;
+
+    @include phone {
+        font-size: 1.2rem;
     }
 }
