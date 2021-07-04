@@ -2084,6 +2084,8 @@ nav {
         -ms-flex-order: 1;
             order: 1;
     width: 100%;
+    border-bottom: 0;
+    padding-bottom: 4rem;
   }
 }
 
