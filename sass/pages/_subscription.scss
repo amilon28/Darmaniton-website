@@ -4,9 +4,19 @@
     display: flex;
     justify-content: space-around;
 
+    @include phone {
+        flex-direction: column;
+        width: 100%;
+    }
+
     &__quick-sign-up {
         padding-top: 3.5rem;
         width: 60%;
+
+        @include phone {
+            order: 1;
+            width: 100%;
+        }
     }
 
     &__name {
@@ -20,6 +30,12 @@
         font-size: 3.5rem;
         color: $color-blue-light;
         margin-bottom: 2rem;
+
+        @include phone {
+            width: 90%;
+            font-size: 3rem;
+            margin-left: 0;
+        }
     }
 
     &__description {
@@ -27,10 +43,43 @@
         width: 71%;
         line-height: 3.5rem;
         margin-bottom: 7.5rem;
+
+        @include phone {
+            width: 100%;
+            font-size: 1.75rem;
+            line-height: 4.5rem;
+            margin-bottom: 5.6rem;
+        }
     }
 
     &__inputBox {
         position: relative;
+
+        .input-field {
+
+            @include phone {
+                display: none;
+            }
+
+            &--phone {
+                display: none;
+
+                @include phone {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+        }
+
+        a {
+            @include phone {
+                top: 20%;
+                right: 63%;
+
+            }
+        }
+
     }
 
     &__infoBox {
@@ -39,12 +88,28 @@
         @include cardsBoxShadow;
         ;
         border-radius: 1.4rem;
+
+        @include phone {
+            border-radius: 2rem;
+        }
+
         margin-bottom: 5.5rem;
 
         &--1 {
             position: relative;
             padding: 1.5rem 1.2rem 1rem 1rem;
-            width: 90%
+            width: 90%;
+
+            @include phone {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            a {
+                @include phone {
+                    right: 79%;
+                }
+            }
         }
 
         &--2,
@@ -68,6 +133,10 @@
         .person {
             &-1 {
                 width: 7.5rem;
+
+                @include phone {
+                    width: 6.25rem;
+                }
             }
 
             &-2 {
@@ -75,6 +144,14 @@
             }
 
 
+        }
+
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            @include phone {
+                display: none;
+            }
         }
 
     }
@@ -86,10 +163,18 @@
     &__locationBox {
         margin-top: 1rem;
         display: flex;
+
+        @include phone {
+            margin-top: 2.5rem;
+        }
     }
 
     &__main-heading {
         font-size: 2rem;
+
+        @include phone {
+            font-size: 1.6rem;
+        }
     }
 
     &__sub-heading {
@@ -98,6 +183,11 @@
 
     &__address {
         margin-right: 1rem;
+    }
+
+
+    @include phone {
+        padding: 5rem;
     }
 }
 
@@ -108,18 +198,38 @@
     display: flex;
     justify-content: space-around;
 
+    @include phone {
+        flex-direction: column;
+        align-items: center;
+        padding: 4.3rem 0;
+    }
+
     .circle {
         position: absolute;
+        top: $top;
 
         &-left {
             right: -1%;
-            top: $top;
+
+            @include phone {
+                top: 28%;
+                right: -5%;
+            }
         }
 
         &-right {
             left: -1%;
-            top: $top;
+
+            @include phone {
+                top: 28%;
+                left: -5%;
+            }
         }
+
+        @include phone {
+            top: 28%;
+        }
+
     }
 
     .box {
@@ -131,10 +241,31 @@
             font-size: $default-font-size;
             margin-bottom: 1.7rem;
             text-align: center;
+
+
+            @include phone {
+                display: none;
+                font-size: 1.75rem;
+            }
+
+            &--phone {
+                display: none;
+
+                @include phone {
+                    display: block;
+                }
+            }
+
         }
 
         &__number {
             font-size: 3.6rem;
+        }
+
+        @include phone {
+            &:not(:last-child) {
+                margin-bottom: 5rem;
+            }
         }
     }
 }
@@ -142,11 +273,21 @@
 .services {
     padding: 12rem 14rem;
 
+    @include phone {
+        padding: 4.5rem 1rem 11.375rem 1rem;
+    }
+
     &__textBox {
+        @include phone {
+            padding-right: 4rem;
+        }
+
         &-main-heading {
             @include section-title;
             margin-bottom: 1.5rem;
             padding-right: 2rem;
+
+
         }
 
         &-heading {
@@ -170,18 +311,47 @@
         display: flex;
         justify-content: space-between;
 
+        @include phone {
+            flex-direction: column;
+            height: auto;
+            padding: 0 4.2rem 0 1rem
+        }
+
         .card {
             @include cardsBoxShadow;
             width: 38%;
             padding: 0 2rem 0 1rem;
+
+
 
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
 
+            @include phone {
+                width: 100%;
+                height: 42.75rem;
+
+                &:first-child {
+                    margin-bottom: 3rem;
+
+                }
+
+                .services__textBox {
+                    padding-right: 1rem;
+                }
+            }
+
             img {
                 width: 10.288rem;
+            }
+
+            a {
+                @include phone {
+                    padding: 1.75rem 7.6rem 2.1rem 7rem;
+                    font-size: 2rem;
+                }
             }
 
         }

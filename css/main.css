@@ -8,13 +8,13 @@
 }
 
 html {
+  overflow-x: hidden;
   font-size: 62.5%;
 }
 
 @media (max-width: 376px) {
   html {
     font-size: 50%;
-    overflow-x: hidden;
   }
 }
 
@@ -1550,9 +1550,28 @@ nav {
       justify-content: space-around;
 }
 
+@media (max-width: 376px) {
+  .pharmacies {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
 .pharmacies__quick-sign-up {
   padding-top: 3.5rem;
   width: 60%;
+}
+
+@media (max-width: 376px) {
+  .pharmacies__quick-sign-up {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+  }
 }
 
 .pharmacies__name {
@@ -1571,6 +1590,14 @@ nav {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 376px) {
+  .pharmacies__title {
+    width: 90%;
+    font-size: 3rem;
+    margin-left: 0;
+  }
+}
+
 .pharmacies__description {
   font-size: 1.6rem;
   width: 71%;
@@ -1578,8 +1605,41 @@ nav {
   margin-bottom: 7.5rem;
 }
 
+@media (max-width: 376px) {
+  .pharmacies__description {
+    width: 100%;
+    font-size: 1.75rem;
+    line-height: 4.5rem;
+    margin-bottom: 5.6rem;
+  }
+}
+
 .pharmacies__inputBox {
   position: relative;
+}
+
+@media (max-width: 376px) {
+  .pharmacies__inputBox .input-field {
+    display: none;
+  }
+}
+
+.pharmacies__inputBox .input-field--phone {
+  display: none;
+}
+
+@media (max-width: 376px) {
+  .pharmacies__inputBox .input-field--phone {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 376px) {
+  .pharmacies__inputBox a {
+    top: 20%;
+    right: 63%;
+  }
 }
 
 .pharmacies__infoBox {
@@ -1594,10 +1654,29 @@ nav {
   margin-bottom: 5.5rem;
 }
 
+@media (max-width: 376px) {
+  .pharmacies__infoBox {
+    border-radius: 2rem;
+  }
+}
+
 .pharmacies__infoBox--1 {
   position: relative;
   padding: 1.5rem 1.2rem 1rem 1rem;
   width: 90%;
+}
+
+@media (max-width: 376px) {
+  .pharmacies__infoBox--1 {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 376px) {
+  .pharmacies__infoBox--1 a {
+    right: 79%;
+  }
 }
 
 .pharmacies__infoBox--2, .pharmacies__infoBox--3 {
@@ -1621,8 +1700,20 @@ nav {
   width: 7.5rem;
 }
 
+@media (max-width: 376px) {
+  .pharmacies__infoBox .person-1 {
+    width: 6.25rem;
+  }
+}
+
 .pharmacies__infoBox .person-2 {
   width: 5.2rem;
+}
+
+@media (max-width: 376px) {
+  .pharmacies__infoBox:nth-child(2), .pharmacies__infoBox:nth-child(3) {
+    display: none;
+  }
 }
 
 .pharmacies__info {
@@ -1636,8 +1727,20 @@ nav {
   display: flex;
 }
 
+@media (max-width: 376px) {
+  .pharmacies__locationBox {
+    margin-top: 2.5rem;
+  }
+}
+
 .pharmacies__main-heading {
   font-size: 2rem;
+}
+
+@media (max-width: 376px) {
+  .pharmacies__main-heading {
+    font-size: 1.6rem;
+  }
 }
 
 .pharmacies__sub-heading {
@@ -1646,6 +1749,12 @@ nav {
 
 .pharmacies__address {
   margin-right: 1rem;
+}
+
+@media (max-width: 376px) {
+  .pharmacies {
+    padding: 5rem;
+  }
 }
 
 .numOfPharmacies {
@@ -1659,18 +1768,50 @@ nav {
       justify-content: space-around;
 }
 
+@media (max-width: 376px) {
+  .numOfPharmacies {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 4.3rem 0;
+  }
+}
+
 .numOfPharmacies .circle {
   position: absolute;
+  top: 2%;
 }
 
 .numOfPharmacies .circle-left {
   right: -1%;
-  top: 2%;
+}
+
+@media (max-width: 376px) {
+  .numOfPharmacies .circle-left {
+    top: 28%;
+    right: -5%;
+  }
 }
 
 .numOfPharmacies .circle-right {
   left: -1%;
-  top: 2%;
+}
+
+@media (max-width: 376px) {
+  .numOfPharmacies .circle-right {
+    top: 28%;
+    left: -5%;
+  }
+}
+
+@media (max-width: 376px) {
+  .numOfPharmacies .circle {
+    top: 28%;
+  }
 }
 
 .numOfPharmacies .box {
@@ -1683,12 +1824,47 @@ nav {
   text-align: center;
 }
 
+@media (max-width: 376px) {
+  .numOfPharmacies .box__title {
+    display: none;
+    font-size: 1.75rem;
+  }
+}
+
+.numOfPharmacies .box__title--phone {
+  display: none;
+}
+
+@media (max-width: 376px) {
+  .numOfPharmacies .box__title--phone {
+    display: block;
+  }
+}
+
 .numOfPharmacies .box__number {
   font-size: 3.6rem;
 }
 
+@media (max-width: 376px) {
+  .numOfPharmacies .box:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+}
+
 .services {
   padding: 12rem 14rem;
+}
+
+@media (max-width: 376px) {
+  .services {
+    padding: 4.5rem 1rem 11.375rem 1rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .services__textBox {
+    padding-right: 4rem;
+  }
 }
 
 .services__textBox-main-heading {
@@ -1732,6 +1908,17 @@ nav {
           justify-content: space-between;
 }
 
+@media (max-width: 376px) {
+  .services__cardBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding: 0 4.2rem 0 1rem;
+  }
+}
+
 .services__cardBox .card {
   background-color: #fff;
   border-radius: 2rem;
@@ -1753,8 +1940,28 @@ nav {
           align-items: center;
 }
 
+@media (max-width: 376px) {
+  .services__cardBox .card {
+    width: 100%;
+    height: 42.75rem;
+  }
+  .services__cardBox .card:first-child {
+    margin-bottom: 3rem;
+  }
+  .services__cardBox .card .services__textBox {
+    padding-right: 1rem;
+  }
+}
+
 .services__cardBox .card img {
   width: 10.288rem;
+}
+
+@media (max-width: 376px) {
+  .services__cardBox .card a {
+    padding: 1.75rem 7.6rem 2.1rem 7rem;
+    font-size: 2rem;
+  }
 }
 
 .FQ {
