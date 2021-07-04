@@ -25,7 +25,7 @@
     right: 25%;
     width: 1.3rem;
 
-    @include phone {
+    @include respond(phone) {
         width: 1.8rem;
     }
 }
@@ -35,9 +35,48 @@
     right: 80%;
 }
 
-// Media Query
-@mixin phone {
-    @media (max-width: 376px) {
-        @content;
+// MEDIA QUERY MANAGER
+/*
+$breakpoint argument choices:
+- phone: 0 - 600px
+- tab-port: 600 - 900px 
+- tab-land: 900 - 1200px
+- normal desktop: 1200 - 1800px
+- big-desktop: 1800px +
+*/
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint==phone {
+
+        //600px / 16
+        @media (max-width: 37.5em) {
+
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint==tab-port {
+        @media (max-width: 56.25em) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint==tab-land {
+        @media (max-width: 75em) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint==big-desktop {
+        @media (min-width: 112.5em) {
+            @content
+        }
     }
 }

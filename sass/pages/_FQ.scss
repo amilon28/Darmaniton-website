@@ -8,7 +8,7 @@
         margin-top: 1rem;
         padding: 4rem 0;
 
-        @include phone {
+        @include respond(phone) {
             padding: 2.5rem 0;
         }
 
@@ -16,7 +16,7 @@
             text-align: center;
             font-size: 3rem;
 
-            @include phone {
+            @include respond(phone) {
                 font-size: 2.5rem;
             }
         }
@@ -25,7 +25,7 @@
             position: absolute;
             top: -8%;
 
-            @include phone {
+            @include respond(phone) {
                 display: none;
             }
         }
@@ -44,7 +44,7 @@
     &__box {
         padding: 12rem;
 
-        @include phone {
+        @include respond(phone) {
             padding: 4rem;
             display: flex;
             flex-direction: column;
@@ -68,12 +68,12 @@
             img {
                 cursor: pointer;
 
-                @include phone {
+                @include respond(phone) {
                     width: 1.5rem;
                 }
             }
 
-            @include phone {
+            @include respond(phone) {
                 &:nth-child(2) {
                     display: none;
                 }
@@ -93,7 +93,7 @@
                 padding-bottom: 2rem;
             }
 
-            @include phone {
+            @include respond(phone) {
                 order: 1;
                 width: 100%;
                 border-bottom: 0;
@@ -106,7 +106,7 @@
         @include section-title;
         margin-bottom: 2.5rem;
 
-        @include phone {
+        @include respond(phone) {
             margin-bottom: 4.5rem;
         }
     }
@@ -115,7 +115,7 @@
         margin-right: 4rem;
         font-size: $default-font-size;
 
-        @include phone {
+        @include respond(phone) {
             margin-right: 3rem;
         }
     }
@@ -128,7 +128,7 @@
         border-top-right-radius: .1rem;
         border-bottom-right-radius: .1rem;
 
-        @include phone {
+        @include respond(phone) {
             padding: 1rem 4rem;
             width: 100%;
         }
@@ -138,7 +138,7 @@
         display: flex;
         justify-content: space-around;
 
-        @include phone {
+        @include respond(phone) {
             width: 100%;
             margin-right: 17rem;
 

@@ -11,6 +11,10 @@
         color: $color-blue-light;
         margin-top: 1rem;
         padding: 1.4rem 3.2rem;
+
+        &--phone {
+            background-color: $color-grey;
+        }
     }
 
     &--white {

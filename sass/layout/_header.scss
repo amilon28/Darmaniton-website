@@ -12,7 +12,7 @@
         left: -12%;
         width: 85rem;
 
-        @include phone {
+        @include respond(phone) {
             display: none;
         }
 
@@ -25,7 +25,7 @@
         top: 111%;
 
 
-        @include phone {
+        @include respond(phone) {
             position: static;
 
         }
@@ -34,7 +34,7 @@
     &__box {
         position: relative;
 
-        @include phone {
+        @include respond(phone) {
             height: 85vh;
             position: static;
             display: flex;
@@ -50,7 +50,7 @@
         margin-right: 20rem;
         margin-top: 10rem;
 
-        @include phone {
+        @include respond(phone) {
             margin: 0;
         }
 
@@ -60,7 +60,7 @@
         font-size: 3.6rem;
         color: $color-blue-light;
 
-        @include phone {
+        @include respond(phone) {
             text-align: center;
         }
 
@@ -71,18 +71,18 @@
         font-size: 1.8rem;
         font-weight: lighter;
 
-        @include phone {
+        @include respond(phone) {
             text-align: center;
         }
 
-        @include phone {
+        @include respond(phone) {
             display: none;
         }
 
         &--phone {
             display: none;
 
-            @include phone {
+            @include respond(phone) {
                 display: block;
             }
         }
@@ -90,7 +90,7 @@
     }
 
     &__buttons {
-        @include phone {
+        @include respond(phone) {
             display: flex;
             flex-direction: column;
             align-items: stretch;
@@ -104,7 +104,7 @@
             text-align: center;
 
             &:first-child {
-                @include phone {
+                @include respond(phone) {
                     display: none;
                 }
             }
@@ -115,7 +115,7 @@
     &-direct-download-btn {
         display: none;
 
-        @include phone {
+        @include respond(phone) {
             display: block;
         }
     }
