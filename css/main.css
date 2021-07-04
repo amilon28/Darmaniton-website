@@ -2162,6 +2162,17 @@ nav {
   display: flex;
 }
 
+@media (max-width: 376px) {
+  .map-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 5.87rem 2rem 3rem;
+    position: relative;
+  }
+}
+
 .map-container .form {
   width: 50%;
 }
@@ -2178,6 +2189,12 @@ nav {
       justify-content: space-around;
   width: 80%;
   height: 100%;
+}
+
+@media (max-width: 376px) {
+  .map-container .form__container {
+    width: 100%;
+  }
 }
 
 .map-container .form__item {
@@ -2197,11 +2214,32 @@ nav {
   margin-bottom: 1.2rem;
 }
 
+@media (max-width: 376px) {
+  .map-container .form__label {
+    font-size: 1.8rem;
+  }
+}
+
 .map-container .form__input {
   padding: 1.5rem 1rem;
   border: none;
   border-radius: 1rem;
   border: 1px solid #D8D8D8;
+}
+
+@media (max-width: 376px) {
+  .map-container .form__input::-webkit-input-placeholder {
+    opacity: 0;
+  }
+  .map-container .form__input:-ms-input-placeholder {
+    opacity: 0;
+  }
+  .map-container .form__input::-ms-input-placeholder {
+    opacity: 0;
+  }
+  .map-container .form__input::placeholder {
+    opacity: 0;
+  }
 }
 
 .map-container .form__input.active-input {
@@ -2215,6 +2253,20 @@ nav {
   color: #1894FF;
   border: 1px solid #1894FF;
   border-radius: 1rem;
+}
+
+@media (max-width: 376px) {
+  .map-container .form__btn {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 376px) {
+  .map-container .form {
+    width: 100%;
+    margin-top: 18rem;
+  }
 }
 
 .map-container .map {
@@ -2262,6 +2314,21 @@ nav {
   line-height: 3rem;
 }
 
+@media (max-width: 376px) {
+  .map-container .map .textBox .address__content {
+    line-height: 4.5rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .map-container .map .textBox .address {
+    grid-column: 1/-1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+}
+
 .map-container .map .textBox .info {
   margin-bottom: 1.2rem;
 }
@@ -2269,5 +2336,35 @@ nav {
 .map-container .map .textBox .email__content,
 .map-container .map .textBox .fixed-number__content {
   color: #1894FF;
+}
+
+@media (max-width: 376px) {
+  .map-container .map .textBox {
+    width: 90%;
+    height: 27.375rem;
+    -webkit-box-shadow: -4px 7px 4.75rem -1px #ECECEC;
+            box-shadow: -4px 7px 4.75rem -1px #ECECEC;
+    border-radius: 2rem;
+    right: 5%;
+    top: 20%;
+  }
+}
+
+@media (max-width: 376px) and (max-width: 376px) {
+  .map-container .map .textBox .fixed-number h3,
+  .map-container .map .textBox .fixed-number p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 376px) {
+  .map-container .map {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 100%;
+    margin-bottom: 4rem;
+    position: static;
+  }
 }
 /*# sourceMappingURL=main.css.map */

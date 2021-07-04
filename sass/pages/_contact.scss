@@ -3,6 +3,12 @@
 
     display: flex;
 
+    @include phone {
+        flex-direction: column;
+        padding: 5.87rem 2rem 3rem;
+        position: relative;
+    }
+
 
     .form {
         width: 50%;
@@ -15,6 +21,10 @@
 
             width: 80%;
             height: 100%;
+
+            @include phone {
+                width: 100%;
+            }
         }
 
         &__item {
@@ -28,6 +38,10 @@
             font-size: 1.2rem;
             font-family: inherit;
             margin-bottom: 1.2rem;
+
+            @include phone {
+                font-size: 1.8rem;
+            }
         }
 
         &__input {
@@ -35,6 +49,13 @@
             border: none;
             border-radius: 1rem;
             border: 1px solid $color-border;
+
+            @include phone {
+                &::placeholder {
+                    opacity: 0;
+                }
+            }
+
         }
 
         &__input.active-input {
@@ -48,6 +69,17 @@
             color: $color-blue-light;
             border: 1px solid $color-blue-light;
             border-radius: 1rem;
+
+            @include phone {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+        }
+
+        @include phone {
+            width: 100%;
+            margin-top: 18rem;
+
         }
     }
 
@@ -57,6 +89,8 @@
 
         img {
             width: 100%;
+
+
         }
 
         .textBox {
@@ -88,6 +122,17 @@
                 &__content {
                     width: 77%;
                     line-height: 3rem;
+
+                    @include phone {
+                        line-height: 4.5rem;
+
+
+                    }
+                }
+
+                @include phone {
+                    grid-column: 1/-1;
+                    grid-row: 2/3;
                 }
             }
 
@@ -99,8 +144,39 @@
             .fixed-number {
                 &__content {
                     color: $color-blue-light;
+
+                }
+
+            }
+
+
+
+            @include phone {
+                width: 90%;
+                height: 27.375rem;
+                box-shadow: -4px 7px 4.75rem -1px #ECECEC;
+                border-radius: 2rem;
+                right: 5%;
+                top: 20%;
+
+                .fixed-number {
+
+                    h3,
+                    p {
+                        @include phone {
+                            text-align: center;
+                        }
+                    }
                 }
             }
+        }
+
+        @include phone {
+            order: -1;
+            width: 100%;
+            margin-bottom: 4rem;
+            position: static;
+
         }
     }
 }
