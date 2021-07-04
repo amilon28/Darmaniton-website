@@ -8,6 +8,10 @@
         margin-top: 1rem;
         padding: 4rem 0;
 
+        @include phone {
+            padding: 2.5rem 0;
+        }
+
         h2 {
             text-align: center;
             font-size: 3rem;
@@ -33,6 +37,8 @@
         .left-shape-FQ {
             right: -10%;
         }
+
+
     }
 
     &__box {

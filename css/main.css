@@ -1976,6 +1976,12 @@ nav {
   padding: 4rem 0;
 }
 
+@media (max-width: 376px) {
+  .FQ__title {
+    padding: 2.5rem 0;
+  }
+}
+
 .FQ__title h2 {
   text-align: center;
   font-size: 3rem;
