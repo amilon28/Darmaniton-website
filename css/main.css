@@ -1981,9 +1981,21 @@ nav {
   font-size: 3rem;
 }
 
+@media (max-width: 376px) {
+  .FQ__title h2 {
+    font-size: 2.5rem;
+  }
+}
+
 .FQ__title img {
   position: absolute;
   top: -8%;
+}
+
+@media (max-width: 376px) {
+  .FQ__title img {
+    display: none;
+  }
 }
 
 .FQ__title .right-shape-FQ {
@@ -1996,6 +2008,19 @@ nav {
 
 .FQ__box {
   padding: 12rem;
+}
+
+@media (max-width: 376px) {
+  .FQ__box {
+    padding: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .FQ__box-main {
@@ -2020,6 +2045,22 @@ nav {
   cursor: pointer;
 }
 
+@media (max-width: 376px) {
+  .FQ__box-text img {
+    width: 1.5rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .FQ__box-text {
+    width: 105%;
+    padding-bottom: 1.5rem;
+  }
+  .FQ__box-text:nth-child(2) {
+    display: none;
+  }
+}
+
 .FQ__box-ans {
   width: 85%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.096);
@@ -2029,6 +2070,15 @@ nav {
 .FQ__box-ans .FQ__box-text {
   border: none;
   padding-bottom: 2rem;
+}
+
+@media (max-width: 376px) {
+  .FQ__box-ans {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+  }
 }
 
 .FQ__main-heading {
@@ -2041,9 +2091,21 @@ nav {
   margin-bottom: 2.5rem;
 }
 
+@media (max-width: 376px) {
+  .FQ__main-heading {
+    margin-bottom: 4.5rem;
+  }
+}
+
 .FQ__sub-heading {
   margin-right: 4rem;
   font-size: 1.6rem;
+}
+
+@media (max-width: 376px) {
+  .FQ__sub-heading {
+    margin-right: 3rem;
+  }
 }
 
 .FQ__paragraph {
@@ -2055,12 +2117,36 @@ nav {
   border-bottom-right-radius: .1rem;
 }
 
+@media (max-width: 376px) {
+  .FQ__paragraph {
+    padding: 1rem 4rem;
+    width: 100%;
+  }
+}
+
 .FQ__gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media (max-width: 376px) {
+  .FQ__gallery {
+    width: 100%;
+    margin-right: 17rem;
+  }
+  .FQ__gallery .facilities__card {
+    margin-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .FQ__gallery .facilities__card--pharmacy {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 .map-container {

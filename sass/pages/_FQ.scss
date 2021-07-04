@@ -1,5 +1,4 @@
 .FQ {
-
     padding-top: 2rem;
 
     &__title {
@@ -12,11 +11,19 @@
         h2 {
             text-align: center;
             font-size: 3rem;
+
+            @include phone {
+                font-size: 2.5rem;
+            }
         }
 
         img {
             position: absolute;
             top: -8%;
+
+            @include phone {
+                display: none;
+            }
         }
 
         .right-shape-FQ {
@@ -30,6 +37,12 @@
 
     &__box {
         padding: 12rem;
+
+        @include phone {
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+        }
 
         &-main {
             margin-bottom: 4.5rem;
@@ -48,6 +61,19 @@
 
             img {
                 cursor: pointer;
+
+                @include phone {
+                    width: 1.5rem;
+                }
+            }
+
+            @include phone {
+                &:nth-child(2) {
+                    display: none;
+                }
+
+                width: 105%;
+                padding-bottom: 1.5rem;
             }
         }
 
@@ -60,18 +86,30 @@
                 border: none;
                 padding-bottom: 2rem;
             }
+
+            @include phone {
+                order: 1;
+                width: 100%;
+            }
         }
     }
 
     &__main-heading {
         @include section-title;
         margin-bottom: 2.5rem;
+
+        @include phone {
+            margin-bottom: 4.5rem;
+        }
     }
 
     &__sub-heading {
         margin-right: 4rem;
         font-size: $default-font-size;
 
+        @include phone {
+            margin-right: 3rem;
+        }
     }
 
     &__paragraph {
@@ -81,10 +119,32 @@
         margin-right: 10rem;
         border-top-right-radius: .1rem;
         border-bottom-right-radius: .1rem;
+
+        @include phone {
+            padding: 1rem 4rem;
+            width: 100%;
+        }
     }
 
     &__gallery {
         display: flex;
         justify-content: space-around;
+
+        @include phone {
+            width: 100%;
+            margin-right: 17rem;
+
+            .facilities__card {
+                margin-left: 2rem;
+                padding-top: 2rem;
+                padding-bottom: 1rem;
+                ;
+
+                &--pharmacy {
+                    justify-content: space-evenly;
+                }
+
+            }
+        }
     }
 }
