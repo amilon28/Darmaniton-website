@@ -305,22 +305,27 @@
 
 .services {
     padding: 12rem 14rem;
+    height: auto;
 
     @include respond(tab-land) {
+
         padding: 5rem;
     }
 
     @include respond(tab-port) {
-        padding: 5rem;
+        padding: 4rem;
+
+
     }
 
     @include respond(phone) {
-        padding: 4.5rem 1rem 11.375rem 1rem;
+        padding: 4.5rem 1rem 10rem 1rem;
+
     }
 
+
+
     &__textBox {
-
-
         @include respond(phone) {
             padding-right: 4rem;
         }
@@ -359,20 +364,19 @@
         justify-content: space-between;
 
         @include respond(tab-land) {
-            height: 95vh;
+            height: auto;
             margin-top: 2.5rem;
             flex-direction: column;
         }
 
         @include respond(tab-port) {
-            height: 95vh;
+
             margin-top: 2.5rem;
             flex-direction: column;
         }
 
         @include respond(phone) {
             flex-direction: column;
-            height: auto;
             padding: 0 4.2rem 0 1rem
         }
 
@@ -394,7 +398,7 @@
                 padding: 4rem;
 
                 &:first-child {
-                    margin-bottom: 2rem;
+                    margin-bottom: 7rem;
                 }
             }
 
@@ -413,8 +417,11 @@
                 height: 42.75rem;
 
                 &:first-child {
-                    margin-bottom: 3rem;
+                    margin-bottom: 7rem;
+                }
 
+                &:last-child {
+                    margin-bottom: 3rem;
                 }
 
                 .services__textBox {

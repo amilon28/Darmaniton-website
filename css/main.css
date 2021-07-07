@@ -2995,6 +2995,7 @@ nav.nav-phone {
 
 .services {
   padding: 12rem 14rem;
+  height: auto;
 }
 
 @media (max-width: 75em) {
@@ -3005,13 +3006,13 @@ nav.nav-phone {
 
 @media (max-width: 56.25em) {
   .services {
-    padding: 5rem;
+    padding: 4rem;
   }
 }
 
 @media (max-width: 37.5em) {
   .services {
-    padding: 4.5rem 1rem 11.375rem 1rem;
+    padding: 4.5rem 1rem 10rem 1rem;
   }
 }
 
@@ -3070,7 +3071,7 @@ nav.nav-phone {
 
 @media (max-width: 75em) {
   .services__cardBox {
-    height: 95vh;
+    height: auto;
     margin-top: 2.5rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3081,7 +3082,6 @@ nav.nav-phone {
 
 @media (max-width: 56.25em) {
   .services__cardBox {
-    height: 95vh;
     margin-top: 2.5rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3096,7 +3096,6 @@ nav.nav-phone {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: auto;
     padding: 0 4.2rem 0 1rem;
   }
 }
@@ -3131,7 +3130,7 @@ nav.nav-phone {
     padding: 4rem;
   }
   .services__cardBox .card:first-child {
-    margin-bottom: 2rem;
+    margin-bottom: 7rem;
   }
 }
 
@@ -3154,6 +3153,9 @@ nav.nav-phone {
     height: 42.75rem;
   }
   .services__cardBox .card:first-child {
+    margin-bottom: 7rem;
+  }
+  .services__cardBox .card:last-child {
     margin-bottom: 3rem;
   }
   .services__cardBox .card .services__textBox {
