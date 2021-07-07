@@ -1922,6 +1922,12 @@ nav.nav-phone {
   }
 }
 
+@media (min-width: 25.3125em) and (max-width: 37.5em) {
+  .subscription__content {
+    margin: 0 .9rem 0 0;
+  }
+}
+
 .subscription__textBox {
   width: 55%;
   display: -webkit-box;

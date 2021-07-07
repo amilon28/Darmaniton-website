@@ -974,6 +974,10 @@
             margin-right: -.5rem;
         }
 
+        @include respond(big-phone) {
+            margin: 0 .9rem 0 0;
+        }
+
     }
 
     &__textBox {
