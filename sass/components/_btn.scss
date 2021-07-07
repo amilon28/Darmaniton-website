@@ -74,5 +74,9 @@
         font-size: .8rem;
         padding: .5rem .8rem;
         @include sign-up-btn-subscribe;
+
+        @include respond(tab-land) {
+            right: 89%;
+        }
     }
 }

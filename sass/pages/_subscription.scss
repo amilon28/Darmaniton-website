@@ -4,6 +4,19 @@
     display: flex;
     justify-content: space-around;
 
+
+    @include respond(tab-land) {
+        flex-direction: column;
+        width: 100%;
+        padding: 5rem;
+    }
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        width: 100%;
+        padding: 5rem;
+    }
+
     @include respond(phone) {
         flex-direction: column;
         width: 100%;
@@ -12,6 +25,16 @@
     &__quick-sign-up {
         padding-top: 3.5rem;
         width: 60%;
+
+        @include respond(tab-land) {
+            width: 100%;
+            padding: 0;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+            padding: 0;
+        }
 
         @include respond(phone) {
             order: 1;
@@ -73,6 +96,11 @@
         }
 
         a {
+            @include respond(tab-land) {
+                top: 10%;
+                right: 59%;
+            }
+
             @include respond(phone) {
                 top: 20%;
                 right: 63%;
@@ -106,6 +134,11 @@
             }
 
             a {
+
+                @include respond(tab-land) {
+                    right: 89%;
+                }
+
                 @include respond(phone) {
                     right: 79%;
                 }
@@ -273,11 +306,21 @@
 .services {
     padding: 12rem 14rem;
 
+    @include respond(tab-land) {
+        padding: 5rem;
+    }
+
+    @include respond(tab-port) {
+        padding: 5rem;
+    }
+
     @include respond(phone) {
         padding: 4.5rem 1rem 11.375rem 1rem;
     }
 
     &__textBox {
+
+
         @include respond(phone) {
             padding-right: 4rem;
         }
@@ -299,6 +342,10 @@
 
         &-text {
             @include section-description;
+
+            @include respond(tab-land) {
+                margin-bottom: 2rem;
+            }
         }
     }
 
@@ -310,6 +357,18 @@
 
         display: flex;
         justify-content: space-between;
+
+        @include respond(tab-land) {
+            height: 95vh;
+            margin-top: 2.5rem;
+            flex-direction: column;
+        }
+
+        @include respond(tab-port) {
+            height: 95vh;
+            margin-top: 2.5rem;
+            flex-direction: column;
+        }
 
         @include respond(phone) {
             flex-direction: column;
@@ -328,6 +387,26 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
+
+            @include respond(tab-land) {
+                width: 100%;
+                justify-content: space-evenly;
+                padding: 4rem;
+
+                &:first-child {
+                    margin-bottom: 2rem;
+                }
+            }
+
+            @include respond(tab-port) {
+                width: 100%;
+                justify-content: space-evenly;
+                padding: 4rem;
+
+                &:first-child {
+                    margin-bottom: 2rem;
+                }
+            }
 
             @include respond(phone) {
                 width: 100%;

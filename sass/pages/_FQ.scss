@@ -138,9 +138,18 @@
         display: flex;
         justify-content: space-around;
 
+        @include respond(tab-port) {
+            flex-wrap: wrap;
+
+            .facilities__card {
+                margin: 2.5rem;
+            }
+        }
+
         @include respond(phone) {
             width: 100%;
             margin-right: 17rem;
+            flex-wrap: nowrap;
 
             .facilities__card {
                 margin-left: 2rem;
@@ -154,5 +163,11 @@
 
             }
         }
+
+        @include respond(big-phone) {
+            margin: 0;
+            flex-wrap: nowrap;
+        }
+
     }
 }
