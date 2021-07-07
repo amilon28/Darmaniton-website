@@ -4,6 +4,8 @@
         background-color: $color-blue-light;
         padding: 3rem 4rem;
 
+
+
         @include respond(phone) {
             padding: 1.5rem 3rem;
         }
@@ -57,6 +59,15 @@
         background-color: $color-white;
         padding: 8.6rem 12.6rem;
 
+        @include respond(tab-land) {
+            width: 100%;
+            padding: 4.2rem;
+        }
+
+        @include respond(tab-port) {
+            padding: 4.5rem;
+        }
+
         @include respond(phone) {
             padding: 3.5rem;
             height: 44.25rem;
@@ -64,9 +75,11 @@
 
         .container {
             height: 20rem;
-            width: 100%;
+            width: 100vw;
             display: flex;
             justify-content: space-between;
+
+
 
             @include respond(phone) {
                 height: 30rem;
@@ -81,8 +94,15 @@
         flex-direction: column;
         justify-content: space-around;
 
+        @include respond(tab-port) {
+            width: 50vw;
+        }
+
+
         @include respond(phone) {
             height: 40rem;
+            align-items: flex-start;
+            width: 100vw;
         }
     }
 
@@ -95,6 +115,15 @@
         h2 {
             margin-bottom: 1rem;
 
+            @include respond(tab-land) {
+                font-size: 2rem;
+            }
+
+
+            @include respond(tab-port) {
+                font-size: 2rem;
+            }
+
             @include respond(phone) {
                 font-size: 2rem;
             }
@@ -103,6 +132,15 @@
         p {
             width: 78%;
             font-size: 1.4rem;
+
+            @include respond(tab-land) {
+                font-size: 1.75rem;
+            }
+
+
+            @include respond(tab-port) {
+                font-size: 1.55rem;
+            }
 
             @include respond(phone) {
                 font-size: 1.75rem;
@@ -127,6 +165,15 @@
     &__heading {
         font-size: $default-font-size;
         margin-bottom: 1.4rem;
+
+        @include respond(tab-land) {
+            font-size: 2rem;
+        }
+
+        @include respond(tab-port) {
+            font-size: 2rem;
+            text-align: center;
+        }
     }
 
     &__list {
@@ -156,16 +203,43 @@
 
         img:first-child {
             margin-left: 1.8rem;
+
+            @include respond(tab-port) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        img {
+            @include respond(tab-port) {
+                width: 30vw;
+            }
+        }
+
+        @include respond(tab-port) {
+            margin: 1rem 4rem 0;
+        }
+    }
+
+    &__services,
+    &__pages {
+        @include respond(tab-land) {
+            display: none
         }
     }
 
     &__services,
     &__pages,
     &__downloads {
+
         @include respond(phone) {
             display: none;
         }
     }
+
+    &__downloads {
+        width: 50vw;
+    }
+
 
     .logo__title {
         font-size: 2.25rem;
