@@ -2262,19 +2262,19 @@ nav.nav-phone {
 
 @media (max-width: 75em) {
   ::-webkit-input-placeholder {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     opacity: .9;
   }
   :-ms-input-placeholder {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     opacity: .9;
   }
   ::-ms-input-placeholder {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     opacity: .9;
   }
   ::placeholder {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     opacity: .9;
   }
 }
