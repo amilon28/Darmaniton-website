@@ -1312,9 +1312,9 @@ nav.nav-phone {
 }
 
 @media (min-width: 75em) and (max-width: 91.6875em) {
-  .facilities__step--3 .facilities__step-heading {
-    -webkit-transform: translateY(1rem);
-            transform: translateY(1rem);
+  .facilities__step--3 {
+    -webkit-transform: translateY(1.2rem);
+            transform: translateY(1.2rem);
   }
 }
 
