@@ -12,6 +12,10 @@
         left: -12%;
         width: 85rem;
 
+        @include respond(generic-desktop) {
+            display: none;
+        }
+
         @include respond(tab-land) {
             display: none;
         }
@@ -29,6 +33,11 @@
         position: absolute;
         left: 9%;
         top: 111%;
+
+        @include respond(generic-desktop) {
+            left: 4%;
+            top: 111%;
+        }
 
         @include respond(tab-land) {
             transform: translateX(-5rem);
@@ -76,7 +85,9 @@
         margin-right: 20rem;
         margin-top: 10rem;
 
-
+        @include respond(generic-desktop) {
+            margin-right: 5rem;
+        }
 
         @include respond(tab-land) {
             margin-right: 5rem;

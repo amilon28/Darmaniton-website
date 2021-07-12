@@ -59,6 +59,10 @@
         background-color: $color-white;
         padding: 8.6rem 12.6rem;
 
+        @include respond(generic-desktop) {
+            padding: 7rem;
+        }
+
         @include respond(tab-land) {
             width: 100%;
             padding: 4.2rem;
