@@ -20,9 +20,7 @@
 }
 
 @mixin circle-icons {
-    position: absolute;
-    top: 28%;
-    right: 25%;
+
     width: 1.3rem;
 
     @include respond(tab-land) {
@@ -150,7 +148,7 @@ $breakpoint argument choices:
     }
 
     @if $breakpoint==tab-land {
-        @media (max-width: 75em) {
+        @media (max-width: 74em) {
             @content
         }
 

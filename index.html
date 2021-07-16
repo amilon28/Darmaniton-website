@@ -121,54 +121,57 @@
     <main class="main">
       <!-- Start About -->
       <section class="about">
-        <div class="about__infoBox">
-          <h2 class="about__title u-margin-bottom-small">درباره درمانیتو</h2>
-          <h2 class="about__title about__title--phone u-margin-bottom-small">
-            درمانیتو چی هست؟
-          </h2>
-          <p class="about__description u-margin-bottom-huge">
-            درمانیتو یک سامانه است که امکان سفارش دارو، محصولات آرایشی بهداشتی
-            نوبت گیری و مشاوره پزشکان را به راحتی و بصورت آنلاین فراهم کرده است.
-          </p>
-          <p
-            class="
-              about__description about__description--phone
-              u-margin-bottom-huge
-            "
-          >
-            درمانیتو یک سوپر اپلیکیشن هست که سعی داره با سرویس های متفاوتش روند
-            درمان شمارو سریع تر کنه؛شما با درمانیتو میتونید نسخه خودتون رو برای
-            تمام داروخانه های اطراف خودتون بفرستید.
-          </p>
-          <div class="about__cards">
-            <div class="card-container">
-              <div class="card">
-                <img src="assets/img/verify.svg" alt="verify" />
+        <div class="about__container">
+          <div class="about__infoBox">
+            <h2 class="about__title u-margin-bottom-small">درباره درمانیتو</h2>
+            <h2 class="about__title about__title--phone u-margin-bottom-small">
+              درمانیتو چی هست؟
+            </h2>
+            <p class="about__description u-margin-bottom-huge">
+              درمانیتو یک سامانه است که امکان سفارش دارو، محصولات آرایشی بهداشتی
+              نوبت گیری و مشاوره پزشکان را به راحتی و بصورت آنلاین فراهم کرده
+              است.
+            </p>
+            <p
+              class="
+                about__description about__description--phone
+                u-margin-bottom-huge
+              "
+            >
+              درمانیتو یک سوپر اپلیکیشن هست که سعی داره با سرویس های متفاوتش
+              روند درمان شمارو سریع تر کنه؛شما با درمانیتو میتونید نسخه خودتون
+              رو برای تمام داروخانه های اطراف خودتون بفرستید.
+            </p>
+            <div class="about__cards">
+              <div class="card-container">
+                <div class="card">
+                  <img src="assets/img/verify.svg" alt="verify" />
+                </div>
+                <p class="card-label">جستجو سریع</p>
               </div>
-              <p class="card-label">جستجو سریع</p>
-            </div>
-            <div class="card-container">
-              <div class="card">
-                <img src="assets/img/time.svg" alt="time" />
+              <div class="card-container">
+                <div class="card">
+                  <img src="assets/img/time.svg" alt="time" />
+                </div>
+                <p class="card-label">به صرفه</p>
               </div>
-              <p class="card-label">به صرفه</p>
-            </div>
-            <div class="card-container">
-              <div class="card">
-                <img src="assets/img/support.svg" alt="support" />
+              <div class="card-container">
+                <div class="card">
+                  <img src="assets/img/support.svg" alt="support" />
+                </div>
+                <p class="card-label">راحت</p>
               </div>
-              <p class="card-label">راحت</p>
-            </div>
-            <div class="card-container">
-              <div class="card">
-                <img src="assets/img/search.svg" alt="search" />
+              <div class="card-container">
+                <div class="card">
+                  <img src="assets/img/search.svg" alt="search" />
+                </div>
+                <p class="card-label">جستجو سریع</p>
               </div>
-              <p class="card-label">جستجو سریع</p>
             </div>
           </div>
-        </div>
-        <div class="about__imgBox">
-          <img src="assets/img/preview-img.svg" />
+          <div class="about__imgBox">
+            <img src="assets/img/preview-img.svg" />
+          </div>
         </div>
       </section>
       <!-- End About -->
@@ -222,51 +225,56 @@
             </div>
           </div>
           <div class="facilities__process">
-            <div class="facilities__diagram">
-              <div class="facilities__line"></div>
-              <div class="facilities__circle-container">
-                <div class="facilities__circle">
-                  <img
-                    src="assets/img/arrow.svg"
-                    alt="arrow"
-                    class="facilities__circle--arrow"
-                  />
-                </div>
-                <div class="facilities__circle">
-                  <img
-                    src="assets/img/arrow.svg"
-                    alt="arrow"
-                    class="facilities__circle--arrow"
-                  />
-                </div>
-                <div class="facilities__circle check">
-                  <img
-                    src="assets/img/check.svg"
-                    alt="check"
-                    class="facilities__circle--check"
-                  />
-                </div>
+            <!-- <div class="facilities__line"></div> -->
+            <div class="facilities__circle-container">
+              <div class="facilities__circle">
+                <img
+                  src="assets/img/arrow.svg"
+                  alt="arrow"
+                  class="facilities__circle--arrow"
+                />
+              </div>
+              <div class="facilities__circle">
+                <img
+                  src="assets/img/arrow.svg"
+                  alt="arrow"
+                  class="facilities__circle--arrow"
+                />
+              </div>
+              <div class="facilities__circle check">
+                <img
+                  src="assets/img/check.svg"
+                  alt="check"
+                  class="facilities__circle--check"
+                />
               </div>
             </div>
+
             <div class="facilities__step">
               <div class="facilities__step--1">
                 <p class="facilities__step-heading">قدم اول</p>
-                <p class="facilities__step-description">
-                  وارد بخش سفارش با عکس نسخه شوید و عکس و توضیحات را وارد کنید
-                </p>
+                <div class="facilities__step-description--container">
+                  <p class="facilities__step-description">
+                    وارد بخش سفارش با عکس نسخه شوید و عکس و توضیحات را وارد کنید
+                  </p>
+                </div>
               </div>
               <div class="facilities__step--2">
                 <p class="facilities__step-heading">قدم دوم</p>
-                <p class="facilities__step-description">
-                  بعد از ارسال عکس نسخه، باید آدرس محل خودتون رو وارد کنید
-                </p>
+                <div class="facilities__step-description--container">
+                  <p class="facilities__step-description">
+                    بعد از ارسال عکس نسخه، باید آدرس محل خودتون رو وارد کنید
+                  </p>
+                </div>
               </div>
               <div class="facilities__step--3">
                 <p class="facilities__step-heading">قدم سوم</p>
-                <p class="facilities__step-description">
-                  اگر نتیجه جستجوی نسخه موفقیت آمیز باشه باید منتظر تحویل سفارش
-                  باشید
-                </p>
+                <div class="facilities__step-description--container">
+                  <p class="facilities__step-description">
+                    اگر نتیجه جستجوی نسخه موفقیت آمیز باشه باید منتظر تحویل
+                    سفارش باشید
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -280,7 +288,7 @@
         <img class="cloud-left cloud" src="assets/img/Path 15701.svg" />
         <div class="download__content">
           <div class="download__img-preview">
-            <img src="assets/img/app-prev-3.svg" alt="preview of app" />
+            <img src="assets/img/app-prev.svg" alt="preview of app" />
           </div>
           <div class="download__download-link">
             <div class="download__textBox">
@@ -349,7 +357,9 @@
               <a href="#" class="input-btn input-btn--sign-up">ثبت نام سریع</a>
             </div>
           </div>
-          <img src="assets/img/subscribe-img.svg" class="subscription__img" />
+          <div class="subscription__imgbox">
+            <img src="assets/img/subscribe-img.svg" class="subscription__img" />
+          </div>
         </div>
       </div>
       <!-- End subscription -->
@@ -359,7 +369,7 @@
     <!-- Start Footer -->
     <footer class="footer">
       <div class="footer__support">
-        <div class="container">
+        <div class="footer__support--container">
           <div class="footer__response-and-support">
             <h2 class="footer__support-heading">پشتیبانی درمانیتو</h2>
             <p class="footer__response">
@@ -376,7 +386,7 @@
         </div>
       </div>
       <div class="footer__links">
-        <div class="container">
+        <div class="footer__links--container">
           <div class="footer__main">
             <div class="logo">
               <img

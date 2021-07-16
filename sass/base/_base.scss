@@ -12,7 +12,7 @@ html {
     font-size: 62.5%; // 1rem = 10px
 
     @include respond(generic-desktop) {
-        font-size: 60%; // 1rem = 9.6px
+        font-size: 62.5%; // 1rem = 9.6px
     }
 
     @include respond(tab-land) {
@@ -33,6 +33,7 @@ html {
 }
 
 body {
+
     box-sizing: border-box;
     direction: rtl;
     overflow-x: hidden;

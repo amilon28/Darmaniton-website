@@ -147,11 +147,20 @@ nav.nav-phone {
         margin-bottom: 5px;
     }
 
-    @include respond(phone) {
-        display: block;
+    @include respond(generic-desktop) {
+        display: none;
+    }
+
+    @include respond(tab-land) {
+        display: none;
     }
 
     @include respond(tab-port) {
         display: block;
     }
+
+    @include respond(phone) {
+        display: block;
+    }
+
 }

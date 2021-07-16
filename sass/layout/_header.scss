@@ -1,6 +1,6 @@
 .header {
 
-    padding: 4.4rem;
+    padding: 4.4rem 13rem 4.4rem 4.4rem;
 
     &__img {
         height: 10rem;
@@ -82,12 +82,9 @@
     &__info {
         display: flex;
         flex-direction: column;
-        margin-right: 20rem;
         margin-top: 10rem;
 
-        @include respond(generic-desktop) {
-            margin-right: 5rem;
-        }
+
 
         @include respond(tab-land) {
             margin-right: 5rem;

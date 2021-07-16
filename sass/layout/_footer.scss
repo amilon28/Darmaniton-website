@@ -3,6 +3,7 @@
     &__support {
         background-color: $color-blue-light;
         padding: 3rem 4rem;
+        width: 100vw;
 
 
 
@@ -10,7 +11,7 @@
             padding: 1.5rem 3rem;
         }
 
-        .container {
+        &--container {
             width: 85%;
             margin: 0 auto;
 
@@ -57,7 +58,8 @@
 
     &__links {
         background-color: $color-white;
-        padding: 8.6rem 12.6rem;
+        padding: 8.7rem 12.7rem;
+        height: 39.6rem;
 
         @include respond(generic-desktop) {
             padding: 7rem;
@@ -77,26 +79,22 @@
             height: 44.25rem;
         }
 
-        .container {
-            height: 20rem;
-            width: 100vw;
+        &--container {
+            height: 22.2rem;
             display: flex;
             justify-content: space-between;
-
-
 
             @include respond(phone) {
                 height: 30rem;
             }
         }
-
-
     }
 
     &__main {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        flex: 2;
 
         @include respond(tab-port) {
             width: 50vw;
@@ -110,7 +108,19 @@
         }
     }
 
+    &__services {
+        flex: 1;
+        height: 21.8rem;
+    }
+
+    &__pages {
+        @extend .footer__services
+    }
+
+    &__downloads {}
+
     &__textBox {
+        width: 25.6rem;
 
         @include respond(phone) {
             margin-top: -2rem;
@@ -134,8 +144,8 @@
         }
 
         p {
-            width: 78%;
             font-size: 1.4rem;
+            line-height: 2.5rem;
 
             @include respond(tab-land) {
                 font-size: 1.75rem;
@@ -168,7 +178,7 @@
 
     &__heading {
         font-size: $default-font-size;
-        margin-bottom: 1.4rem;
+        margin-bottom: 2.4rem;
 
         @include respond(tab-land) {
             font-size: 2rem;
@@ -180,10 +190,6 @@
         }
     }
 
-    &__list {
-        list-style: none;
-    }
-
     &__link {
         text-decoration: none;
         color: $color-black;
@@ -191,10 +197,11 @@
     }
 
     &__list {
-        height: 100%;
+        list-style: none;
+        height: 18rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     a.active-item {
@@ -203,7 +210,6 @@
     }
 
     &__apps {
-        margin-top: 2.5rem;
 
         img:first-child {
             margin-left: 1.8rem;
@@ -240,9 +246,9 @@
         }
     }
 
-    &__downloads {
-        width: 50vw;
-    }
+    // &__downloads {
+    //     width: 50vw;
+    // }
 
 
     .logo__title {
