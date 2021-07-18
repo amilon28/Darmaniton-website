@@ -136,9 +136,6 @@ $breakpoint argument choices:
 */
 
 @mixin respond($breakpoint) {
-
-
-
     @if $breakpoint==tab-port {
         @media (max-width: 56.25em) {
             @content
@@ -148,12 +145,14 @@ $breakpoint argument choices:
     }
 
     @if $breakpoint==tab-land {
-        @media (max-width: 74em) {
+        @media (max-width: 74.9375em) {
             @content
         }
 
         ;
     }
+
+
 
     @if $breakpoint==generic-desktop {
         @media (min-width:75em) and (max-width: 91.6875em) {
@@ -189,7 +188,13 @@ $breakpoint argument choices:
 
     @if $breakpoint==big-phone {
         @media(min-width: 25.3125em) and (max-width: 37.5em) {
-            @content
+            @content;
         }
     }
+
+    // @if $breakpoint==spec {
+    //     @media(width: 1199px) {
+    //         @content;
+    //     }
+    // }
 }

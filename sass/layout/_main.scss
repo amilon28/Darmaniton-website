@@ -5,18 +5,18 @@
 
 
     .about {
-        padding: 40rem 12rem 0;
+        padding: 40rem 7rem 0;
 
         @include respond(generic-desktop) {
-            padding: 25rem 10rem 0;
+            padding: 25rem 0 0;
         }
 
         @include respond(tab-land) {
-            padding: 20rem 8rem 5rem 5rem;
+            padding: 20rem 7rem 10rem 4rem;
         }
 
         @include respond(tab-port) {
-            padding: 10rem 5rem;
+            padding: 10rem 0;
         }
 
         @include respond(phone) {
@@ -31,12 +31,14 @@
     }
 
     .facilities {
+        padding: 20rem 12rem;
+
         @include respond(generic-desktop) {
             padding: 15rem 10rem 25rem;
         }
 
         @include respond(tab-land) {
-            padding: 5rem 8rem 10rem 5rem;
+            padding: 10rem 6rem 25rem;
         }
 
         @include respond(phone) {
@@ -52,7 +54,7 @@
         padding: 0 10rem;
 
         @include respond(tab-land) {
-            padding: 0 8rem;
+            padding: 0 4rem;
         }
 
         @include respond(tab-port) {
@@ -70,17 +72,16 @@
 
     .subscription {
 
-        // padding: 18rem;
         @include respond(generic-desktop) {
-            padding: 15rem 5rem 15rem 10rem;
+            padding: 15rem 5rem 15rem 5rem;
         }
 
         @include respond(tab-land) {
-            padding: 8rem 1.4rem 15rem 1rem;
+            padding: 5rem;
         }
 
         @include respond(tab-port) {
-            padding-bottom: 8rem;
+            padding: 2rem;
         }
 
         @include respond(phone) {
@@ -97,22 +98,23 @@
 
 // About
 .about {
-
-    @include respond(tab-port) {
-        flex-direction: column;
-    }
-
     @include respond(phone) {
         flex-direction: column;
     }
 
     &__container {
         display: flex;
-        width: 90%;
+        width: 80%;
         justify-content: space-around;
 
         @include respond(generic-desktop) {
-            width: 100%;
+            width: 85%;
+            justify-content: space-evenly;
+        }
+
+        @include respond(tab-land) {
+            width: 90%;
+            justify-content: space-evenly;
         }
     }
 
@@ -120,11 +122,6 @@
         order: 1;
         width: 53.65rem;
         align-self: center;
-
-
-        @include respond(tab-land) {
-            margin-right: 7rem;
-        }
 
         @include respond(tab-port) {
             margin-right: 0;
@@ -134,13 +131,17 @@
             margin: 0;
             padding: 0;
         }
-
-
     }
 
     &__imgBox {
         order: 0;
-        // margin-bottom: 4rem;
+        width: 35.7rem;
+
+        @include respond(generic-desktop) {}
+
+        @include respond(tab-land) {
+            margin-left: 8rem;
+        }
 
         @include respond(tab-port) {
             margin: 0 auto 2rem;
@@ -154,7 +155,10 @@
             width: 35rem;
 
             @include respond(tab-land) {
-                width: 38.5rem;
+                // width: 38.5rem;
+                // width: 100%;
+
+                object-fit: cover;
             }
 
             @include respond(phone) {
@@ -165,8 +169,6 @@
                 width: 90vw;
 
             }
-
-
         }
     }
 
@@ -204,7 +206,7 @@
 
         @include respond(tab-land) {
             font-size: 1.8rem;
-            margin-bottom: 9rem;
+
         }
 
         @include respond(phone) {
@@ -226,6 +228,9 @@
         display: flex;
         justify-content: space-between;
 
+        @include respond(tab-land) {
+            width: 48.65rem;
+        }
 
         @include respond(phone) {
             display: none;
@@ -286,10 +291,11 @@
             "services process  process process";
 
         @include respond(tab-land) {
-            // row-gap: 1rem;
+            width: 80%;
             grid-template-rows: 1fr;
-            width: 100%;
+            column-gap: 6rem;
         }
+
 
         @include respond(tab-port) {
             display: flex;
@@ -308,6 +314,7 @@
         @include section-title;
         height: 3.2rem;
         grid-area: header;
+        margin-right: 1.2rem;
 
         @include respond(tab-land) {
             font-size: 2.5rem;
@@ -350,7 +357,7 @@
         row-gap: 4rem;
 
         @include respond(tab-land) {
-            row-gap: 0
+            grid-template-rows: repeat(2, 1fr);
         }
 
         @include respond(tab-port) {
@@ -409,7 +416,6 @@
             }
         }
 
-
     }
 
     &__label {
@@ -434,6 +440,7 @@
 
         @include respond(tab-land) {
             font-size: 1.8rem;
+            width: 40vw;
         }
 
         @include respond(phone) {
@@ -445,6 +452,11 @@
         display: flex;
         width: 50.8rem;
         height: 21.8rem;
+
+        @include respond(tab-land) {
+            height: 28rem;
+            margin-top: 4rem;
+        }
     }
 
     &__diagram {
@@ -458,20 +470,14 @@
     }
 
     &__step {
-
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-self: flex-end;
 
-
         @include respond(generic-desktop) {
             transform: translateY(1rem);
-        }
-
-        @include respond(tab-land) {
-            margin-top: 3rem;
         }
 
         @include respond(small-phone) {
@@ -479,29 +485,20 @@
         }
 
         &--3 {
-
             .facilities__step-description--container {
                 justify-content: flex-end;
             }
 
             transform: translateY(1.2rem);
-
-
         }
-
-
     }
 
     &__circle-container::before {
         content: "";
-        // width: 21rem;
         background-color: $color-black-transparent;
         width: 2px;
         height: 100%;
-
         position: absolute;
-        // transform: rotate(-90deg);
-
     }
 
 
@@ -579,6 +576,15 @@
             display: flex;
             justify-content: space-around;
             align-items: flex-end;
+
+            @include respond(tab-land) {
+                display: block;
+                transform: translate(-3rem);
+                width: 40vw;
+
+            }
+
+
         }
 
         font-size: 1.4rem;
@@ -587,6 +593,7 @@
 
         @include respond(tab-land) {
             font-size: 1.8rem;
+
         }
 
 
@@ -655,6 +662,16 @@
         left: -4%;
         top: -12%;
         opacity: .5;
+
+        @include respond(generic-desktop) {
+            left: -25%;
+            top: -6%;
+        }
+
+        @include respond(tab-land) {
+            left: -25%;
+            top: -6%;
+        }
     }
 
     .cloud-right {
@@ -666,10 +683,6 @@
     }
 
     &__content {
-        width: 100%;
-
-        margin: 10r em auto 0;
-
         display: flex;
         align-items: center;
 
@@ -688,7 +701,6 @@
             height: 111.625rem;
         }
 
-
         @include respond(small-phone) {
             height: auto;
         }
@@ -702,6 +714,11 @@
         align-items: flex-end;
 
 
+
+        @include respond(tab-land) {
+            width: 100%;
+        }
+
         @include respond(tab-port) {
             transform: translateY(2.5rem);
         }
@@ -710,8 +727,11 @@
             margin-bottom: -1rem;
             height: 55rem;
 
+
             @include respond(tab-land) {
-                height: 45rem;
+                width: 100%;
+                object-fit: cover;
+                margin-right: 2rem;
             }
 
             @include respond(phone) {
@@ -921,8 +941,17 @@
 .subscription {
     overflow: hidden;
     position: relative;
-    width: 90vw;
-    width: 100vw;
+
+    @include respond(generic-desktop) {
+        display: flex;
+        justify-content: center;
+    }
+
+    @include respond(tab-land) {
+        display: flex;
+        justify-content: center;
+    }
+
 
     &__cloud {
         position: absolute;
@@ -939,30 +968,29 @@
     }
 
     &__content {
-        margin-top: 10vh;
         @include cardsBoxShadow;
         display: flex;
         justify-content: space-evenly;
-        // padding: 7rem;
-        padding: 0 4.5rem;
-        width: 75vw;
+        padding: 0 5.5rem;
+
         height: 43.038rem;
 
         @include respond(generic-desktop) {
-            width: 90vw;
+            justify-content: flex-start;
+            width: 85%;
         }
+
+
 
         @include respond(tab-land) {
             width: 100%;
-            margin: 0;
-            padding: 0 2.5rem;
-            display: flex;
-            // flex-direction: column   ;
+            padding: 0 3rem;
+            justify-content: space-around;
         }
 
         @include respond(tab-port) {
-            padding: 3rem;
-            margin: 0 auto;
+            // padding: 1rem;
+            // margin: 0 auto;
         }
 
         @include respond(phone) {
@@ -971,8 +999,6 @@
             padding-right: 4rem;
             padding-left: 2rem;
             padding: 4.5rem 1rem 0 2.5rem;
-            // margin-top: 10rem;
-            // margin-right: -.5rem;
             width: 100%;
             margin-left: -10rem;
         }
@@ -992,11 +1018,15 @@
     }
 
     &__textBox {
-        width: 55%;
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @include respond(generic-desktop) {
+            width: 100%;
+            flex-shrink: 1;
+        }
 
         @include respond(tab-land) {
             padding: 0;
@@ -1071,6 +1101,12 @@
         position: relative;
         width: 50rem;
 
+        @include respond(generic-desktop) {
+            width: 46rem;
+        }
+
+
+
         .input-field {
             width: 100%;
         }
@@ -1080,95 +1116,24 @@
             right: 72%;
         }
 
-        // @include respond(tab-land) {
-        //     a {
-        //         top: 12%;
-        //         right: 69%;
-        //     }
-        // }
 
-
-        // @include respond(phone) {
-        //     width: 100%;
-
-        //     .input-field {
-        //         margin: 0;
-        //         width: 100%;
-        //     }
-
-        //     a {
-        //         padding-left: 1rem;
-        //         right: 61%;
-        //         top: 17%;
-
-        //     }
-        // }
-
-        // @include respond(small-phone) {
-        //     a {
-        //         position: static;
-        //         display: block;
-        //         text-align: center;
-        //         width: 50%;
-        //         margin: 2rem auto 0;
-        //     }
-        // }
-
-        // @include respond(big-phone) {
-        //     a {
-        //         right: 75%;
-        //         top: 17%;
-        //     }
-        // }
     }
 
     &__imgbox {
-        // height: 4rem;
+        width: 100%;
         display: flex;
         align-items: flex-end;
+        justify-content: flex-end;
+        object-fit: cover;
 
         img {
-            width: 100%;
+            @include respond(tab-land) {
+                max-height: 100%;
+                max-width: 100%;
+
+            }
         }
     }
-
-    // &__img {
-    //     padding-right: 5rem;
-    //     transform: translateY(7rem);
-
-    //     @include respond(tab-land) {
-    //         // transform: translate(-14rem, 3rem);
-    //         // position: absolute;
-    //         align-self: stretch;
-    //     }
-
-    //     @include respond(tab-port) {
-    //         transform: translateY(3rem);
-    //     }
-
-
-
-
-    //     @include respond(tab-land) {
-    //         padding: 0;
-    //         width: 45rem;
-    //         display: block;
-    //     }
-
-    //     @include respond(phone) {
-    //         padding: 0;
-    //         width: 32.7825rem;
-    //         display: block;
-    //         margin-bottom: 2rem;
-    //     }
-
-    //     @include respond(small-phone) {
-    //         display: none;
-    //     }
-
-
-    // }
-
 
     @include respond(phone) {
         width: 95vw;

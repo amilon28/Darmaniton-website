@@ -94,8 +94,14 @@ nav {
         width: 42%;
     }
 
+    @include respond(spec) {
+        // width: 60%;
+        display: none;
+        background-color: #f5b14b;
+    }
+
     @include respond(tab-land) {
-        width: 40%;
+        width: 45%;
     }
 
     &__item {
@@ -128,14 +134,7 @@ nav.nav-phone {
     @include respond(phone) {
         @include mobile-menu;
     }
-
-
-
 }
-
-
-
-
 
 .hamburger {
     display: none;
