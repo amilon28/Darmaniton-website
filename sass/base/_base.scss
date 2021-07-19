@@ -23,7 +23,7 @@ html {
         font-size: 50%; // 1rem = 8px   8/16
     }
 
-    @include respond(phone) {
+    @include respond(big-phone) {
         font-size: 50%; // 1rem = 8px
     }
 

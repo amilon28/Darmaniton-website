@@ -10,9 +10,20 @@
         padding: 4.4rem 8rem 4.4rem 4.4rem;
     }
 
+    @include respond(tab-port) {
+        padding: 3.5rem;
+    }
+
     &__img {
         height: 10rem;
+        width: 100%;
         position: relative;
+
+        @include respond(big-phone) {
+            height: auto;
+            margin-bottom: 2rem;
+            width: auto;
+        }
     }
 
     &__shape {
@@ -29,12 +40,9 @@
             display: none;
         }
 
-        @include respond(phone) {
+        @include respond(big-phone) {
             display: none;
         }
-
-
-
     }
 
     &__doc {
@@ -52,13 +60,11 @@
             transform: translateX(-5rem);
         }
 
-        @include respond(tab-port) {
-            position: static;
-            ;
-        }
 
-        @include respond(phone) {
+
+        @include respond(big-phone) {
             position: static;
+            padding: 2rem 0 0 4rem;
         }
 
         @include respond(small-phone) {
@@ -70,16 +76,10 @@
     &__box {
         position: relative;
 
-        @include respond(tab-port) {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            height: 65vh;
-        }
 
-        @include respond(phone) {
-            height: 85vh;
+
+        @include respond(big-phone) {
+            height: auto;
             position: static;
             display: flex;
             flex-direction: column;
@@ -93,16 +93,13 @@
         flex-direction: column;
         margin-top: 10rem;
 
-
-
-
-
         @include respond(tab-port) {
             margin-right: 0;
         }
 
-        @include respond(phone) {
+        @include respond(big-phone) {
             margin: 0;
+            // height: 100%;
         }
 
     }
@@ -111,29 +108,28 @@
         font-size: 3.6rem;
         color: $color-blue-light;
 
-        @include respond(phone) {
+        @include respond(big-phone) {
             text-align: center;
         }
-
-
     }
 
     &__description {
         font-size: 1.8rem;
         font-weight: lighter;
 
-        @include respond(phone) {
+        @include respond(big-phone) {
             text-align: center;
+            margin-bottom: 2.5rem;
         }
 
-        @include respond(phone) {
+        @include respond(big-phone) {
             display: none;
         }
 
         &--phone {
             display: none;
 
-            @include respond(phone) {
+            @include respond(big-phone) {
                 display: block;
             }
         }
@@ -141,7 +137,7 @@
     }
 
     &__buttons {
-        @include respond(phone) {
+        @include respond(big-phone) {
             display: flex;
             flex-direction: column;
             align-items: stretch;
@@ -155,8 +151,14 @@
             text-align: center;
 
             &:first-child {
-                @include respond(phone) {
+                @include respond(big-phone) {
                     display: none;
+                }
+            }
+
+            &:last-child {
+                @include respond(big-phone) {
+                    margin-right: 0;
                 }
             }
         }
@@ -166,7 +168,7 @@
     &-direct-download-btn {
         display: none;
 
-        @include respond(phone) {
+        @include respond(big-phone) {
             display: block;
         }
     }

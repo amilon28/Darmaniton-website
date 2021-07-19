@@ -27,7 +27,7 @@
         width: 2rem;
     }
 
-    @include respond(phone) {
+    @include respond(big-phone) {
         width: 1.8rem;
     }
 }
@@ -128,8 +128,8 @@
 $breakpoint argument choices:
 - phone(normal): 0 - 600px
 - phone(small): 280 - 367px
-- phone(big): 405 - 600px
-- tab-port: 600 - 900px 
+- phone(big): 405 - 700px
+- tab-port: 700 - 900px 
 - tab-land: 900 - 1200px
 - generic-desktop: 1200 - 1800px
 - big-desktop: 1800px +
@@ -168,33 +168,15 @@ $breakpoint argument choices:
         }
     }
 
-    @if $breakpoint==phone {
-
-        //600px / 16
-        @media (max-width: 37.5em) {
-
-            @content
-        }
-
-        ;
-    }
-
-
     @if $breakpoint==small-phone {
-        @media(min-width: 17.5em) and (max-width: 23.4375em) {
+        @media(min-width: 17.5em) and (max-width: 25.3125em) {
             @content;
         }
     }
 
     @if $breakpoint==big-phone {
-        @media(min-width: 25.3125em) and (max-width: 37.5em) {
+        @media(min-width: 25.3125em) and (max-width: 43.75em) {
             @content;
         }
     }
-
-    // @if $breakpoint==spec {
-    //     @media(width: 1199px) {
-    //         @content;
-    //     }
-    // }
 }

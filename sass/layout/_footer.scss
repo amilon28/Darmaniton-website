@@ -5,9 +5,11 @@
         padding: 3rem 4rem;
         width: 100vw;
 
+        @include respond(tab-port) {
+            padding: 2rem;
+        }
 
-
-        @include respond(phone) {
+        @include respond(big-phone) {
             padding: 1.5rem 3rem;
         }
 
@@ -19,9 +21,18 @@
             justify-content: space-between;
             align-items: center;
 
-            @include respond(phone) {
-                height: 19rem;
+
+            @include respond(big-phone) {
+                height: auto;
                 flex-direction: column;
+            }
+        }
+
+        &-number {
+            img {
+                @include respond(tab-port) {
+                    width: 28rem;
+                }
             }
         }
     }
@@ -32,8 +43,9 @@
         align-items: center;
         color: $color-white;
 
-        @include respond(phone) {
+        @include respond(big-phone) {
             flex-direction: column;
+            margin-bottom: 2rem;
         }
     }
 
@@ -41,7 +53,7 @@
         font-size: 2rem;
         margin-left: 2.5rem;
 
-        @include respond(phone) {
+        @include respond(big-phone) {
             margin: 0 0 2rem 0;
         }
     }
@@ -50,7 +62,7 @@
         font-size: 1.4rem;
         opacity: .9;
 
-        @include respond(phone) {
+        @include respond(big-phone) {
             font-size: 1.5rem;
         }
 
@@ -72,12 +84,12 @@
         }
 
         @include respond(tab-port) {
-            padding: 4.5rem;
+            padding: 2rem;
         }
 
-        @include respond(phone) {
-            padding: 3.5rem;
-            height: 44.25rem;
+        @include respond(big-phone) {
+            padding: 2rem 5rem;
+            height: auto;
         }
 
         &--container {
@@ -96,8 +108,8 @@
             }
 
 
-            @include respond(phone) {
-                height: 30rem;
+            @include respond(big-phone) {
+                // height: 30rem;
             }
         }
     }
@@ -117,7 +129,7 @@
         }
 
 
-        @include respond(phone) {
+        @include respond(big-phone) {
             height: 40rem;
             align-items: flex-start;
             width: 100vw;
@@ -145,8 +157,9 @@
     &__textBox {
         width: 25.6rem;
 
-        @include respond(phone) {
+        @include respond(big-phone) {
             margin-top: -2rem;
+            width: 100%;
         }
 
         h2 {
@@ -161,8 +174,9 @@
                 font-size: 2rem;
             }
 
-            @include respond(phone) {
+            @include respond(big-phone) {
                 font-size: 2rem;
+
             }
         }
 
@@ -177,10 +191,11 @@
 
             @include respond(tab-port) {
                 font-size: 1.55rem;
+                width: 80%;
             }
 
-            @include respond(phone) {
-                font-size: 1.75rem;
+            @include respond(big-phone) {
+                font-size: 1.9rem;
                 width: 100%;
             }
         }
@@ -198,8 +213,9 @@
             width: 70%;
         }
 
-        @include respond(phone) {
+        @include respond(big-phone) {
             align-self: center;
+            width: 22rem;
         }
     }
 
@@ -218,7 +234,7 @@
 
         @include respond(tab-port) {
             font-size: 2rem;
-            text-align: center;
+
         }
     }
 
@@ -285,16 +301,12 @@
         }
 
         img {
-
-
             @include respond(tab-port) {
-                width: 30vw;
+                width: 100%;
             }
         }
 
-        @include respond(tab-port) {
-            margin: 1rem 4rem 0;
-        }
+
     }
 
     &__services,
@@ -305,7 +317,7 @@
             flex: 1;
         }
 
-        @include respond(phone) {
+        @include respond(big-phone) {
             display: none;
         }
     }
