@@ -69,7 +69,12 @@ nav {
         }
 
         @include respond(big-phone) {
+            display: none;
             font-size: 1.5rem;
+
+            &--bigPhone {
+                display: block;
+            }
         }
     }
 }

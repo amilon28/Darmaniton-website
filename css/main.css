@@ -426,7 +426,11 @@ nav {
 
 @media (min-width: 25.3125em) and (max-width: 43.75em) {
   .logo__description {
+    display: none;
     font-size: 1.5rem;
+  }
+  .logo__description--bigPhone {
+    display: block;
   }
 }
 
