@@ -152,8 +152,6 @@ $breakpoint argument choices:
         ;
     }
 
-
-
     @if $breakpoint==generic-desktop {
         @media (min-width:75em) and (max-width: 91.6875em) {
             @content;

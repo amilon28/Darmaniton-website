@@ -6,6 +6,14 @@ nav {
 
     padding: 4rem 0;
 
+
+    @include respond(tab-port) {
+        width: 100%;
+        padding: 3rem;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
     @include respond(big-phone) {
         width: 100%;
         padding: 4rem 2rem;
@@ -18,13 +26,15 @@ nav {
         }
     }
 
-    @include respond(tab-port) {
+    @include respond(small-phone) {
 
-        width: 100%;
-        padding: 3rem;
-        justify-content: space-between;
-        margin-bottom: 2rem;
+        .list,
+        .list+a {
+            display: none;
+        }
     }
+
+
 }
 
 .logo {
@@ -35,21 +45,19 @@ nav {
         margin-left: 1rem;
 
         @include respond(big-phone) {
-            width: 4.4025rem;
             margin-left: 1.8rem;
         }
-    }
 
-    &__info-box {
-        // margin-top: 1.1rem;
+        @include respond(small-phone) {
+            width: 4.3rem;
+            margin-left: 2.2rem;
+        }
     }
 
     &__title {
         font-weight: 700;
         font-size: 1.8rem;
         margin-bottom: .65rem;
-
-
 
         @include respond(big-phone) {
             font-size: 2.25rem;
@@ -59,6 +67,10 @@ nav {
 
     &__description {
         font-size: 1.2rem;
+
+        &--bigPhone {
+            display: none;
+        }
 
         @include respond(tab-land) {
             font-size: 1.6rem;
@@ -71,6 +83,14 @@ nav {
         @include respond(big-phone) {
             display: none;
             font-size: 1.5rem;
+
+            &--bigPhone {
+                display: block;
+            }
+        }
+
+        @include respond(small-phone) {
+            display: none;
 
             &--bigPhone {
                 display: block;
@@ -128,6 +148,10 @@ nav.nav-phone {
     @include respond(big-phone) {
         @include mobile-menu;
     }
+
+    @include respond(small-phone) {
+        @include mobile-menu;
+    }
 }
 
 .hamburger {
@@ -153,6 +177,10 @@ nav.nav-phone {
     }
 
     @include respond(big-phone) {
+        display: block;
+    }
+
+    @include respond(small-phone) {
         display: block;
     }
 

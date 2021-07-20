@@ -13,6 +13,10 @@
             padding: 1.5rem 3rem;
         }
 
+        @include respond(small-phone) {
+            padding: 3rem 3rem 1.5rem 3rem;
+        }
+
         &--container {
             width: 85%;
             margin: 0 auto;
@@ -24,6 +28,10 @@
 
             @include respond(big-phone) {
                 height: auto;
+                flex-direction: column;
+            }
+
+            @include respond(small-phone) {
                 flex-direction: column;
             }
         }
@@ -47,6 +55,11 @@
             flex-direction: column;
             margin-bottom: 2rem;
         }
+
+        @include respond(small-phone) {
+            flex-direction: column;
+            margin-bottom: 3rem;
+        }
     }
 
     &__support-heading {
@@ -55,6 +68,10 @@
 
         @include respond(big-phone) {
             margin: 0 0 2rem 0;
+        }
+
+        @include respond(small-phone) {
+            margin: 0 0 1rem 0;
         }
     }
 
@@ -92,6 +109,11 @@
             height: auto;
         }
 
+        @include respond(small-phone) {
+            padding: 2rem;
+            height: 42rem;
+        }
+
         &--container {
             // height: 22.2rem;
             display: flex;
@@ -118,7 +140,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        flex: 2;
+        flex: 1.5;
 
         @include respond(tab-land) {
             flex: 1.5;
@@ -134,15 +156,29 @@
             align-items: flex-start;
             width: 100vw;
         }
+
+        @include respond(small-phone) {
+            height: 37rem;
+        }
+
+
     }
 
     &__services {
         flex: 1;
         height: 21.8rem;
+
+        @include respond(small-phone) {
+            display: none;
+        }
     }
 
     &__pages {
         @extend .footer__services;
+
+        @include respond(small-phone) {
+            display: none;
+        }
 
     }
 
@@ -152,6 +188,10 @@
             display: flex;
             flex-direction: column;
         }
+
+        @include respond(small-phone) {
+            display: none;
+        }
     }
 
     &__textBox {
@@ -159,6 +199,10 @@
 
         @include respond(big-phone) {
             margin-top: -2rem;
+            width: 100%;
+        }
+
+        @include respond(small-phone) {
             width: 100%;
         }
 
@@ -198,6 +242,11 @@
                 font-size: 1.9rem;
                 width: 100%;
             }
+
+            @include respond(small-phone) {
+                width: 100%;
+                font-style: 1.7rem;
+            }
         }
 
         margin: 2.5rem 0;
@@ -216,6 +265,10 @@
         @include respond(big-phone) {
             align-self: center;
             width: 22rem;
+        }
+
+        @include respond(small-phone) {
+            margin: 0 auto;
         }
     }
 

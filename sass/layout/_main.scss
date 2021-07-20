@@ -25,7 +25,7 @@
 
 
         @include respond(small-phone) {
-            padding: 2rem;
+            padding: 2rem 2rem 10rem 2rem;
         }
 
     }
@@ -67,7 +67,7 @@
         }
 
         @include respond(small-phone) {
-            padding: 2rem 5rem;
+            padding: 7rem 0 2rem;
         }
     }
 
@@ -100,9 +100,6 @@
 
 // About
 .about {
-    @include respond(big-phone) {
-        flex-direction: column;
-    }
 
     &__container {
         display: flex;
@@ -126,6 +123,11 @@
         @include respond(big-phone) {
             flex-direction: column;
         }
+
+
+        @include respond(small-phone) {
+            flex-direction: column;
+        }
     }
 
     &__infoBox {
@@ -141,13 +143,18 @@
             width: 100%;
             margin-top: 3rem;
         }
+
+        @include respond(small-phone) {
+            padding: 0 3rem;
+            width: auto;
+        }
+
+
     }
 
     &__imgBox {
         order: 0;
         width: 35.7rem;
-
-
 
         @include respond(tab-land) {
             margin-left: 8rem;
@@ -159,6 +166,11 @@
 
         @include respond(big-phone) {
             text-align: center;
+            margin: 0 auto;
+        }
+
+
+        @include respond(small-phone) {
             margin: 0 auto;
         }
 
@@ -176,11 +188,11 @@
             }
 
             @include respond(big-phone) {
-                width: 30rem;
+                width: 35rem;
             }
 
             @include respond(small-phone) {
-                width: 90vw;
+                // width: 90vw;
 
             }
         }
@@ -194,7 +206,7 @@
             padding-right: 1.8rem;
         }
 
-        @include respond(big-phone) {
+        @include respond(small-phone) {
             display: none;
             padding-right: 1.8rem;
             font-size: 2rem
@@ -204,8 +216,11 @@
         &--phone {
             display: none;
 
-            @include respond(big-phone) {
+            @include respond(small-phone) {
                 display: block;
+                margin-top: 3rem;
+                // width: 90%;
+                // margin-right: 3rem;
             }
         }
     }
@@ -215,7 +230,7 @@
         font-size: $default-font-size;
         font-weight: 100;
         opacity: 70%;
-        // margin-bottom: 9rem;
+
         line-height: 3.5rem;
 
         @include respond(tab-land) {
@@ -227,17 +242,25 @@
             width: 95%;
         }
 
-        @include respond(big-phone) {
+        @include respond(small-phone) {
             display: none;
         }
+
+
 
         &--phone {
             display: none;
 
-            @include respond(big-phone) {
+            @include respond(small-phone) {
                 display: block;
-                width: 100%;
             }
+        }
+
+
+
+        @include respond(small-phone) {
+            width: 100%;
+
         }
     }
 
@@ -254,9 +277,11 @@
             width: 90%;
         }
 
-        @include respond(big-phone) {
+        @include respond(small-phone) {
             display: none;
         }
+
+
 
         .card {
             position: relative;
@@ -307,6 +332,10 @@
         height: 90rem;
     }
 
+    @include respond(small-phone) {
+        height: 100rem;
+    }
+
     .container {
         width: 90%;
         display: grid;
@@ -336,6 +365,13 @@
             flex-direction: column;
             width: 100%;
         }
+
+        @include respond(small-phone) {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            width: 100%
+        }
     }
 
     &__title {
@@ -349,7 +385,7 @@
 
         }
 
-        @include respond(big-phone) {
+        @include respond(small-phone) {
             display: none;
             font-size: 2rem;
         }
@@ -359,7 +395,7 @@
         &--phone {
             display: none;
 
-            @include respond(big-phone) {
+            @include respond(small-phone) {
                 display: block;
                 padding-right: 2rem;
             }
@@ -370,9 +406,10 @@
         padding: 1rem;
         grid-area: pharmacy;
 
-        @include respond(big-phone) {
+        @include respond(small-phone) {
             width: 100%;
-            order: 1;
+            order: 2;
+            margin-top: 2rem;
         }
     }
 
@@ -402,15 +439,17 @@
             margin-bottom: 2rem;
         }
 
-    }
-
-    &__process {
-        grid-area: process;
-
-        @include respond(big-phone) {
-            order: 2;
+        @include respond(small-phone) {
+            order: 1;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-right: 2rem;
         }
+
     }
+
+
 
     &__card {
         width: 16rem;
@@ -428,8 +467,10 @@
         @include respond(big-phone) {
             width: 14rem;
             height: 14rem;
-
         }
+
+
+
 
 
 
@@ -453,6 +494,13 @@
             }
         }
 
+        @include respond(small-phone) {
+            justify-content: center;
+            width: 15rem;
+            height: 15rem;
+            margin-left: 3rem;
+            padding: 4rem;
+        }
     }
 
     &__label {
@@ -475,6 +523,10 @@
     &__description {
         @include section-description;
 
+        &--phone {
+            display: none;
+        }
+
         @include respond(tab-land) {
             font-size: 1.8rem;
             width: 40vw;
@@ -483,11 +535,20 @@
         @include respond(big-phone) {
             font-size: 1.9rem;
             width: 100%;
+        }
 
+        @include respond(small-phone) {
+            width: 100%;
+            display: none;
+
+            &--phone {
+                display: block;
+            }
         }
     }
 
     &__process {
+        grid-area: process;
         display: flex;
         width: 50.8rem;
         height: 21.8rem;
@@ -502,6 +563,12 @@
             width: 100%;
             height: 30rem;
 
+        }
+
+        @include respond(small-phone) {
+            order: 3;
+            width: 100%;
+            height: 35rem;
         }
     }
 
@@ -531,7 +598,8 @@
         }
 
         @include respond(small-phone) {
-            transform: translateY(1rem);
+            // transform: translateY(1rem);
+            width: 100%;
         }
 
         &--3 {
@@ -611,9 +679,6 @@
         @include respond(big-phone) {
             // margin: 4rem 1rem 0 0;
         }
-
-
-
     }
 
     &__step-description {
@@ -635,7 +700,11 @@
                 width: 100%;
             }
 
-
+            @include respond(small-phone) {
+                height: auto;
+                width: 100%;
+                padding-left: 1rem;
+            }
         }
 
         font-size: 1.4rem;
@@ -652,15 +721,23 @@
             margin-right: 1rem;
         }
 
+        @include respond(small-phone) {
+            height: auto;
+            width: 100%;
+        }
+
 
     }
 
     &__icon {
-
-
         @include respond(big-phone) {
             width: 7rem;
             height: 7rem;
+        }
+
+        @include respond(small-phone) {
+            width: 5rem;
+            height: 5rem;
         }
 
         &--shop {
@@ -692,7 +769,7 @@
 
 
     @include respond(small-phone) {
-        height: auto
+        height: 111.625rem
     }
 
 
@@ -733,7 +810,6 @@
         align-items: center;
 
         @include respond(big-phone) {
-            display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
@@ -742,6 +818,8 @@
 
         @include respond(small-phone) {
             height: auto;
+            flex-direction: column;
+            width: 100%;
         }
     }
 
@@ -767,6 +845,10 @@
             justify-content: center;
         }
 
+        @include respond(small-phone) {
+            transform: translateY(13rem);
+        }
+
 
 
         img {
@@ -789,10 +871,8 @@
             }
 
             @include respond(small-phone) {
-                display: none;
+                margin: 0;
             }
-
-
         }
 
     }
@@ -824,18 +904,19 @@
             height: 50rem;
             justify-content: space-between;
             align-items: center;
+            padding: 0 2rem;
 
             &>* {
                 margin-bottom: 0;
             }
         }
 
-        @include respond(big-phone) {
-            padding: 0 2rem;
-        }
+
 
         @include respond(small-phone) {
-            width: 100vw;
+            width: 100%;
+            align-items: center;
+            margin-top: 5rem;
         }
 
     }
@@ -883,6 +964,10 @@
             width: 45rem;
         }
 
+        @include respond(small-phone) {
+            width: 100%;
+        }
+
         .input-field {
             width: 100%;
         }
@@ -892,25 +977,6 @@
             top: 12%;
         }
 
-        @include respond(big-phone) {
-            a {
-                width: 35%;
-                text-align: center;
-                display: block;
-                position: static;
-                margin: 0 auto 3rem;
-            }
-        }
-
-        @include respond(small-phone) {
-            a {
-                width: 35%;
-                text-align: center;
-                display: block;
-                position: static;
-                margin: 0 auto 3rem;
-            }
-        }
 
         @include respond(big-phone) {
             a {
@@ -928,9 +994,9 @@
         justify-content: space-between;
         width: 60rem;
 
-        @include respond(tab-land) {
-            display: flex;
-        }
+        // @include respond(tab-land) {
+        //     display: flex;
+        // }
 
         @include respond(tab-port) {
             justify-content: flex-start;
@@ -940,15 +1006,15 @@
         @include respond(big-phone) {
             width: 25rem;
             margin: 0 auto;
-            display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
         }
 
         @include respond(small-phone) {
             margin: 0;
+            flex-direction: column;
+            align-items: center;
         }
 
 
@@ -969,22 +1035,22 @@
             @include respond(big-phone) {
                 margin-bottom: 2rem;
                 width: 20rem;
-
             }
 
-            @include respond(small-phone) {
-                display: block;
 
+            @include respond(small-phone) {
+                width: 22.5rem;
+                margin: 0 0 3rem;
             }
         }
 
         &--android {
             @include respond(big-phone) {
-                // display: block;
+                display: block;
             }
 
             @include respond(small-phone) {
-                display: block;
+                display: none;
             }
         }
 
@@ -996,16 +1062,13 @@
             @include respond(big-phone) {
                 display: block;
             }
-        }
-
-        &--sibapp {
-
 
             @include respond(small-phone) {
                 display: block;
-                margin: 0 auto;
             }
         }
+
+
 
     }
 
@@ -1013,9 +1076,6 @@
         @include respond(big-phone) {
             width: 100%;
         }
-
-
-
     }
 }
 
@@ -1054,12 +1114,12 @@
     }
 
     &__content {
+        height: 43.038rem;
         @include cardsBoxShadow;
         display: flex;
         justify-content: space-evenly;
         padding: 0 5.5rem;
 
-        height: 43.038rem;
 
         @include respond(generic-desktop) {
             justify-content: flex-start;
@@ -1082,11 +1142,10 @@
         }
 
         @include respond(small-phone) {
-            margin-top: 2rem;
-            width: 90vw;
-            height: auto;
-            padding: 0;
-            margin-right: -.5rem;
+            height: 68.75rem;
+            flex-direction: column;
+            padding: 0 1rem;
+            margin: 9rem 0;
         }
 
     }
@@ -1121,8 +1180,12 @@
         }
 
         @include respond(small-phone) {
+            order: 1;
             padding: 1.5rem;
             margin: 0;
+            justify-content: flex-start;
+            height: auto;
+            width: 100%;
         }
 
     }
@@ -1141,8 +1204,6 @@
             font-size: 2rem;
             margin-bottom: 3rem;
         }
-
-
 
         &--phone {
             display: none;
@@ -1183,11 +1244,27 @@
             width: 40rem;
         }
 
+        @include respond(small-phone) {
+            width: 100%;
+        }
+
 
 
         .input-field {
             width: 100%;
 
+            @include respond(small-phone) {
+                display: none;
+            }
+
+            &--sm {
+                display: none;
+
+                @include respond(small-phone) {
+                    display: block;
+                    width: 100%;
+                }
+            }
         }
 
         a {
@@ -1197,6 +1274,13 @@
 
             @include respond(big-phone) {
                 padding: 1rem;
+            }
+
+            @include respond(small-phone) {
+                top: 6%;
+                padding: .8rem;
+                text-align: center;
+
             }
         }
     }
@@ -1208,11 +1292,14 @@
         justify-content: flex-end;
         object-fit: cover;
 
+        @include respond(small-phone) {
+            display: block;
+        }
+
         img {
             @include respond(tab-land) {
                 max-height: 100%;
                 max-width: 100%;
-
             }
         }
     }

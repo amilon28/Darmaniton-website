@@ -14,6 +14,12 @@
         padding: 3.5rem;
     }
 
+    @include respond(small-phone) {
+        padding: 3.5rem 0 5rem 0;
+        margin: 0 auto;
+        height: 100vh;
+    }
+
     &__img {
         height: 10rem;
         width: 100%;
@@ -21,8 +27,14 @@
 
         @include respond(big-phone) {
             height: auto;
-            margin-bottom: 2rem;
+            margin-bottom: 4rem;
             width: auto;
+        }
+
+        @include respond(small-phone) {
+            width: auto;
+            height: auto;
+            margin: 0 auto;
         }
     }
 
@@ -60,23 +72,26 @@
             transform: translateX(-5rem);
         }
 
-
-
         @include respond(big-phone) {
             position: static;
             padding: 2rem 0 0 4rem;
         }
 
         @include respond(small-phone) {
-            width: 85vw;
-            transform: translateX(1rem);
+            display: none;
+        }
+
+        &--phone {
+            display: none;
+
+            @include respond(small-phone) {
+                display: block;
+            }
         }
     }
 
     &__box {
         position: relative;
-
-
 
         @include respond(big-phone) {
             height: auto;
@@ -86,6 +101,17 @@
             justify-content: space-between;
             align-items: center;
         }
+
+        @include respond(small-phone) {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+
     }
 
     &__info {
@@ -99,7 +125,14 @@
 
         @include respond(big-phone) {
             margin: 0;
-            // height: 100%;
+            align-items: center;
+        }
+
+        @include respond(small-phone) {
+            margin: 0;
+            text-align: center;
+            align-items: center;
+            margin-top: 7rem;
         }
 
     }
@@ -117,20 +150,17 @@
         font-size: 1.8rem;
         font-weight: lighter;
 
-        @include respond(big-phone) {
-            text-align: center;
-            margin-bottom: 2.5rem;
-        }
 
-        @include respond(big-phone) {
+        @include respond(small-phone) {
             display: none;
         }
 
         &--phone {
             display: none;
 
-            @include respond(big-phone) {
+            @include respond(small-phone) {
                 display: block;
+                margin-bottom: 2rem;
             }
         }
 
@@ -144,14 +174,28 @@
             justify-content: space-around;
             height: 20vh;
             width: 80%;
-            margin-right: 2rem;
+            // margin-right: 2rem;
+        }
+
+        @include respond(small-phone) {
+            width: 20rem;
+            height: 20rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
         }
 
         a {
             text-align: center;
 
+            @include respond(small-phone) {
+                font-size: 2rem;
+                padding: 1rem;
+                font-weight: lighter;
+            }
+
             &:first-child {
-                @include respond(big-phone) {
+                @include respond(small-phone) {
                     display: none;
                 }
             }
@@ -159,6 +203,11 @@
             &:last-child {
                 @include respond(big-phone) {
                     margin-right: 0;
+                    ;
+                }
+
+                @include respond(small-phone) {
+                    margin: 0;
                 }
             }
         }
@@ -168,7 +217,7 @@
     &-direct-download-btn {
         display: none;
 
-        @include respond(big-phone) {
+        @include respond(small-phone) {
             display: block;
         }
     }
