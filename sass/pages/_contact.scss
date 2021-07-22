@@ -3,10 +3,12 @@
 
     display: flex;
 
+    @include respond(generic-desktop) {
+        padding: 5rem;
+    }
+
     @include respond(tab-land) {
-        width: 100vw;
-        flex-direction: column;
-        padding: 8rem 7rem 8rem 2rem;
+        padding: 5rem;
     }
 
 
@@ -31,6 +33,16 @@
 
         @include respond(tab-port) {
             width: 100vw;
+            order: 1;
+        }
+
+        @include respond(big-phone) {
+            width: 100%;
+        }
+
+        @include respond(small-phone) {
+            margin: 8rem 0;
+            width: 100%;
         }
 
 
@@ -43,17 +55,23 @@
             height: 100%;
 
             @include respond(tab-land) {
-                width: 60%;
-                margin: 0 10rem 0;
+                width: 90%;
+                margin: 0;
             }
 
 
             @include respond(tab-port) {
-                width: 60%;
-                margin: 0 auto;
+                width: 65%;
+                margin: 0 10rem 3rem 8rem;
             }
 
             @include respond(big-phone) {
+                width: 80%;
+                margin: 22rem auto 10rem;
+            }
+
+            @include respond(small-phone) {
+                margin: 0;
                 width: 100%;
             }
         }
@@ -114,15 +132,14 @@
             border-radius: 1rem;
 
             @include respond(tab-land) {
-                width: 40%;
-                margin: 0 auto;
+                // width: 40%;
+                // margin: 0 auto;
                 padding: 1.5rem 1rem;
                 font-size: 2rem;
             }
 
             @include respond(tab-port) {
-                width: 40%;
-                margin: 0 auto;
+
                 padding: 1.5rem 1rem;
                 font-size: 2rem;
             }
@@ -131,13 +148,11 @@
                 font-size: 2rem;
                 font-weight: bold;
             }
-        }
 
-        @include respond(big-phone) {
-            width: 100%;
-            margin-top: 18rem;
-            padding-bottom: 5rem;
-
+            @include respond(small-phone) {
+                margin: 0;
+                width: 100%;
+            }
         }
     }
 
@@ -147,6 +162,8 @@
 
         img {
             width: 100%;
+
+            @include respond(small-phone) {}
         }
 
         .textBox {
@@ -158,8 +175,8 @@
             right: 5%;
 
             display: grid;
-
-            grid-template-columns: repeat(2, 1fr);
+            column-gap: 4rem;
+            grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
 
             .title {
                 color: $color-black;
@@ -190,12 +207,22 @@
                     @include respond(big-phone) {
                         line-height: 4.5rem;
                     }
+
+                    @include respond(small-phone) {
+                        line-height: 4.5rem;
+                        width: 100%;
+                    }
                 }
 
 
                 @include respond(big-phone) {
                     grid-column: 1/-1;
                     grid-row: 2/3;
+                }
+
+                @include respond(small-phone) {
+                    grid-row: 2/3;
+                    grid-column: 1/-1;
                 }
             }
 
@@ -214,9 +241,9 @@
                 }
             }
 
-
-
-
+            @include respond(tab-land) {
+                box-shadow: -4px 7px 4.75rem -1px #ECECEC;
+            }
 
             @include respond(big-phone) {
                 width: 90%;
@@ -224,7 +251,8 @@
                 box-shadow: -4px 7px 4.75rem -1px #ECECEC;
                 border-radius: 2rem;
                 right: 5%;
-                top: 20%;
+                top: 30%;
+                grid-template-columns: repeat(2, 1fr);
 
                 .fixed-number {
 
@@ -236,6 +264,16 @@
                     }
                 }
             }
+
+            @include respond(small-phone) {
+                width: 95%;
+                box-shadow: -4px 7px 4.75rem -1px #ECECEC;
+                border-radius: 5px;
+                padding: 2rem;
+                gap: 4rem;
+                bottom: -6%;
+                right: 6px;
+            }
         }
 
         @include respond(tab-land) {
@@ -245,7 +283,7 @@
 
         @include respond(tab-port) {
             width: 90vw;
-            margin-top: 5rem;
+            margin-bottom: 5rem;
         }
 
         @include respond(big-phone) {
@@ -253,7 +291,12 @@
             width: 100%;
             margin-bottom: 4rem;
             position: static;
+        }
 
+        @include respond(small-phone) {
+            width: 85vw;
+            height: 50rem;
+            margin-top: 3rem;
         }
     }
 }
