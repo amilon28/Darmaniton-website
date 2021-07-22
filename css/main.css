@@ -652,7 +652,7 @@ nav.nav-phone {
     font-size: 1.25rem;
   }
   nav.nav-phone .logo_btns a {
-    width: 22rem;
+    width: 21rem;
     font-size: 1.75rem;
   }
   nav.nav-phone .links {
@@ -734,7 +734,7 @@ nav.nav-phone {
     font-size: 1.25rem;
   }
   nav.nav-phone .logo_btns a {
-    width: 22rem;
+    width: 21rem;
     font-size: 1.75rem;
   }
   nav.nav-phone .links {
@@ -3152,7 +3152,7 @@ nav.nav-phone {
   background-color: #E6F3FF;
   color: #1894FF;
   margin-top: 1rem;
-  padding: 1.4rem 3.2rem;
+  padding: 1.4rem 2rem;
 }
 
 .btn--download--phone {
@@ -3248,7 +3248,7 @@ nav.nav-phone {
 }
 
 .pharmacies {
-  width: 80%;
+  width: 90%;
   padding: 6rem 12rem 20rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3259,23 +3259,14 @@ nav.nav-phone {
 
 @media (max-width: 74.9375em) {
   .pharmacies {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
     padding: 5rem;
   }
 }
 
 @media (max-width: 56.25em) {
   .pharmacies {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    padding: 5rem;
+    padding: 3rem;
+    justify-items: center;
   }
 }
 
@@ -3286,6 +3277,17 @@ nav.nav-phone {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    padding: 5rem 2rem 5rem 5rem;
+  }
+}
+
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
+  .pharmacies {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem;
   }
 }
 
@@ -3303,12 +3305,21 @@ nav.nav-phone {
 
 @media (max-width: 56.25em) {
   .pharmacies__quick-sign-up {
-    width: 100%;
+    width: 50%;
     padding: 0;
   }
 }
 
 @media (min-width: 25.3125em) and (max-width: 43.75em) {
+  .pharmacies__quick-sign-up {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+  }
+}
+
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
   .pharmacies__quick-sign-up {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -3325,6 +3336,12 @@ nav.nav-phone {
           user-select: none;
 }
 
+@media (min-width: 25.3125em) and (max-width: 43.75em) {
+  .pharmacies__name {
+    width: 100%;
+  }
+}
+
 .pharmacies__title {
   width: 65%;
   line-height: 5rem;
@@ -3338,6 +3355,12 @@ nav.nav-phone {
     width: 90%;
     font-size: 3rem;
     margin-left: 0;
+  }
+}
+
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
+  .pharmacies__title {
+    width: 100%;
   }
 }
 
@@ -3357,11 +3380,34 @@ nav.nav-phone {
   }
 }
 
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
+  .pharmacies__description {
+    width: 100%;
+  }
+}
+
 .pharmacies__inputBox {
   position: relative;
+  width: 45rem;
+}
+
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
+  .pharmacies__inputBox {
+    width: 32rem;
+  }
+}
+
+.pharmacies__inputBox .input-field {
+  width: 100%;
 }
 
 @media (min-width: 25.3125em) and (max-width: 43.75em) {
+  .pharmacies__inputBox .input-field {
+    display: none;
+  }
+}
+
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
   .pharmacies__inputBox .input-field {
     display: none;
   }
@@ -3378,17 +3424,20 @@ nav.nav-phone {
   }
 }
 
-@media (max-width: 74.9375em) {
-  .pharmacies__inputBox a {
-    top: 10%;
-    right: 59%;
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
+  .pharmacies__inputBox .input-field--phone {
+    display: block;
   }
 }
 
-@media (min-width: 25.3125em) and (max-width: 43.75em) {
+.pharmacies__inputBox a {
+  right: 70%;
+  top: 13%;
+}
+
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
   .pharmacies__inputBox a {
-    top: 20%;
-    right: 63%;
+    padding: .8rem .5rem;
   }
 }
 
@@ -3407,6 +3456,7 @@ nav.nav-phone {
 @media (min-width: 25.3125em) and (max-width: 43.75em) {
   .pharmacies__infoBox {
     border-radius: 2rem;
+    width: 80%;
   }
 }
 
@@ -3414,6 +3464,12 @@ nav.nav-phone {
   position: relative;
   padding: 1.5rem 1.2rem 1rem 1rem;
   width: 90%;
+}
+
+@media (max-width: 74.9375em) {
+  .pharmacies__infoBox--1 {
+    width: 110%;
+  }
 }
 
 @media (min-width: 25.3125em) and (max-width: 43.75em) {
@@ -3425,13 +3481,19 @@ nav.nav-phone {
 
 @media (max-width: 74.9375em) {
   .pharmacies__infoBox--1 a {
-    right: 89%;
+    right: 79%;
   }
 }
 
 @media (min-width: 25.3125em) and (max-width: 43.75em) {
   .pharmacies__infoBox--1 a {
-    right: 79%;
+    right: 82%;
+  }
+}
+
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
+  .pharmacies__infoBox--1 a {
+    padding: .5rem .5rem;
   }
 }
 
@@ -3439,6 +3501,24 @@ nav.nav-phone {
   padding: 1rem;
   width: 62%;
   font-size: .8rem;
+}
+
+@media (max-width: 74.9375em) {
+  .pharmacies__infoBox--2, .pharmacies__infoBox--3 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .pharmacies__infoBox--2, .pharmacies__infoBox--3 {
+    width: 70%;
+  }
+}
+
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
+  .pharmacies__infoBox--2, .pharmacies__infoBox--3 {
+    display: none;
+  }
 }
 
 .pharmacies__infoBox--2 {
@@ -3450,6 +3530,18 @@ nav.nav-phone {
   opacity: .4;
   margin-right: 20rem;
   position: relative;
+}
+
+@media (max-width: 74.9375em) {
+  .pharmacies__infoBox--3 a {
+    right: 79%;
+  }
+}
+
+@media (max-width: 74.9375em) {
+  .pharmacies__infoBox--3 {
+    margin-left: -2rem;
+  }
 }
 
 .pharmacies__infoBox .person-1 {
@@ -3507,12 +3599,6 @@ nav.nav-phone {
   margin-right: 1rem;
 }
 
-@media (min-width: 25.3125em) and (max-width: 43.75em) {
-  .pharmacies {
-    padding: 5rem;
-  }
-}
-
 .numOfPharmacies {
   padding: 2.5rem 0 3rem;
   background-color: #1894FF;
@@ -3537,6 +3623,19 @@ nav.nav-phone {
   }
 }
 
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
+  .numOfPharmacies {
+    height: 56.25rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .numOfPharmacies .circle {
   position: absolute;
   top: 2%;
@@ -3553,6 +3652,13 @@ nav.nav-phone {
   }
 }
 
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
+  .numOfPharmacies .circle-left {
+    top: 28%;
+    right: -5%;
+  }
+}
+
 .numOfPharmacies .circle-right {
   left: -1%;
 }
@@ -3561,6 +3667,13 @@ nav.nav-phone {
   .numOfPharmacies .circle-right {
     top: 28%;
     left: -5%;
+  }
+}
+
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
+  .numOfPharmacies .circle-right {
+    top: 28%;
+    right: 81%;
   }
 }
 
@@ -3614,13 +3727,13 @@ nav.nav-phone {
 
 @media (max-width: 74.9375em) {
   .services {
-    padding: 5rem;
+    padding: 7rem 3rem;
   }
 }
 
 @media (max-width: 56.25em) {
   .services {
-    padding: 4rem;
+    padding: 7rem 4rem;
   }
 }
 
@@ -3630,9 +3743,29 @@ nav.nav-phone {
   }
 }
 
+@media (max-width: 74.9375em) {
+  .services__textBox {
+    width: 90%;
+    margin-right: 5rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .services__textBox {
+    width: 90%;
+    margin-right: 5rem;
+  }
+}
+
 @media (min-width: 25.3125em) and (max-width: 43.75em) {
   .services__textBox {
     padding-right: 4rem;
+  }
+}
+
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
+  .services__textBox {
+    margin: 0;
   }
 }
 
@@ -3687,20 +3820,16 @@ nav.nav-phone {
   .services__cardBox {
     height: auto;
     margin-top: 2.5rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
 @media (max-width: 56.25em) {
   .services__cardBox {
     margin-top: 2.5rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    width: auto;
   }
 }
 
@@ -3711,6 +3840,21 @@ nav.nav-phone {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0 4.2rem 0 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
+  .services__cardBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -3737,48 +3881,58 @@ nav.nav-phone {
 
 @media (max-width: 74.9375em) {
   .services__cardBox .card {
-    width: 100%;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    padding: 4rem;
-  }
-  .services__cardBox .card:first-child {
-    margin-bottom: 7rem;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 3rem;
   }
 }
 
 @media (max-width: 56.25em) {
   .services__cardBox .card {
-    width: 100%;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     padding: 4rem;
   }
-  .services__cardBox .card:first-child {
-    margin-bottom: 2rem;
-  }
 }
 
 @media (min-width: 25.3125em) and (max-width: 43.75em) {
   .services__cardBox .card {
-    width: 100%;
-    height: 42.75rem;
+    width: 80%;
+    height: auto;
   }
   .services__cardBox .card:first-child {
     margin-bottom: 7rem;
-  }
-  .services__cardBox .card:last-child {
-    margin-bottom: 3rem;
   }
   .services__cardBox .card .services__textBox {
     padding-right: 1rem;
   }
 }
 
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
+  .services__cardBox .card {
+    width: 90%;
+  }
+  .services__cardBox .card:first-child {
+    margin-bottom: 7rem;
+  }
+}
+
 .services__cardBox .card img {
   width: 10.288rem;
+}
+
+@media (max-width: 74.9375em) {
+  .services__cardBox .card .store {
+    width: 9em;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 25.3125em) and (max-width: 43.75em) {
+  .services__cardBox .card .store {
+    width: 8rem;
+  }
 }
 
 @media (min-width: 25.3125em) and (max-width: 43.75em) {
@@ -3828,6 +3982,12 @@ nav.nav-phone {
   top: -8%;
 }
 
+@media (max-width: 74.9375em) {
+  .FQ__title img {
+    display: none;
+  }
+}
+
 @media (min-width: 25.3125em) and (max-width: 43.75em) {
   .FQ__title img {
     display: none;
@@ -3850,6 +4010,12 @@ nav.nav-phone {
 
 .FQ__box {
   padding: 12rem;
+}
+
+@media (max-width: 56.25em) {
+  .FQ__box {
+    padding: 3rem;
+  }
 }
 
 @media (min-width: 25.3125em) and (max-width: 43.75em) {
@@ -3898,8 +4064,11 @@ nav.nav-phone {
     width: 105%;
     padding-bottom: 1.5rem;
   }
-  .FQ__box-text:nth-child(2) {
-    display: none;
+}
+
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
+  .FQ__box-text {
+    width: auto;
   }
 }
 
@@ -3976,25 +4145,39 @@ nav.nav-phone {
       justify-content: space-around;
 }
 
+@media (max-width: 74.9375em) {
+  .FQ__gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media (max-width: 56.25em) {
   .FQ__gallery {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .FQ__gallery .facilities__card {
-    margin: 2.5rem;
+    width: 50%;
+    height: 40rem;
+    margin: 0 auto;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 25.3125em) and (max-width: 43.75em) {
   .FQ__gallery {
-    width: 100%;
-    margin-right: 17rem;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    width: 50%;
+    margin: 0 auto;
   }
   .FQ__gallery .facilities__card {
-    margin-left: 2rem;
+    margin: 2rem;
     padding-top: 2rem;
     padding-bottom: 1rem;
   }
@@ -4005,11 +4188,9 @@ nav.nav-phone {
   }
 }
 
-@media (min-width: 25.3125em) and (max-width: 43.75em) {
-  .FQ__gallery {
-    margin: 0;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+@media (min-width: 17.5em) and (max-width: 25.3125em) {
+  .FQ__gallery .facilities__card:nth-child(2n+1) {
+    margin: 2rem;
   }
 }
 
