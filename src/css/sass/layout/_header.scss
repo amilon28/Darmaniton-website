@@ -86,6 +86,7 @@
 
             @include respond(small-phone) {
                 display: block;
+                width: 31rem;
             }
         }
     }
