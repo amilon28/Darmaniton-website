@@ -5,9 +5,9 @@ const mobileMenu = document.querySelector(".nav-phone");
 const closeMenu = document.querySelector(".close-menu");
 
 hamburgerBtn.addEventListener("click", function () {
-  mobileMenu.style.transform = "translateX(0)";
+  mobileMenu.style.transform = "translateX(-50%)";
 });
 
 closeMenu.addEventListener("click", function () {
-  mobileMenu.style.transform = "translateX(105%)";
+  mobileMenu.style.transform = "translateX(-150%)";
 });
