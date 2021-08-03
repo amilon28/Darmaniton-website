@@ -415,9 +415,6 @@
             margin-right: 5rem;
         }
 
-        @include respond(big-phone) {
-            padding-right: 4rem;
-        }
 
         @include respond(small-phone) {
             margin: 0;
@@ -472,7 +469,7 @@
 
         @include respond(big-phone) {
             flex-direction: column;
-            padding: 0 4.2rem 0 1rem;
+            padding: 0 2.2rem 0 1rem;
             align-items: center;
         }
 
@@ -494,17 +491,19 @@
             align-items: center;
 
             @include respond(tab-land) {
+                width: 300px;
                 justify-content: space-around;
                 padding: 3rem;
             }
 
             @include respond(tab-port) {
+
                 justify-content: space-evenly;
                 padding: 4rem;
             }
 
             @include respond(big-phone) {
-                width: 80%;
+                width: 350px;
                 height: auto;
 
                 &:first-child {
