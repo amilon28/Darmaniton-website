@@ -996,6 +996,11 @@
         justify-content: space-between;
         width: 60rem;
 
+        button {
+            border: none;
+            background-color: transparent;
+        }
+
         // @include respond(tab-land) {
         //     display: flex;
         // }

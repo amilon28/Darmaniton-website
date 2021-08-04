@@ -769,6 +769,7 @@ nav.nav-phone {
 
 .hamburger {
   display: none;
+  margin-left: 5px;
 }
 
 .hamburger div {
@@ -2137,6 +2138,11 @@ nav.nav-phone {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 60rem;
+}
+
+.download__social button {
+  border: none;
+  background-color: transparent;
 }
 
 @media (max-width: 56.25em) {
